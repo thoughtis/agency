@@ -1,1 +1,1 @@
-dist/lfs/** filter=lfs diff=lfs merge=lfs -text
+dist/assets/lfs/** filter=lfs diff=lfs merge=lfs -text

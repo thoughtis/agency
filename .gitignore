@@ -3,3 +3,5 @@ gitignored
 node_modules
 Untitled.code-workspace
 dist
+# Local Netlify folder
+.netlify

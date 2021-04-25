@@ -1,1 +1,1 @@
-src/lfs/** filter=lfs diff=lfs merge=lfs -text
+dist/lfs/** filter=lfs diff=lfs merge=lfs -text

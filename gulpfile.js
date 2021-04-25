@@ -25,15 +25,18 @@ function fileInclude() {
     }));
 }
 
-exports.default = (cb) => {
-  const all = gulp.parallel(
-    css,
-    fileInclude
-  )
+const all = gulp.parallel(
+  css,
+  fileInclude
+)
 
+exports.build = (cb) => {
   all()
-  
-  gulp.watch('src', all);
+  cb()
+}
 
+exports.watch = (cb) => {
+  all()
+  gulp.watch('src', all);
   cb()
 }

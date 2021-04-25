@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Minion Pro";
+  src: url("../assets/fonts/MinionPro-Regular.woff2") format("woff2"),
+    url("../assets/fonts/MinionPro-Regular.woff") format("woff");
+}
+
+/* Here are styles pasted from the "Text Styles" in figma */
+
+.headline {
+  font-family: Minion Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 46px;
+  letter-spacing: -0.03em;
+
+  @screen sm {
+    font-size: 76px;
+    line-height: 82px;
+  }
+}
+
+.subheadline {
+  font-family: Minion Pro;
+  font-size: 56px;
+  line-height: 62px;
+  letter-spacing: -0.02em;
+}
+
+.mobile-subheadline {
+  font-family: Minion Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 42px;
+  letter-spacing: -0.03em;
+}
+
+.caps-xl {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 138px;
+  line-height: 247px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.caps-lg {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 66px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.caps-md {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.caps-sm {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.body {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.01em;
+}
+
+.body-small {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+}
+
+.body-mobile {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.caps-lg-mobile {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}

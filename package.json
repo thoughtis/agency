@@ -2,7 +2,7 @@
   "name": "thought-catalog-agency",
   "version": "1.0.0",
   "scripts": {
-    "dev": "gulp"
+    "gulp": "gulp"
   },
   "dependencies": {
     "autoprefixer": "^10.2.5",

@@ -2,7 +2,8 @@
   "name": "thought-catalog-agency",
   "version": "1.0.0",
   "scripts": {
-    "gulp": "gulp"
+    "dev": "gulp watch",
+    "build": "NODE_ENV=production && gulp build"
   },
   "dependencies": {
     "autoprefixer": "^10.2.5",

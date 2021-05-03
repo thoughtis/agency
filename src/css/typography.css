@@ -1,13 +1,9 @@
-@font-face {
-  font-family: "Minion Pro";
-  src: url("../assets/fonts/MinionPro-Regular.woff2") format("woff2"),
-    url("../assets/fonts/MinionPro-Regular.woff") format("woff");
-}
-
 /* Here are styles pasted from the "Text Styles" in figma */
 
+/* Graphik, -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif */
+
 .headline {
-  font-family: Minion Pro;
+  font-family: "minion-pro", "Hoefler Text", "Noto Serif", Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 38px;
@@ -21,14 +17,14 @@
 }
 
 .subheadline {
-  font-family: Minion Pro;
+  font-family: "minion-pro", "Hoefler Text", "Noto Serif", Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
   font-size: 56px;
   line-height: 62px;
   letter-spacing: -0.02em;
 }
 
 .mobile-subheadline {
-  font-family: Minion Pro;
+  font-family: "minion-pro", "Hoefler Text", "Noto Serif", Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 34px;
@@ -37,7 +33,7 @@
 }
 
 .caps-xl {
-  font-family: Oswald;
+  font-family: "oswald", "Avenir Next Condensed", "Arial Narrow", Impact, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 138px;
@@ -47,7 +43,7 @@
 }
 
 .caps-lg {
-  font-family: Oswald;
+  font-family: "oswald", "Avenir Next Condensed", "Arial Narrow", Impact, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 60px;
@@ -57,7 +53,7 @@
 }
 
 .caps-md {
-  font-family: Oswald;
+  font-family: "oswald", "Avenir Next Condensed", "Arial Narrow", Impact, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -67,7 +63,7 @@
 }
 
 .caps-sm {
-  font-family: Oswald;
+  font-family: "oswald", "Avenir Next Condensed", "Arial Narrow", Impact, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -103,7 +99,7 @@
 }
 
 .caps-lg-mobile {
-  font-family: Oswald;
+  font-family: "oswald", "Avenir Next Condensed", "Arial Narrow", Impact, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 42px;

@@ -3,3 +3,9 @@
 @import "tailwindcss/utilities";
 @import "./typography.css";
 @import "./components.css";
+@import "./responsive-bg-images.css";
+@import "./utilities.css";
+
+html, body {
+  @extend .body;
+}

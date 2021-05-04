@@ -7,10 +7,69 @@
   @@include('./partials/head-content.html', { pathToRoot: '.' })
   <title>Home</title>
 </head>
-<body>
+<body class="text-center">
   @@include('./partials/page-header.html', { pathToRoot: '.' })
-  <p class="mx-21 headline text-center">Marketers these days have less budget, bigger growth objectives, and shorter time frames.</p>
-  <img src="./assets/lfs/389.png?nf_resize=fit&w=1000" />
-  <img src="./assets/lfs/389.png" />
+  <p class="mx-21 headline mb-45">Marketers these days have less budget, bigger growth objectives, and shorter time frames.</p>
+  <img src="./assets/lfs/389.png?nf_resize=fit&w=750" />
+  <div class="-mt-14 mb-63 sm:mt-0 relative">
+    @@include('./partials/marquee.html', { pathToRoot: '.', text: 'that’s where we fit in – '})
+  </div>
+  <div class="mx-21">
+    <h2 class="subheadline mb-7">Building an audience creates a recurring source of lead generation.</h2>
+    <p class="mb-36">We help companies find their audience and channel them toward their products and services through content.</p>
+    <div class="mb-47 pb-30">
+      <div class="mb-60">
+        <img src="./assets/lfs/platforms.png?nf_resize=fit&w=231" width="231" class="inline-block" />
+        <h3 class="caps-md -mt-8 mb-9">Platforms</h3>
+        <p>We identify which platforms resonate with your audience.</p>
+      </div>
+      <div class="mb-60">
+        <img src="./assets/lfs/planning.png?nf_resize=fit&w=274" width="274" class="inline-block" />
+        <h3 class="caps-md -mt-8 mb-9">Planning</h3>
+        <p>We create compelling content based on strategically chosen subjects.</p>
+      </div>
+      <div class="mb-60">
+        <img src="./assets/lfs/performance.png?nf_resize=fit&w=321" width="321" class="inline-block" />
+        <h3 class="caps-md -mt-8 mb-9">Performance</h3>
+        <p>We promote and measure inbound lead generation in order to tweak for performance.</p>
+      </div>
+    </div>
+  </div>
+  <div style="background-color: #E68D6D;" class="relative bg-cover bg-right-bottom w-full box-border text-white text-left pt-127 pl-30 pr-40 pb-302 sm:pb-401 sm:pl-190 sm:pt-180 responsive-bg-img-wine">
+    <div class="absolute top-32 left-39 sm:top-87 sm:left-190">
+      <div class="caps-sm text-black">01</div>
+      <div class="caps-xl text-black text-stroke" style="line-height: 128px;">Video</div>
+    </div>
+    <p class="subheadline relative mb-21" style="max-width: 937px">We use video to tell stories. Stories that help customers better understand products, services, and the end result of a brand’s value proposition.</p>
+    <p class="hidden sm:block" style="max-width: 444px;">We tookover the social platform for Hausera, then built and managed a community on their blog.</p>
+    <img class="absolute left-92 -bottom-31 hidden sm:block" src="./assets/lfs/Group423.png" style="width: 59%" />
+  </div>
+  <div class="text-white text-left pt-31 pb-37 sm:hidden" style="background-color: #161513;">
+    <p class="pl-27 pb-23" style="max-width: 297px">We tookover the social platform for Hausera, then built and managed a community on their blog.</p>
+    <img src="./assets/lfs/Group422.png" style="width: 93%;" />
+  </div>
+  <div class="pt-142 pl-30 pb-113 sm:pl-190 sm:pt-180 text-white text-left responsive-bg-img-house bg-right-bottom relative overflow-hidden" style="background-color: #7CADA7;">
+    <div class="absolute top-38 left-39 sm:top-87 sm:left-190">
+      <div class="caps-sm text-black">02</div>
+      <div class="caps-xl text-black text-stroke" style="line-height: 128px;">Editorial</div>
+    </div>
+    <p class="subheadline mb-12 relative w-268 sm:w-full">We focus editorial on three main areas:</p>
+    <ul class="pb-194 sm:pb-48">
+      <li class="mb-10 sm:mb-0">
+        <div class="sm:inline-block align-middle">– B2B editorial</div>
+        <div class="sm:inline-block caps-sm ml-21 sm:ml-0 align-middle" style="font-size: 12px">(white papers, case studies, newsletters + more)</div>
+      </li>
+      <li class="mb-10 sm:mb-0">
+        <div class="sm:inline-block align-middle">– Acquisition editorial</div>
+        <div class="sm:inline-block caps-sm ml-21 sm:ml-0 align-middle" style="font-size: 12px">(organic search and social media)</div>
+      </li>
+      <li class="mb-10 sm:mb-0">
+        <div class="sm:inline-block align-middle">– Branded editorial</div>
+        <div class="sm:inline-block caps-sm ml-21 sm:ml-0 align-middle" style="font-size: 12px">(existing customers becoming deeper fans)</div>
+      </li>
+    </ul>
+    <p class="hidden sm:block" style="width:478px">Our expertise in organic search growth has led 0 to 2,000 visitors per day for Hausera.</p>
+    <img class="hidden sm:block" src="./assets/lfs/Group424.png" width="600" style="background-color: #7CADA7" />
+  </div>
 </body>
 </html>

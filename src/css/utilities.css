@@ -1,0 +1,13 @@
+/* .text-stroke {
+    color: transparent;
+    text-shadow: 
+      -2px -2px 0 black, 
+      2px -2px 0 black,
+      -2px 2px 0 black,
+      2px 2px 0 black;
+} */
+
+.text-stroke {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+}

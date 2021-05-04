@@ -1,3 +1,13 @@
-/* .btn {
-  
-} */
+.marquee {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  background: black;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+
+  @extend .caps-lg;
+
+  padding-top: 11px;
+  padding-bottom: 15px;
+}

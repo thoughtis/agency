@@ -3,6 +3,7 @@ module.exports = ctx => {
     require('postcss-import'),
     require('postcss-mixins'),
     require('postcss-simple-vars'),
+    require('postcss-extend'),
     require('tailwindcss'),
     require('postcss-nested'),
   ]

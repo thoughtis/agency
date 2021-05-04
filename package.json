@@ -20,5 +20,8 @@
     "postcss-nested": "^5.0.5",
     "postcss-simple-vars": "^6.0.3",
     "tailwindcss": "^2.1.2"
+  },
+  "devDependencies": {
+    "postcss-extend": "^1.0.5"
   }
 }

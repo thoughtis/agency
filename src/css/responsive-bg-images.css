@@ -1,15 +1,15 @@
 @define-mixin responsive-bg-img $src, $srcSm, $srcMd {
   /* Using Tailwindcss's default breakpoints, multiplied by two */
-  background-image: url("$(src)?nf_resize=fit&w=800px");
+  background-image: url("$(src)?nf_resize=fit&w=800");
 
   @screen sm {
     /* ATOW, sm breakpoint is 640. 640 * 2 = 1280 */
-    background-image: url("$(srcSm)?nf_resize=fit&w=1280px");
+    background-image: url("$(srcSm)?nf_resize=fit&w=1280");
   }
 
   @screen md {
     /* ATOW, md breakpoint is 1024. 1024 * 2 = 2048 */
-    background-image: url("$(srcMd)?nf_resize=fit&w=2048px");
+    background-image: url("$(srcMd)?nf_resize=fit&w=2048");
   }
 }
 

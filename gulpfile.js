@@ -19,7 +19,7 @@ function fileInclude() {
       basepath: '@file'
     }))
     .pipe(gulp.dest((file) => {
-      const destpath = file.base.replace(__dirname + '/src', __dirname + '/dist',)
+      const destpath = file.base.replace(__dirname + '/src', __dirname + '/dist')
       console.log(destpath)
       return destpath
     }));

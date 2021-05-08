@@ -409,6 +409,7 @@ module.exports = {
       399: '399px',
       400: '400px',
       401: '401px',
+      513: '513px',
     }
   },
   variants: {

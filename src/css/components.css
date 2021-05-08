@@ -1,3 +1,9 @@
+.footer {
+  @screen md {
+    background-image: url(../assets/svg/globe.svg);
+  }
+}
+
 .marquee {
   border-top: 2px solid white;
   border-bottom: 2px solid white;
@@ -10,4 +16,18 @@
 
   padding-top: 11px;
   padding-bottom: 15px;
+}
+
+.text-bg {
+  position: absolute;
+  top: 0px;
+  right: -99px;
+  bottom: 154px;
+  left: -99px;
+  text-align: left;
+  font-family: "minion-pro", "Hoefler Text", "Noto Serif", Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: normal;
+  overflow: hidden;
 }

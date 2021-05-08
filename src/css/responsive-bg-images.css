@@ -16,6 +16,12 @@
 .responsive-bg-img-wine {
   @mixin responsive-bg-img ../assets/lfs/wine-mobile.png, ../assets/lfs/wine.png,
     ../assets/lfs/wine.png;
+
+  background-size: cover;
+
+  @screen lg {
+    background-size: 60% auto;
+  }
 }
 
 .responsive-bg-img-house {
@@ -33,4 +39,12 @@
 .responsive-bg-img-mountains {
   @mixin responsive-bg-img ../assets/lfs/mountains-mobile.png,
     ../assets/lfs/mountains.png, ../assets/lfs/mountains.png;
+
+  background-size: cover;
+  background-position: bottom right;
+}
+
+.responsive-bg-img-stars {
+  @mixin responsive-bg-img ../assets/lfs/stars-mobile.png,
+    ../assets/lfs/stars.png, ../assets/lfs/stars.png;
 }

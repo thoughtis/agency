@@ -1,3 +1,20 @@
+.bubble {
+  border-radius: 100%;
+  font-family: Graphik, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: none;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  text-align: center;
+
+  @screen lg {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+  }
+}
+
 .footer {
   @screen md {
     background-image: url(../assets/svg/globe.svg);

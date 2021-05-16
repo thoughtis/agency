@@ -11,26 +11,12 @@
   <body class="text-center home">
     <div class="home__hero relative">
       @@include('./partials/pageHeader.html', { pathToRoot: '.' })
-      <p class="px-21 headline mb-45 mx-auto" style="max-width: 1000px">
+      <p class="px-21 headline mb-45 mx-auto" style="max-width: 900px">
         Marketers these days have less budget, bigger growth objectives, and
         shorter time frames.
       </p>
-      <!-- Mobile bubbles img -->
-      <img
-        class="block lg:hidden w-full"
-        src="./assets/lfs/389.png?nf_resize=fit&w=750"
-      />
-      <!-- Desktop left and right bubbles imgs -->
-      <img
-        class="hidden lg:block absolute"
-        style="height: 79vh; bottom: 2vh; right: 15px"
-        src="./assets/lfs/Group304.png?nf_resize=fit&w=1380"
-      />
-      <img
-        class="hidden lg:block absolute"
-        style="height: 27vh; bottom: 24vh; left: 228px"
-        src="./assets/lfs/Group427.png?nf_resize=fit&w=316"
-      />
+      <!-- Mobile bubbles -->
+      @@include('./partials/home-bubbles-mobile.html', { pathToRoot: '.' })
       <!-- The timeline -->
       <div
         class="hidden lg:flex absolute caps-sm items-center"
@@ -42,6 +28,7 @@
           style="margin-bottom: -1px"
         ></div>
         <div>present day</div>
+        @@include('./partials/home-bubbles.html', { pathToRoot: '.' })
       </div>
     </div>
     <div class="-mt-14 mb-63 sm:mt-0 relative">

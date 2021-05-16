@@ -8,8 +8,8 @@
   letter-spacing: -0.03em;
 
   @screen sm {
-    font-size: 74px;
-    line-height: 79px;
+    font-size: 65px;
+    line-height: 70px;
   }
 }
 

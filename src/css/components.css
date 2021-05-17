@@ -1,18 +1,27 @@
+.arrows-1 {
+  left: 230px;
+  top: 30px;
+  display: none;
+
+  @media (min-width: 1230px) {
+    display: block;
+  }
+}
+
+.arrows-2 {
+  left: 270px;
+  top: 143px;
+  display: none;
+
+  @media (min-width: 1230px) {
+    display: block;
+  }
+}
+
 .bubble {
   border-radius: 100%;
-  font-family: Graphik, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
   text-transform: none;
   transform: translate(-50%, -50%);
-  font-weight: bold;
-  text-align: center;
-
-  @screen lg {
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 0.03em;
-  }
 }
 
 .footer {
@@ -22,17 +31,45 @@
 }
 
 .marquee {
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
   background: black;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
   color: white;
-  white-space: nowrap;
+  font-family: "oswald", "Avenir Next Condensed", "Arial Narrow", Impact, sans-serif;
+  font-size: 138px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 138px;
   overflow: hidden;
+  padding-bottom: 30px;
+  padding-top: 26px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  position: relative;
 
-  @extend .caps-lg;
+  span {
+    padding: 0 1vw;
+  }
+}
 
-  padding-top: 11px;
-  padding-bottom: 15px;
+.marquee__inner {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    animation: marquee 5s linear infinite;
+    animation-play-state: running;
+    animation-duration: 20s;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-1000vw);
+    }
 }
 
 .text-bg {

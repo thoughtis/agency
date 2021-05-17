@@ -20,7 +20,7 @@
   background-size: cover;
 
   @screen lg {
-    background-size: 60% auto;
+    background-size: auto 100%;
   }
 }
 
@@ -41,7 +41,7 @@
     ../assets/lfs/mountains.png, ../assets/lfs/mountains.png;
 
   background-size: cover;
-  background-position: bottom right;
+  background-position: top right;
 }
 
 .responsive-bg-img-stars {

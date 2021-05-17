@@ -1,720 +1,650 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    @@include('./partials/headContent.html', { pathToRoot: '.' })
-    <title>Thought Catalog Agency</title>
-  </head>
 
-  <body class="text-center home">
-    <div class="home__hero relative">
-      @@include('./partials/pageHeader.html', { pathToRoot: '.' })
-      <p class="px-21 headline mb-45 mx-auto" style="max-width: 900px">
-        Marketers these days have less budget, bigger growth objectives, and
-        shorter time frames.
-      </p>
-      <!-- Mobile bubbles -->
-      @@include('./partials/homeBubblesMobile.html', { pathToRoot: '.' })
-      <!-- The timeline -->
-      <div
-        class="hidden lg:flex absolute caps-sm items-center"
-        style="bottom: 36vh; left: 193px; right: 190px"
-      >
-        <div>10 years ago</div>
-        <div
-          class="border-t border-black h-0 mx-13 flex-grow"
-          style="margin-bottom: -1px"
-        ></div>
-        <div>present day</div>
-        @@include('./partials/homeBubbles.html', { pathToRoot: '.' })
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  @@include('./partials/headContent.html', { pathToRoot: '.' })
+  <title>Thought Catalog Agency</title>
+</head>
+
+<body class="text-center home">
+  <div class="home__hero relative">
+    @@include('./partials/pageHeader.html', { pathToRoot: '.' })
+    <p class="px-21 headline mb-45 mx-auto" style="max-width: 900px">
+      Marketers these days have less budget, bigger growth objectives, and
+      shorter time frames.
+    </p>
+    <!-- Mobile bubbles -->
+    @@include('./partials/homeBubblesMobile.html', { pathToRoot: '.' })
+    <!-- The timeline -->
+    <div class="hidden lg:flex absolute caps-sm items-center" style="bottom: 36vh; left: 193px; right: 190px">
+      <div>10 years ago</div>
+      <div class="border-t border-black h-0 mx-13 flex-grow" style="margin-bottom: -1px"></div>
+      <div>present day</div>
+      @@include('./partials/homeBubbles.html', { pathToRoot: '.' })
     </div>
-    <div class="-mt-14 mb-63 sm:mt-0 relative">
-      @@include('./partials/marquee.html', { pathToRoot: '.', text: 'that’s where we fit in – '})
-    </div>
-    <div class="mx-21">
-      <h2 class="subheadline mb-7 sm:mb-10 mx-auto" style="max-width: 860px">
-        Building an audience creates a recurring source of lead generation.
-      </h2>
-      <p class="mb-50 mx-auto" style="max-width: 668px">
-        We help companies find their audience and channel them toward their
-        products and services through content.
-      </p>
-      <!-- 3-col -->
-      <div
-        class="mb-47 mx-auto pb-30 flex flex-col lg:flex-row items-center lg:items-start justify-center w-350 sm:w-375 lg:w-auto"
-        style="max-width: 1200px;"
-      >
-        <div class="mb-60 mx-20 flex-1">
-          @@include('./partials/01.html', { pathToRoot: '.' })
-          <h3 class="caps-md mb-9">Platforms</h3>
-          <p>We identify which platforms resonate with your audience.</p>
-        </div>
-        <div class="mb-60 mx-20 flex-1">
-          @@include('./partials/02.html', { pathToRoot: '.' })
-          <h3 class="caps-md mb-9">Planning</h3>
-          <p>We create compelling content based on strategically chosen subjects.</p>
-        </div>
-        <div class="mb-60 mx-20 flex-1">
-          @@include('./partials/03.html', { pathToRoot: '.' })
-          <h3 class="caps-md mb-9">Performance</h3>
-          <p>We promote and measure inbound lead generation in order to tweak for
-            performance.</p>
-        </div>
-      </div>
-    </div>
-    <!-- logos -->
-    <div class="flex flex-wrap mx-20 md:mx-150 mb-99">
-      <div class="flex flex-grow justify-around mb-20">
-        <img class="mx-10" src="./assets/svg/hbo.svg" width="60" />
-        <img class="mx-10" src="./assets/svg/titos.svg" width="67" />
-        <img class="mx-10" src="./assets/svg/perrier.svg" width="64" />
-      </div>
-      <div class="flex flex-grow justify-around mb-20">
-        <img class="mx-10" src="./assets/svg/fx.svg" width="49" />
-        <img class="mx-10" src="./assets/svg/netflix.svg" width="101" />
-        <img class="mx-10" src="./assets/svg/google.svg" width="71" />
-      </div>
-    </div>
-    <!-- 01 video -->
+  </div>
+  <div class="-mt-14 mb-63 sm:mt-0 relative">
+    @@include('./partials/marquee.html', { pathToRoot: '.', text: 'that’s where we fit in –'})
+  </div>
+  <div class="mx-21">
+    <h2 class="subheadline mb-7 sm:mb-10 mx-auto" style="max-width: 860px">
+      Building an audience creates a recurring source of lead generation.
+    </h2>
+    <p class="mb-50 mx-auto" style="max-width: 668px">
+      We help companies find their audience and channel them toward their
+      products and services through content.
+    </p>
+    <!-- 3-col -->
     <div
-      style="background-color: #e68d6d"
-      class="relative bg-no-repeat bg-contain bg-right-bottom w-full box-border text-white text-left pt-127 pl-30 pr-40 pb-302 sm:pb-401 sm:pl-190 sm:pt-180 responsive-bg-img-wine"
-    >
-      <div class="absolute top-32 left-39 sm:top-87 sm:left-190">
-        <div class="caps-sm text-black">01</div>
-        <div
-          class="caps-xl text-black text-stroke-2px"
-          style="line-height: 128px"
-        >
-          Video
+      class="mb-47 mx-auto pb-30 flex flex-col lg:flex-row items-center lg:items-start justify-center w-350 sm:w-375 lg:w-auto"
+      style="max-width: 1200px;">
+      <div class="mb-60 mx-20 flex-1 relative">
+        <!-- Arrows -->
+        <img src="./assets/svg/1-2-arrows.svg" class="absolute z-30 arrows-1" />
+        @@include('./partials/01.html', { pathToRoot: '.' })
+        <h3 class="caps-md mb-9">Platforms</h3>
+        <p>We identify which platforms resonate with your audience.</p>
+      </div>
+      <div class="mb-60 mx-20 flex-1 relative">
+        <!-- Arrows -->
+        <img src="./assets/svg/2-3-arrows.svg" class="absolute z-30 arrows-2" />
+        @@include('./partials/02.html', { pathToRoot: '.' })
+        <h3 class="caps-md mb-9">Planning</h3>
+        <p>We create compelling content based on strategically chosen subjects.</p>
+      </div>
+      <div class="mb-60 mx-20 flex-1">
+        @@include('./partials/03.html', { pathToRoot: '.' })
+        <h3 class="caps-md mb-9">Performance</h3>
+        <p>We promote and measure inbound lead generation in order to tweak for
+          performance.</p>
+      </div>
+    </div>
+  </div>
+  <!-- logos -->
+  <div class="flex flex-wrap mx-20 md:mx-150 mb-99">
+    <div class="flex flex-grow justify-around mb-20">
+      <img class="mx-10" src="./assets/svg/hbo.svg" width="60" />
+      <img class="mx-10" src="./assets/svg/titos.svg" width="67" />
+      <img class="mx-10" src="./assets/svg/perrier.svg" width="64" />
+    </div>
+    <div class="flex flex-grow justify-around mb-20">
+      <img class="mx-10" src="./assets/svg/fx.svg" width="49" />
+      <img class="mx-10" src="./assets/svg/netflix.svg" width="101" />
+      <img class="mx-10" src="./assets/svg/google.svg" width="71" />
+    </div>
+  </div>
+  <!-- 01 video -->
+  <div style="background-color: #e68d6d"
+    class="relative bg-no-repeat bg-contain bg-right-bottom w-full box-border text-white text-left pt-127 pl-30 pr-40 pb-302 sm:pb-401 sm:pl-190 sm:pt-200 md:pr-100 lg:pr-180 responsive-bg-img-wine">
+    <div class="absolute top-32 left-39 sm:top-87 sm:left-190">
+      <div class="caps-sm text-black">01</div>
+      <div class="caps-xl text-black text-stroke-2px" style="line-height: 128px">
+        Video
+      </div>
+    </div>
+    <p class="subheadline relative mb-21" style="max-width: 937px">
+      We use video to tell stories. Stories that help customers better
+      understand products, services, and the end result of a brand’s value
+      proposition.
+    </p>
+    <p class="hidden sm:block" style="max-width: 444px">
+      We tookover the social platform for Hausera, then built and managed a
+      community on their blog.
+    </p>
+    <img class="absolute left-92 -bottom-31 hidden sm:block z-10" src="./assets/lfs/Group423.png?nf_resize=fit&w=1680"
+      style="width: 59%" />
+  </div>
+  <!-- 01 video mobile bottom part-->
+  <div class="text-white text-left pt-31 pb-37 sm:hidden" style="background-color: #161513">
+    <p class="pl-27 pb-23" style="max-width: 297px">
+      We tookover the social platform for Hausera, then built and managed a
+      community on their blog.
+    </p>
+    <img src="./assets/lfs/Group422.png?nf_resize=fit&w=710" style="width: 93%" />
+  </div>
+  <!-- 02 editorial -->
+  <div
+    class="-mt-1 pt-142 pl-30 pb-113 sm:pl-190 sm:pt-180 text-white text-left responsive-bg-img-house bg-right-bottom relative overflow-hidden"
+    style="background-color: #7cada7">
+    <div class="absolute top-38 left-39 sm:top-87 sm:left-190">
+      <div class="caps-sm text-black">02</div>
+      <div class="caps-xl text-black text-stroke-2px" style="line-height: 128px">
+        Editorial
+      </div>
+    </div>
+    <p class="subheadline mb-12 relative w-268 sm:w-full">
+      We focus editorial on three main areas:
+    </p>
+    <ul class="pb-194 sm:pb-48">
+      <li class="mb-10 sm:mb-0">
+        <div class="sm:inline-block align-middle">– B2B editorial</div>
+        <div class="sm:inline-block caps-sm ml-21 sm:ml-0 align-middle" style="font-size: 12px">
+          (white papers, case studies, newsletters + more)
         </div>
-      </div>
-      <p class="subheadline relative mb-21" style="max-width: 937px">
-        We use video to tell stories. Stories that help customers better
-        understand products, services, and the end result of a brand’s value
-        proposition.
-      </p>
-      <p class="hidden sm:block" style="max-width: 444px">
-        We tookover the social platform for Hausera, then built and managed a
-        community on their blog.
-      </p>
-      <img
-        class="absolute left-92 -bottom-31 hidden sm:block z-10"
-        src="./assets/lfs/Group423.png?nf_resize=fit&w=1680"
-        style="width: 59%"
-      />
-    </div>
-    <!-- 01 video mobile bottom part-->
-    <div
-      class="text-white text-left pt-31 pb-37 sm:hidden"
-      style="background-color: #161513"
-    >
-      <p class="pl-27 pb-23" style="max-width: 297px">
-        We tookover the social platform for Hausera, then built and managed a
-        community on their blog.
-      </p>
-      <img
-        src="./assets/lfs/Group422.png?nf_resize=fit&w=710"
-        style="width: 93%"
-      />
-    </div>
-    <!-- 02 editorial -->
-    <div
-      class="-mt-1 pt-142 pl-30 pb-113 sm:pl-190 sm:pt-180 text-white text-left responsive-bg-img-house bg-right-bottom relative overflow-hidden"
-      style="background-color: #7cada7"
-    >
-      <div class="absolute top-38 left-39 sm:top-87 sm:left-190">
-        <div class="caps-sm text-black">02</div>
-        <div
-          class="caps-xl text-black text-stroke-2px"
-          style="line-height: 128px"
-        >
-          Editorial
+      </li>
+      <li class="mb-10 sm:mb-0">
+        <div class="sm:inline-block align-middle">
+          – Acquisition editorial
         </div>
-      </div>
-      <p class="subheadline mb-12 relative w-268 sm:w-full">
-        We focus editorial on three main areas:
-      </p>
-      <ul class="pb-194 sm:pb-48">
-        <li class="mb-10 sm:mb-0">
-          <div class="sm:inline-block align-middle">– B2B editorial</div>
-          <div
-            class="sm:inline-block caps-sm ml-21 sm:ml-0 align-middle"
-            style="font-size: 12px"
-          >
-            (white papers, case studies, newsletters + more)
-          </div>
-        </li>
-        <li class="mb-10 sm:mb-0">
-          <div class="sm:inline-block align-middle">
-            – Acquisition editorial
-          </div>
-          <div
-            class="sm:inline-block caps-sm ml-21 sm:ml-0 align-middle"
-            style="font-size: 12px"
-          >
-            (organic search and social media)
-          </div>
-        </li>
-        <li class="mb-10 sm:mb-0">
-          <div class="sm:inline-block align-middle">– Branded editorial</div>
-          <div
-            class="sm:inline-block caps-sm ml-21 sm:ml-0 align-middle"
-            style="font-size: 12px"
-          >
-            (existing customers becoming deeper fans)
-          </div>
-        </li>
-      </ul>
-      <p class="hidden sm:block" style="width: 478px">
-        Our expertise in organic search growth has led 0 to 2,000 visitors per
-        day for Hausera.
-      </p>
-      <img
-        class="hidden sm:block"
-        src="./assets/lfs/Group424.png?nf_resize=fit&w=1200"
-        width="600"
-        style="background-color: #7cada7"
-      />
-    </div>
-    <!-- 02 editorial mobile bottom part -->
-    <div class="py-30 pr-30 pl-40 sm:hidden" style="background-color: #161513">
-      <p class="mb-22 text-white text-left">
-        Our expertise in organic search growth has led 0 to 2,000 visitors per
-        day for Hausera.
-      </p>
-      <img src="./assets/lfs/Group4277.png?nf_resize=fit&w=600" />
-    </div>
-    <!-- 03 photo -->
-    <div
-      style="background-color: #dabc84"
-      class="relative bg-no-repeat bg-right-bottom w-full box-border text-white text-left pt-127 pl-30 pr-40 pb-302 sm:pb-0 sm:pl-190 sm:pt-180 responsive-bg-img-mountains"
-    >
-      <div class="absolute top-32 left-39 sm:top-87 sm:left-190">
-        <div class="caps-sm text-black">03</div>
-        <div
-          class="caps-xl text-black text-stroke-2px"
-          style="line-height: 128px"
-        >
-          Photo
+        <div class="sm:inline-block caps-sm ml-21 sm:ml-0 align-middle" style="font-size: 12px">
+          (organic search and social media)
         </div>
-      </div>
-      <p class="subheadline relative mb-21" style="max-width: 937px">
-        Our photography assists in asset development for social media,
-        advertising, marketing campaigns, and more.
-      </p>
-      <p class="hidden sm:block" style="max-width: 444px">
-        We’ve helped tell stories visually for:
-      </p>
-      <img
-        class="hidden sm:block z-10"
-        src="./assets/lfs/Group428.png?nf_resize=fit&w=1716"
-        style="width: 59%;transform: translate(-120px, 31px)"
-      />
-    </div>
-    <!-- 03 photo mobile bottom part-->
-    <div
-      class="text-white text-left pt-31 pb-37 overflow-hidden sm:hidden"
-      style="background-color: #161513"
-    >
-      <p class="pl-27 pb-23" style="max-width: 297px">
-        We’ve helped tell stories visually for:
-      </p>
-      <img
-        src="./assets/lfs/Group428.png?nf_resize=fit&w=822"
-        style="min-width: 110%; margin-left: -5%"
-      />
-    </div>
-    @@include('./partials/marquee.html', { pathToRoot: '.', text: 'With over 1B pieces of content produced daily, how will you stand out? '})
-    <div
-      class="pt-51 px-40 pb-60 responsive-bg-img-stars text-left md:text-center text-white bg-cover bg-right-bottom"
-    >
-      <h2 class="subheadline md:mx-auto" style="max-width: 785px">
-        Customers interact with content earlier in the sales funnel.
-      </h2>
-      <p class="mb-53 md:mx-auto md:m-70" style="max-width: 785px">
-        Whether it’s interacting with a Tweet, scrolling by an image on
-        Instagram, a video they stumbled upon through YouTube or a searching for
-        a specific need. Customers' interest is piqued through this awareness.
-      </p>
-      <h3 class="caps-sm mb-25 hidden md:block">
-        We believe a multi-pronged strategy of:
-      </h3>
-      <img class="hidden md:block" src="./assets/lfs/Group345.png" />
-    </div>
-    <div class="bg-black text-white px-40 pb-60 md:hidden">
-      <h3 class="caps-sm mb-25">We believe a multi-pronged strategy of:</h3>
-      <div class="flex justify-center">
-        <img class="mx-10" src="./assets/svg/circle.svg" />
-        <img class="mx-10" src="./assets/svg/gon.svg" />
-      </div>
-      <div class="flex justify-center">
-        <img class="mx-10" src="./assets/svg/tri.svg" />
-        <img class="mx-10" src="./assets/svg/rect.svg" />
-      </div>
-      <div class="flex justify-center">
-        <img class="mx-10" src="./assets/svg/gon5.svg" />
-        <img class="mx-10" src="./assets/svg/square.svg" />
+      </li>
+      <li class="mb-10 sm:mb-0">
+        <div class="sm:inline-block align-middle">– Branded editorial</div>
+        <div class="sm:inline-block caps-sm ml-21 sm:ml-0 align-middle" style="font-size: 12px">
+          (existing customers becoming deeper fans)
+        </div>
+      </li>
+    </ul>
+    <p class="hidden sm:block" style="width: 478px">
+      Our expertise in organic search growth has led 0 to 2,000 visitors per
+      day for Hausera.
+    </p>
+    <img class="hidden sm:block" src="./assets/lfs/Group424.png?nf_resize=fit&w=1200" width="600"
+      style="background-color: #7cada7" />
+  </div>
+  <!-- 02 editorial mobile bottom part -->
+  <div class="py-30 pr-30 pl-40 sm:hidden" style="background-color: #161513">
+    <p class="mb-22 text-white text-left">
+      Our expertise in organic search growth has led 0 to 2,000 visitors per
+      day for Hausera.
+    </p>
+    <img src="./assets/lfs/Group4277.png?nf_resize=fit&w=600" />
+  </div>
+  <!-- 03 photo -->
+  <div style="background-color: #dabc84"
+    class="relative z-10 bg-no-repeat bg-right-bottom w-full box-border text-white text-left pt-127 pl-30 pr-40 pb-302 sm:pb-10 sm:pl-190 sm:pt-180 md:pr-100 lg:pr-180 responsive-bg-img-mountains">
+    <div class="absolute top-32 left-39 sm:top-87 sm:left-190">
+      <div class="caps-sm text-black">03</div>
+      <div class="caps-xl text-black text-stroke-2px" style="line-height: 128px">
+        Photo
       </div>
     </div>
-    <!-- Part with bg text-->
-    <div class="relative overflow-hidden">
-      <!-- Text bg -->
-      <div class="absolute text-bg">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-        venenatis lacus vitae pretium mattis. Quisque ullamcorper faucibus dui,
-        eget posuere nunc tristique sed. Praesent luctus tellus ac elit sodales
-        condimentum. Aenean euismod turpis ligula, eu lobortis velit sodales in.
-        Curabitur hendrerit leo neque, eget pretium velit posuere nec. In mattis
-        dui lacinia, vehicula elit a, tristique quam. Quisque leo eros,
-        ultricies. El venenatis in, pulvinar sit amet sapien. Nam nec tortor non
-        elit tempus iaculis. Sed volutpat luctus magna non facilisis. Proin
-        fringilla fringilla congue. Etiam a tempor felis. Pellentesque et turpis
-        facilisis purus aliquam lobortis. Nulla interdum mauris eget metus
-        congue laoreet. Vivamus ante mauris, fermentum vel maximus eget, lacinia
-        sed orci. Integer ac lorem lobortis, consectetur risus et, pharetra ex.
-        Sed eget nisl vel justo blandit auctor a a nisl. Nulla a ipsum
-        scelerisque, auctor sapien et, posuere sapien. Pellentesque habitant
-        morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        Quisque quis est vel ante mollis vehicula. Proin ut lectus velit. Aenean
-        non rhoncus tellus. Aenean eu massa a ipsum placerat gravida. Integer
-        pulvinar volutpat rhoncus. Aenean tempor ex id sem vestibulum consequat.
-        Sed vehicula nunc id orci convallis, eget tincidunt ipsum consectetur.
-        Praesent aliquam, magna vitae ultricies finibus, urna dui porta nibh, id
-        tempor felis erat quis mauris. Sed consequat pulvinar tellus a
-        scelerisque. Nullam enim nulla, tincidunt eu quam pulvinar, molestie
-        vulputate lectus. Nulla et mi in arcu efficitur eleifend eu at quam.
-        Donec lobortis, dolor id pellentesque mattis, nibh urna molestie nunc,
-        varius elementum urna nisl a ante. Aenean sapien libero, hendrerit a
-        ornare feugiat, hendrerit quis turpis. Pellentesque habitant morbi
-        tristique senectus et netus et malesuada fames ac turpis egestas.
-        Integer vel posuere nulla. Sed lacinia, velit at luctus eleifend, odio
-        mi vulputate nibh, a dignissim sem mi sed nisl. Aenean sodales tristique
-        neque, et sagittis odio ultrices non. Phasellus auctor molestie risus
-        non pharetra. Sed odio dolor, cursus ac dolor quis, suscipit maximus
-        tortor. Aliquam venenatis sodales posuere. Sed ullamcorper accumsan nisl
-        et iaculis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Pellentesque in pulvinar enim. Maecenas dictum ligula at scelerisque
-        maximus. Cras ut mi id nulla aliquet consectetur. Duis eget ex
-        tincidunt, accumsan nulla sed, finibus nulla. Nullam sed sem rutrum,
-        finibus nisi et, tristique dolor. Sed egestas nisl vel elit vehicula,
-        vel viverra nulla facilisis. Nam tempus lobortis odio, at placerat
-        sapien variusVestibulum sodales sapien turpis. Vestibulum dictum urna et
-        pharetra convallis. Proin vel elit at eros malesuada vulputate sit amet
-        et est. Aliquam nec gravida elit. Mauris consectetur magna at augue
-        molestie, ac lacinia nunc sollicitudin. In hac habitasse platea
-        dictumst. Aliquam id nibh eu ante egestas vulputate. Nam id lectus
-        condimentum sapien placerat rhoncus. Etiam vitae elementum lectus.
-        Phasellus a dolor iaculis, scelerisque quam cursus, laoreet libero.
-        Donec ac finibus enim. Donec vel mi dictum, aliquet augue eu, sodales
-        nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-        venenatis lacus vitae pretium mattis. Quisque ullamcorper faucibus dui,
-        eget posuere nunc tristique sed. Praesent luctus tellus ac elit sodales
-        condimentum. Aenean euismod turpis ligula, eu lobortis velit sodales in.
-        Curabitur hendrerit leo neque, eget pretium velit posuere nec. In mattis
-        dui lacinia, vehicula elit a, tristique quam. Quisque leo eros,
-        ultricies. El venenatis in, pulvinar sit amet sapien. Nam nec tortor non
-        elit tempus iaculis. Sed volutpat luctus magna non facilisis. Proin
-        fringilla fringilla congue. Etiam a tempor felis. Pellentesque et turpis
-        facilisis purus aliquam lobortis. Nulla interdum mauris eget metus
-        congue laoreet. Vivamus ante mauris, fermentum vel maximus eget, lacinia
-        sed orci. Integer ac lorem lobortis, consectetur risus et, pharetra ex.
-        Sed eget nisl vel justo blandit auctor a a nisl. Nulla a ipsum
-        scelerisque, auctor sapien et, posuere sapien. Pellentesque habitant
-        morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        Quisque quis est vel ante mollis vehicula. Proin ut lectus velit. Aenean
-        non rhoncus tellus. Aenean eu massa a ipsum placerat gravida. Integer
-        pulvinar volutpat rhoncus. Aenean tempor ex id sem vestibulum consequat.
-        Sed vehicula nunc id orci convallis, eget tincidunt ipsum consectetur.
-        Praesent aliquam, magna vitae ultricies finibus, urna dui porta nibh, id
-        tempor felis erat quis mauris. Sed consequat pulvinar tellus a
-        scelerisque. Nullam enim nulla, tincidunt eu quam pulvinar, molestie
-        vulputate lectus. Nulla et mi in arcu efficitur eleifend eu at quam.
-        Donec lobortis, dolor id pellentesque mattis, nibh urna molestie nunc,
-        varius elementum urna nisl a ante. Aenean sapien libero, hendrerit a
-        ornare feugiat, hendrerit quis turpis. Pellentesque habitant morbi
-        tristique senectus et netus et malesuada fames ac turpis egestas.
-        Integer vel posuere nulla. Sed lacinia, velit at luctus eleifend, odio
-        mi vulputate nibh, a dignissim sem mi sed nisl. Aenean sodales tristique
-        neque, et sagittis odio ultrices non. Phasellus auctor molestie risus
-        non pharetra. Sed odio dolor, cursus ac dolor quis, suscipit maximus
-        tortor. Aliquam venenatis sodales posuere. Sed ullamcorper accumsan nisl
-        et iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Mauris venenatis lacus vitae pretium mattis. Quisque ullamcorper
-        faucibus dui, eget posuere nunc tristique sed. Praesent luctus tellus ac
-        elit sodales condimentum. Aenean euismod turpis ligula, eu lobortis
-        velit sodales in. Curabitur hendrerit leo neque, eget pretium velit
-        posuere nec. In mattis dui lacinia, vehicula elit a, tristique quam.
-        Quisque leo eros, ultricies. El venenatis in, pulvinar sit amet sapien.
-        Nam nec tortor non elit tempus iaculis. Sed volutpat luctus magna non
-        facilisis. Proin fringilla fringilla congue. Etiam a tempor felis.
-        Pellentesque et turpis facilisis purus aliquam lobortis. Nulla interdum
-        mauris eget metus congue laoreet. Vivamus ante mauris, fermentum vel
-        maximus eget, lacinia sed orci. Integer ac lorem lobortis, consectetur
-        risus et, pharetra ex. Sed eget nisl vel justo blandit auctor a a nisl.
-        Nulla a ipsum scelerisque, auctor sapien et, posuere sapien.
-        Pellentesque habitant morbi tristique senectus et netus et malesuada
-        fames ac turpis egestas. Quisque quis est vel ante mollis vehicula.
-        Proin ut lectus velit. Aenean non rhoncus tellus. Aenean eu massa a
-        ipsum placerat gravida. Integer pulvinar volutpat rhoncus. Aenean tempor
-        ex id sem vestibulum consequat. Sed vehicula nunc id orci convallis,
-        eget tincidunt ipsum consectetur. Praesent aliquam, magna vitae
-        ultricies finibus, urna dui porta nibh, id tempor felis erat quis
-        mauris. Sed consequat pulvinar tellus a scelerisque. Nullam enim nulla,
-        tincidunt eu quam pulvinar, molestie vulputate lectus. Nulla et mi in
-        arcu efficitur eleifend eu at quam. Donec lobortis, dolor id
-        pellentesque mattis, nibh urna molestie nunc, varius elementum urna nisl
-        a ante. Aenean sapien libero, hendrerit a ornare feugiat, hendrerit quis
-        turpis. Pellentesque habitant morbi tristique senectus et netus et
-        malesuada fames ac turpis egestas. Integer vel posuere nulla. Sed
-        lacinia, velit at luctus eleifend, odio mi vulputate nibh, a dignissim
-        sem mi sed nisl. Aenean sodales tristique neque, et sagittis odio
-        ultrices non. Phasellus auctor molestie risus non pharetra. Sed odio
-        dolor, cursus ac dolor quis, suscipit maximus tortor. Aliquam venenatis
-        sodales posuere. Sed ullamcorper accumsan nisl et iaculis.Lorem ipsum
-        dolor sit amet, consectetur adipiscing elit. Pellentesque in pulvinar
-        enim. Maecenas dictum ligula at scelerisque maximus. Cras ut mi id nulla
-        aliquet consectetur. Duis eget ex tincidunt, accumsan nulla sed, finibus
-        nulla. Nullam sed sem rutrum, finibus nisi et, tristique dolor. Sed
-        egestas nisl vel elit vehicula, vel viverra nulla facilisis. Nam tempus
-        lobortis odio, at placerat sapien variusVestibulum sodales sapien
-        turpis. Vestibulum dictum urna et pharetra convallis. Proin vel elit at
-        eros malesuada vulputate sit amet et est. Aliquam nec gravida elit.
-        Mauris consectetur magna at augue molestie, ac lacinia nunc
-        sollicitudin. In hac habitasse platea dictumst. Aliquam id nibh eu ante
-        egestas vulputate. Nam id lectus condimentum sapien placerat rhoncus.
-        Etiam vitae elementum lectus. Phasellus a dolor iaculis, scelerisque
-        quam cursus, laoreet libero. Donec ac finibus enim. Donec vel mi dictum,
-        aliquet augue eu, sodales nisl. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Mauris venenatis lacus vitae pretium mattis. Quisque
-        ullamcorper faucibus dui, eget posuere nunc tristique sed. Praesent
-        luctus tellus ac elit sodales condimentum. Aenean euismod turpis ligula,
-        eu lobortis velit sodales in. Curabitur hendrerit leo neque, eget
-        pretium velit posuere nec. In mattis dui lacinia, vehicula elit a,
-        tristique quam. Quisque leo eros, ultricies. El venenatis in, pulvinar
-        sit amet sapien. Nam nec tortor non elit tempus iaculis. Sed volutpat
-        luctus magna non facilisis. Proin fringilla fringilla congue. Etiam a
-        tempor felis. Pellentesque et turpis facilisis purus aliquam lobortis.
-        Nulla interdum mauris eget metus congue laoreet. Vivamus ante mauris,
-        fermentum vel maximus eget, lacinia sed orci. Integer ac lorem lobortis,
-        consectetur risus et, pharetra ex. Sed eget nisl vel justo blandit
-        auctor a a nisl. Nulla a ipsum scelerisque, auctor sapien et, posuere
-        sapien. Pellentesque habitant morbi tristique senectus et netus et
-        malesuada fames ac turpis egestas. Quisque quis est vel ante mollis
-        vehicula. Proin ut lectus velit. Aenean non rhoncus tellus. Aenean eu
-        massa a ipsum placerat gravida. Integer pulvinar volutpat rhoncus.
-        Aenean tempor ex id sem vestibulum consequat. Sed vehicula nunc id orci
-        convallis, eget tincidunt ipsum consectetur. Praesent aliquam, magna
-        vitae ultricies finibus, urna dui porta nibh, id tempor felis erat quis
-        mauris. Sed consequat pulvinar tellus a scelerisque. Nullam enim nulla,
-        tincidunt eu quam pulvinar, molestie vulputate lectus. Nulla et mi in
-        arcu efficitur eleifend eu at quam. Donec lobortis, dolor id
-        pellentesque mattis, nibh urna molestie nunc, varius elementum urna nisl
-        a ante. Aenean sapien libero, hendrerit a ornare feugiat, hendrerit quis
-        turpis. Pellentesque habitant morbi tristique senectus et netus et
-        malesuada fames ac turpis egestas. Integer vel posuere nulla. Sed
-        lacinia, velit at luctus eleifend, odio mi vulputate nibh, a dignissim
-        sem mi sed nisl. Aenean sodales tristique neque, et sagittis odio
-        ultrices non. Phasellus auctor molestie risus non pharetra. Sed odio
-        dolor, cursus ac dolor quis, suscipit maximus tortor. Aliquam venenatis
-        sodales posuere. Sed ullamcorper accumsan nisl et iaculis. Lorem ipsum
-        dolor sit amet, consectetur adipiscing elit. Mauris venenatis lacus
-        vitae pretium mattis. Quisque ullamcorper faucibus dui, eget posuere
-        nunc tristique sed. Praesent luctus tellus ac elit sodales condimentum.
-        Aenean euismod turpis ligula, eu lobortis velit sodales in. Curabitur
-        hendrerit leo neque, eget pretium velit posuere nec. In mattis dui
-        lacinia, vehicula elit a, tristique quam. Quisque leo eros, ultricies.
-        El venenatis in, pulvinar sit amet sapien. Nam nec tortor non elit
-        tempus iaculis. Sed volutpat luctus magna non facilisis. Proin fringilla
-        fringilla congue. Etiam a tempor felis. Pellentesque et turpis facilisis
-        purus aliquam lobortis. Nulla interdum mauris eget metus congue laoreet.
-        Vivamus ante mauris, fermentum vel maximus eget, lacinia sed orci.
-        Integer ac lorem lobortis, consectetur risus et, pharetra ex. Sed eget
-        nisl vel justo blandit auctor a a nisl. Nulla a ipsum scelerisque,
-        auctor sapien et, posuere sapien. Pellentesque habitant morbi tristique
-        senectus et netus et malesuada fames ac turpis egestas. Quisque quis est
-        vel ante mollis vehicula. Proin ut lectus velit. Aenean non rhoncus
-        tellus. Aenean eu massa a ipsum placerat gravida. Integer pulvinar
-        volutpat rhoncus. Aenean tempor ex id sem vestibulum consequat. Sed
-        vehicula nunc id orci convallis, eget tincidunt ipsum consectetur.
-        Praesent aliquam, magna vitae ultricies finibus, urna dui porta nibh, id
-        tempor felis erat quis mauris. Sed consequat pulvinar tellus a
-        scelerisque. Nullam enim nulla, tincidunt eu quam pulvinar, molestie
-        vulputate lectus. Nulla et mi in arcu efficitur eleifend eu at quam.
-        Donec lobortis, dolor id pellentesque mattis, nibh urna molestie nunc,
-        varius elementum urna nisl a ante. Aenean sapien libero, hendrerit a
-        ornare feugiat, hendrerit quis turpis. Pellentesque habitant morbi
-        tristique senectus et netus et malesuada fames ac turpis egestas.
-        Integer vel posuere nulla. Sed lacinia, velit at luctus eleifend, odio
-        mi vulputate nibh, a dignissim sem mi sed nisl. Aenean sodales tristique
-        neque, et sagittis odio ultrices non. Phasellus auctor molestie risus
-        non pharetra. Sed odio dolor, cursus ac dolor quis, suscipit maximus
-        tortor. Aliquam venenatis sodales posuere. Sed ullamcorper accumsan nisl
-        et iaculis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Pellentesque in pulvinar enim. Maecenas dictum ligula at scelerisque
-        maximus. Cras ut mi id nulla aliquet consectetur. Duis eget ex
-        tincidunt, accumsan nulla sed, finibus nulla. Nullam sed sem rutrum,
-        finibus nisi et, tristique dolor. Sed egestas nisl vel elit vehicula,
-        vel viverra nulla facilisis. Nam tempus lobortis odio, at placerat
-        sapien variusVestibulum sodales sapien turpis. Vestibulum dictum urna et
-        pharetra convallis. Proin vel elit at eros malesuada vulputate sit amet
-        et est. Aliquam nec gravida elit. Mauris consectetur magna at augue
-        molestie, ac lacinia nunc sollicitudin. In hac habitasse platea
-        dictumst. Aliquam id nibh eu ante egestas vulputate. Nam id lectus
-        condimentum sapien placerat rhoncus. Etiam vitae elementum lectus.
-        Phasellus a dolor iaculis, scelerisque quam cursus, laoreet libero.
-        Donec ac finibus enim. Donec vel mi dictum, aliquet augue eu, sodales
-        nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-        venenatis lacus vitae pretium mattis. Quisque ullamcorper faucibus dui,
-        eget posuere nunc tristique sed. Praesent luctus tellus ac elit sodales
-        condimentum. Aenean euismod turpis ligula, eu lobortis velit sodales in.
-        Curabitur hendrerit leo neque, eget pretium velit posuere nec. In mattis
-        dui lacinia, vehicula elit a, tristique quam. Quisque leo eros,
-        ultricies. El venenatis in, pulvinar sit amet sapien. Nam nec tortor non
-        elit tempus iaculis. Sed volutpat luctus magna non facilisis. Proin
-        fringilla fringilla congue. Etiam a tempor felis. Pellentesque et turpis
-        facilisis purus aliquam lobortis. Nulla interdum mauris eget metus
-        congue laoreet. Vivamus ante mauris, fermentum vel maximus eget, lacinia
-        sed orci. Integer ac lorem lobortis, consectetur risus et, pharetra ex.
-        Sed eget nisl vel justo blandit auctor a a nisl. Nulla a ipsum
-        scelerisque, auctor sapien et, posuere sapien. Pellentesque habitant
-        morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        Quisque quis est vel ante mollis vehicula. Proin ut lectus velit. Aenean
-        non rhoncus tellus. Aenean eu massa a ipsum placerat gravida. Integer
-        pulvinar volutpat rhoncus. Aenean tempor ex id sem vestibulum consequat.
-        Sed vehicula nunc id orci convallis, eget tincidunt ipsum consectetur.
-        Praesent aliquam, magna vitae ultricies finibus, urna dui porta nibh, id
-        tempor felis erat quis mauris. Sed consequat pulvinar tellus a
-        scelerisque. Nullam enim nulla, tincidunt eu quam pulvinar, molestie
-        vulputate lectus. Nulla et mi in arcu efficitur eleifend eu at quam.
-        Donec lobortis, dolor id pellentesque mattis, nibh urna molestie nunc,
-        varius elementum urna nisl a ante. Aenean sapien libero, hendrerit a
-        ornare feugiat, hendrerit quis turpis. Pellentesque habitant morbi
-        tristique senectus et netus et malesuada fames ac turpis egestas.
-        Integer vel posuere nulla. Sed lacinia, velit at luctus eleifend, odio
-        mi vulputate nibh, a dignissim sem mi sed nisl. Aenean sodales tristique
-        neque, et sagittis odio ultrices non. Phasellus auctor molestie risus
-        non pharetra. Sed odio dolor, cursus ac dolor quis, suscipit maximus
-        tortor. Aliquam venenatis sodales posuere. Sed ullamcorper accumsan nisl
-        et iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Mauris venenatis lacus vitae pretium mattis. Quisque ullamcorper
-        faucibus dui, eget posuere nunc tristique sed. Praesent luctus tellus ac
-        elit sodales condimentum. Aenean euismod turpis ligula, eu lobortis
-        velit sodales in. Curabitur hendrerit leo neque, eget pretium velit
-        posuere nec. In mattis dui lacinia, vehicula elit a, tristique quam.
-        Quisque leo eros, ultricies. El venenatis in, pulvinar sit amet sapien.
-        Nam nec tortor non elit tempus iaculis. Sed volutpat luctus magna non
-        facilisis. Proin fringilla fringilla congue. Etiam a tempor felis.
-        Pellentesque et turpis facilisis purus aliquam lobortis. Nulla interdum
-        mauris eget metus congue laoreet. Vivamus ante mauris, fermentum vel
-        maximus eget, lacinia sed orci. Integer ac lorem lobortis, consectetur
-        risus et, pharetra ex. Sed eget nisl vel justo blandit auctor a a nisl.
-        Nulla a ipsum scelerisque, auctor sapien et, posuere sapien.
-        Pellentesque habitant morbi tristique senectus et netus et malesuada
-        fames ac turpis egestas. Quisque quis est vel ante mollis vehicula.
-        Proin ut lectus velit. Aenean non rhoncus tellus. Aenean eu massa a
-        ipsum placerat gravida. Integer pulvinar volutpat rhoncus. Aenean tempor
-        ex id sem vestibulum consequat. Sed vehicula nunc id orci convallis,
-        eget tincidunt ipsum consectetur. Praesent aliquam, magna vitae
-        ultricies finibus, urna dui porta nibh, id tempor felis erat quis
-        mauris. Sed consequat pulvinar tellus a scelerisque. Nullam enim nulla,
-        tincidunt eu quam pulvinar, molestie vulputate lectus. Nulla et mi in
-        arcu efficitur eleifend eu at quam. Donec lobortis, dolor id
-        pellentesque mattis, nibh urna molestie nunc, varius elementum urna nisl
-        a ante. Aenean sapien libero, hendrerit a ornare feugiat, hendrerit quis
-        turpis. Pellentesque habitant morbi tristique senectus et netus et
-        malesuada fames ac turpis egestas. Integer vel posuere nulla. Sed
-        lacinia, velit at luctus eleifend, odio mi vulputate nibh, a dignissim
-        sem mi sed nisl. Aenean sodales tristique neque, et sagittis odio
-        ultrices non. Phasellus auctor molestie risus non pharetra. Sed odio
-        dolor, cursus ac dolor quis, suscipit maximus tortor. Aliquam venenatis
-        sodales posuere. Sed ullamcorper accumsan nisl et iaculis.Lorem ipsum
-        dolor sit amet, consectetur adipiscing elit. Pellentesque in pulvinar
-        enim. Maecenas dictum ligula at scelerisque maximus. Cras ut mi id nulla
-        aliquet consectetur. Duis eget ex tincidunt, accumsan nulla sed, finibus
-        nulla. Nullam sed sem rutrum, finibus nisi et, tristique dolor. Sed
-        egestas nisl vel elit vehicula, vel viverra nulla facilisis. Nam tempus
-        lobortis odio, at placerat sapien variusVestibulum sodales sapien
-        turpis. Vestibulum dictum urna et pharetra convallis. Proin vel elit at
-        eros malesuada vulputate sit amet et est. Aliquam nec gravida elit.
-        Mauris consectetur magna at augue molestie, ac lacinia nunc
-        sollicitudin. In hac habitasse platea dictumst. Aliquam id nibh eu ante
-        egestas vulputate. Nam id lectus condimentum sapien placerat rhoncus.
-        Etiam vitae elementum lectus. Phasellus a dolor iaculis, scelerisque
-        quam cursus, laoreet libero. Donec ac finibus enim. Donec vel mi dictum,
-        aliquet augue eu, sodales nisl. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Mauris venenatis lacus vitae pretium mattis. Quisque
-        ullamcorper faucibus dui, eget posuere nunc tristique sed. Praesent
-        luctus tellus ac elit sodales condimentum. Aenean euismod turpis ligula,
-        eu lobortis velit sodales in. Curabitur hendrerit leo neque, eget
-        pretium velit posuere nec. In mattis dui lacinia, vehicula elit a,
-        tristique quam. Quisque leo eros, ultricies. El venenatis in, pulvinar
-        sit amet sapien. Nam nec tortor non elit tempus iaculis. Sed volutpat
-        luctus magna non facilisis. Proin fringilla fringilla congue. Etiam a
-        tempor felis. Pellentesque et turpis facilisis purus aliquam lobortis.
-        Nulla interdum mauris eget metus congue laoreet. Vivamus ante mauris,
-        fermentum vel maximus eget, lacinia sed orci. Integer ac lorem lobortis,
-        consectetur risus et, pharetra ex. Sed eget nisl vel justo blandit
-        auctor a a nisl. Nulla a ipsum scelerisque, auctor sapien et, posuere
-        sapien. Pellentesque habitant morbi tristique senectus et netus et
-        malesuada fames ac turpis egestas. Quisque quis est vel ante mollis
-        vehicula. Proin ut lectus velit. Aenean non rhoncus tellus. Aenean eu
-        massa a ipsum placerat gravida. Integer pulvinar volutpat rhoncus.
-        Aenean tempor ex id sem vestibulum consequat. Sed vehicula nunc id orci
-        convallis, eget tincidunt ipsum consectetur. Praesent aliquam, magna
-        vitae ultricies finibus, urna dui porta nibh, id tempor felis erat quis
-        mauris. Sed consequat pulvinar tellus a scelerisque. Nullam enim nulla,
-        tincidunt eu quam pulvinar, molestie vulputate lectus. Nulla et mi in
-        arcu efficitur eleifend eu at quam. Donec lobortis, dolor id
-        pellentesque mattis, nibh urna molestie nunc, varius elementum urna nisl
-        a ante. Aenean sapien libero, hendrerit a ornare feugiat, hendrerit quis
-        turpis. Pellentesque habitant morbi tristique senectus et netus et
-        malesuada fames ac turpis egestas. Integer vel posuere nulla. Sed
-        lacinia, velit at luctus eleifend, odio mi vulputate nibh, a dignissim
-        sem mi sed nisl. Aenean sodales tristique neque, et sagittis odio
-        ultrices non. Phasellus auctor molestie risus non pharetra. Sed odio
-        dolor, cursus ac dolor quis, suscipit maximus tortor. Aliquam venenatis
-        sodales posuere. Sed ullamcorper accumsan nisl et iaculis.
-      </div>
-      <!-- Inner container with side numbers bg -->
-      <div
-        class="relative pt-513 px-40 pb-60 bg-no-repeat bg-left-top"
-        style="
+    <p class="subheadline relative mb-21" style="max-width: 937px">
+      Our photography assists in asset development for social media,
+      advertising, marketing campaigns, and more.
+    </p>
+    <p class="hidden sm:block pb-10" style="max-width: 444px">
+      We’ve helped tell stories visually for:
+    </p>
+    <img class="hidden sm:block z-10" src="./assets/lfs/Group428.png?nf_resize=fit&w=1716"
+      style="width: 59vw;transform: translate(-120px, 31px)" />
+  </div>
+  <!-- 03 photo mobile bottom part-->
+  <div class="text-white text-left pt-31 pb-37 overflow-hidden sm:hidden" style="background-color: #161513">
+    <p class="pl-27 pb-23" style="max-width: 297px">
+      We’ve helped tell stories visually for:
+    </p>
+    <img src="./assets/lfs/Group428.png?nf_resize=fit&w=822" style="min-width: 110%; margin-left: -5%" />
+  </div>
+  @@include('./partials/marquee.html', { pathToRoot: '.', text: 'With over 1B pieces of content produced daily, how will you stand out?'})
+  <div class="pt-150 px-40 pb-170 responsive-bg-img-stars text-left md:text-center text-white bg-cover bg-right-bottom">
+    <h2 class="subheadline mb-16 md:mx-auto" style="max-width: 785px">
+      Customers interact with content earlier in the sales funnel.
+    </h2>
+    <p class="mb-53 md:mx-auto md:mb-70" style="max-width: 785px">
+      Whether it’s interacting with a Tweet, scrolling by an image on
+      Instagram, a video they stumbled upon through YouTube or a searching for
+      a specific need. Customers' interest is piqued through this awareness.
+    </p>
+    <h3 class="caps-sm mb-25 hidden md:block">
+      We believe a multi-pronged strategy of:
+    </h3>
+    <img class="hidden md:block" src="./assets/lfs/Group345.png" />
+  </div>
+  <div class="bg-black text-white px-40 pb-60 md:hidden">
+    <h3 class="caps-sm mb-25">We believe a multi-pronged strategy of:</h3>
+    <div class="flex justify-center">
+      <img class="mx-10" src="./assets/svg/circle.svg" />
+      <img class="mx-10" src="./assets/svg/gon.svg" />
+    </div>
+    <div class="flex justify-center">
+      <img class="mx-10" src="./assets/svg/tri.svg" />
+      <img class="mx-10" src="./assets/svg/rect.svg" />
+    </div>
+    <div class="flex justify-center">
+      <img class="mx-10" src="./assets/svg/gon5.svg" />
+      <img class="mx-10" src="./assets/svg/square.svg" />
+    </div>
+  </div>
+  <!-- Part with bg text-->
+  <div class="relative overflow-hidden">
+    <!-- Text bg -->
+    <div class="absolute text-bg">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+      venenatis lacus vitae pretium mattis. Quisque ullamcorper faucibus dui,
+      eget posuere nunc tristique sed. Praesent luctus tellus ac elit sodales
+      condimentum. Aenean euismod turpis ligula, eu lobortis velit sodales in.
+      Curabitur hendrerit leo neque, eget pretium velit posuere nec. In mattis
+      dui lacinia, vehicula elit a, tristique quam. Quisque leo eros,
+      ultricies. El venenatis in, pulvinar sit amet sapien. Nam nec tortor non
+      elit tempus iaculis. Sed volutpat luctus magna non facilisis. Proin
+      fringilla fringilla congue. Etiam a tempor felis. Pellentesque et turpis
+      facilisis purus aliquam lobortis. Nulla interdum mauris eget metus
+      congue laoreet. Vivamus ante mauris, fermentum vel maximus eget, lacinia
+      sed orci. Integer ac lorem lobortis, consectetur risus et, pharetra ex.
+      Sed eget nisl vel justo blandit auctor a a nisl. Nulla a ipsum
+      scelerisque, auctor sapien et, posuere sapien. Pellentesque habitant
+      morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Quisque quis est vel ante mollis vehicula. Proin ut lectus velit. Aenean
+      non rhoncus tellus. Aenean eu massa a ipsum placerat gravida. Integer
+      pulvinar volutpat rhoncus. Aenean tempor ex id sem vestibulum consequat.
+      Sed vehicula nunc id orci convallis, eget tincidunt ipsum consectetur.
+      Praesent aliquam, magna vitae ultricies finibus, urna dui porta nibh, id
+      tempor felis erat quis mauris. Sed consequat pulvinar tellus a
+      scelerisque. Nullam enim nulla, tincidunt eu quam pulvinar, molestie
+      vulputate lectus. Nulla et mi in arcu efficitur eleifend eu at quam.
+      Donec lobortis, dolor id pellentesque mattis, nibh urna molestie nunc,
+      varius elementum urna nisl a ante. Aenean sapien libero, hendrerit a
+      ornare feugiat, hendrerit quis turpis. Pellentesque habitant morbi
+      tristique senectus et netus et malesuada fames ac turpis egestas.
+      Integer vel posuere nulla. Sed lacinia, velit at luctus eleifend, odio
+      mi vulputate nibh, a dignissim sem mi sed nisl. Aenean sodales tristique
+      neque, et sagittis odio ultrices non. Phasellus auctor molestie risus
+      non pharetra. Sed odio dolor, cursus ac dolor quis, suscipit maximus
+      tortor. Aliquam venenatis sodales posuere. Sed ullamcorper accumsan nisl
+      et iaculis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Pellentesque in pulvinar enim. Maecenas dictum ligula at scelerisque
+      maximus. Cras ut mi id nulla aliquet consectetur. Duis eget ex
+      tincidunt, accumsan nulla sed, finibus nulla. Nullam sed sem rutrum,
+      finibus nisi et, tristique dolor. Sed egestas nisl vel elit vehicula,
+      vel viverra nulla facilisis. Nam tempus lobortis odio, at placerat
+      sapien variusVestibulum sodales sapien turpis. Vestibulum dictum urna et
+      pharetra convallis. Proin vel elit at eros malesuada vulputate sit amet
+      et est. Aliquam nec gravida elit. Mauris consectetur magna at augue
+      molestie, ac lacinia nunc sollicitudin. In hac habitasse platea
+      dictumst. Aliquam id nibh eu ante egestas vulputate. Nam id lectus
+      condimentum sapien placerat rhoncus. Etiam vitae elementum lectus.
+      Phasellus a dolor iaculis, scelerisque quam cursus, laoreet libero.
+      Donec ac finibus enim. Donec vel mi dictum, aliquet augue eu, sodales
+      nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+      venenatis lacus vitae pretium mattis. Quisque ullamcorper faucibus dui,
+      eget posuere nunc tristique sed. Praesent luctus tellus ac elit sodales
+      condimentum. Aenean euismod turpis ligula, eu lobortis velit sodales in.
+      Curabitur hendrerit leo neque, eget pretium velit posuere nec. In mattis
+      dui lacinia, vehicula elit a, tristique quam. Quisque leo eros,
+      ultricies. El venenatis in, pulvinar sit amet sapien. Nam nec tortor non
+      elit tempus iaculis. Sed volutpat luctus magna non facilisis. Proin
+      fringilla fringilla congue. Etiam a tempor felis. Pellentesque et turpis
+      facilisis purus aliquam lobortis. Nulla interdum mauris eget metus
+      congue laoreet. Vivamus ante mauris, fermentum vel maximus eget, lacinia
+      sed orci. Integer ac lorem lobortis, consectetur risus et, pharetra ex.
+      Sed eget nisl vel justo blandit auctor a a nisl. Nulla a ipsum
+      scelerisque, auctor sapien et, posuere sapien. Pellentesque habitant
+      morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Quisque quis est vel ante mollis vehicula. Proin ut lectus velit. Aenean
+      non rhoncus tellus. Aenean eu massa a ipsum placerat gravida. Integer
+      pulvinar volutpat rhoncus. Aenean tempor ex id sem vestibulum consequat.
+      Sed vehicula nunc id orci convallis, eget tincidunt ipsum consectetur.
+      Praesent aliquam, magna vitae ultricies finibus, urna dui porta nibh, id
+      tempor felis erat quis mauris. Sed consequat pulvinar tellus a
+      scelerisque. Nullam enim nulla, tincidunt eu quam pulvinar, molestie
+      vulputate lectus. Nulla et mi in arcu efficitur eleifend eu at quam.
+      Donec lobortis, dolor id pellentesque mattis, nibh urna molestie nunc,
+      varius elementum urna nisl a ante. Aenean sapien libero, hendrerit a
+      ornare feugiat, hendrerit quis turpis. Pellentesque habitant morbi
+      tristique senectus et netus et malesuada fames ac turpis egestas.
+      Integer vel posuere nulla. Sed lacinia, velit at luctus eleifend, odio
+      mi vulputate nibh, a dignissim sem mi sed nisl. Aenean sodales tristique
+      neque, et sagittis odio ultrices non. Phasellus auctor molestie risus
+      non pharetra. Sed odio dolor, cursus ac dolor quis, suscipit maximus
+      tortor. Aliquam venenatis sodales posuere. Sed ullamcorper accumsan nisl
+      et iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Mauris venenatis lacus vitae pretium mattis. Quisque ullamcorper
+      faucibus dui, eget posuere nunc tristique sed. Praesent luctus tellus ac
+      elit sodales condimentum. Aenean euismod turpis ligula, eu lobortis
+      velit sodales in. Curabitur hendrerit leo neque, eget pretium velit
+      posuere nec. In mattis dui lacinia, vehicula elit a, tristique quam.
+      Quisque leo eros, ultricies. El venenatis in, pulvinar sit amet sapien.
+      Nam nec tortor non elit tempus iaculis. Sed volutpat luctus magna non
+      facilisis. Proin fringilla fringilla congue. Etiam a tempor felis.
+      Pellentesque et turpis facilisis purus aliquam lobortis. Nulla interdum
+      mauris eget metus congue laoreet. Vivamus ante mauris, fermentum vel
+      maximus eget, lacinia sed orci. Integer ac lorem lobortis, consectetur
+      risus et, pharetra ex. Sed eget nisl vel justo blandit auctor a a nisl.
+      Nulla a ipsum scelerisque, auctor sapien et, posuere sapien.
+      Pellentesque habitant morbi tristique senectus et netus et malesuada
+      fames ac turpis egestas. Quisque quis est vel ante mollis vehicula.
+      Proin ut lectus velit. Aenean non rhoncus tellus. Aenean eu massa a
+      ipsum placerat gravida. Integer pulvinar volutpat rhoncus. Aenean tempor
+      ex id sem vestibulum consequat. Sed vehicula nunc id orci convallis,
+      eget tincidunt ipsum consectetur. Praesent aliquam, magna vitae
+      ultricies finibus, urna dui porta nibh, id tempor felis erat quis
+      mauris. Sed consequat pulvinar tellus a scelerisque. Nullam enim nulla,
+      tincidunt eu quam pulvinar, molestie vulputate lectus. Nulla et mi in
+      arcu efficitur eleifend eu at quam. Donec lobortis, dolor id
+      pellentesque mattis, nibh urna molestie nunc, varius elementum urna nisl
+      a ante. Aenean sapien libero, hendrerit a ornare feugiat, hendrerit quis
+      turpis. Pellentesque habitant morbi tristique senectus et netus et
+      malesuada fames ac turpis egestas. Integer vel posuere nulla. Sed
+      lacinia, velit at luctus eleifend, odio mi vulputate nibh, a dignissim
+      sem mi sed nisl. Aenean sodales tristique neque, et sagittis odio
+      ultrices non. Phasellus auctor molestie risus non pharetra. Sed odio
+      dolor, cursus ac dolor quis, suscipit maximus tortor. Aliquam venenatis
+      sodales posuere. Sed ullamcorper accumsan nisl et iaculis.Lorem ipsum
+      dolor sit amet, consectetur adipiscing elit. Pellentesque in pulvinar
+      enim. Maecenas dictum ligula at scelerisque maximus. Cras ut mi id nulla
+      aliquet consectetur. Duis eget ex tincidunt, accumsan nulla sed, finibus
+      nulla. Nullam sed sem rutrum, finibus nisi et, tristique dolor. Sed
+      egestas nisl vel elit vehicula, vel viverra nulla facilisis. Nam tempus
+      lobortis odio, at placerat sapien variusVestibulum sodales sapien
+      turpis. Vestibulum dictum urna et pharetra convallis. Proin vel elit at
+      eros malesuada vulputate sit amet et est. Aliquam nec gravida elit.
+      Mauris consectetur magna at augue molestie, ac lacinia nunc
+      sollicitudin. In hac habitasse platea dictumst. Aliquam id nibh eu ante
+      egestas vulputate. Nam id lectus condimentum sapien placerat rhoncus.
+      Etiam vitae elementum lectus. Phasellus a dolor iaculis, scelerisque
+      quam cursus, laoreet libero. Donec ac finibus enim. Donec vel mi dictum,
+      aliquet augue eu, sodales nisl. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Mauris venenatis lacus vitae pretium mattis. Quisque
+      ullamcorper faucibus dui, eget posuere nunc tristique sed. Praesent
+      luctus tellus ac elit sodales condimentum. Aenean euismod turpis ligula,
+      eu lobortis velit sodales in. Curabitur hendrerit leo neque, eget
+      pretium velit posuere nec. In mattis dui lacinia, vehicula elit a,
+      tristique quam. Quisque leo eros, ultricies. El venenatis in, pulvinar
+      sit amet sapien. Nam nec tortor non elit tempus iaculis. Sed volutpat
+      luctus magna non facilisis. Proin fringilla fringilla congue. Etiam a
+      tempor felis. Pellentesque et turpis facilisis purus aliquam lobortis.
+      Nulla interdum mauris eget metus congue laoreet. Vivamus ante mauris,
+      fermentum vel maximus eget, lacinia sed orci. Integer ac lorem lobortis,
+      consectetur risus et, pharetra ex. Sed eget nisl vel justo blandit
+      auctor a a nisl. Nulla a ipsum scelerisque, auctor sapien et, posuere
+      sapien. Pellentesque habitant morbi tristique senectus et netus et
+      malesuada fames ac turpis egestas. Quisque quis est vel ante mollis
+      vehicula. Proin ut lectus velit. Aenean non rhoncus tellus. Aenean eu
+      massa a ipsum placerat gravida. Integer pulvinar volutpat rhoncus.
+      Aenean tempor ex id sem vestibulum consequat. Sed vehicula nunc id orci
+      convallis, eget tincidunt ipsum consectetur. Praesent aliquam, magna
+      vitae ultricies finibus, urna dui porta nibh, id tempor felis erat quis
+      mauris. Sed consequat pulvinar tellus a scelerisque. Nullam enim nulla,
+      tincidunt eu quam pulvinar, molestie vulputate lectus. Nulla et mi in
+      arcu efficitur eleifend eu at quam. Donec lobortis, dolor id
+      pellentesque mattis, nibh urna molestie nunc, varius elementum urna nisl
+      a ante. Aenean sapien libero, hendrerit a ornare feugiat, hendrerit quis
+      turpis. Pellentesque habitant morbi tristique senectus et netus et
+      malesuada fames ac turpis egestas. Integer vel posuere nulla. Sed
+      lacinia, velit at luctus eleifend, odio mi vulputate nibh, a dignissim
+      sem mi sed nisl. Aenean sodales tristique neque, et sagittis odio
+      ultrices non. Phasellus auctor molestie risus non pharetra. Sed odio
+      dolor, cursus ac dolor quis, suscipit maximus tortor. Aliquam venenatis
+      sodales posuere. Sed ullamcorper accumsan nisl et iaculis. Lorem ipsum
+      dolor sit amet, consectetur adipiscing elit. Mauris venenatis lacus
+      vitae pretium mattis. Quisque ullamcorper faucibus dui, eget posuere
+      nunc tristique sed. Praesent luctus tellus ac elit sodales condimentum.
+      Aenean euismod turpis ligula, eu lobortis velit sodales in. Curabitur
+      hendrerit leo neque, eget pretium velit posuere nec. In mattis dui
+      lacinia, vehicula elit a, tristique quam. Quisque leo eros, ultricies.
+      El venenatis in, pulvinar sit amet sapien. Nam nec tortor non elit
+      tempus iaculis. Sed volutpat luctus magna non facilisis. Proin fringilla
+      fringilla congue. Etiam a tempor felis. Pellentesque et turpis facilisis
+      purus aliquam lobortis. Nulla interdum mauris eget metus congue laoreet.
+      Vivamus ante mauris, fermentum vel maximus eget, lacinia sed orci.
+      Integer ac lorem lobortis, consectetur risus et, pharetra ex. Sed eget
+      nisl vel justo blandit auctor a a nisl. Nulla a ipsum scelerisque,
+      auctor sapien et, posuere sapien. Pellentesque habitant morbi tristique
+      senectus et netus et malesuada fames ac turpis egestas. Quisque quis est
+      vel ante mollis vehicula. Proin ut lectus velit. Aenean non rhoncus
+      tellus. Aenean eu massa a ipsum placerat gravida. Integer pulvinar
+      volutpat rhoncus. Aenean tempor ex id sem vestibulum consequat. Sed
+      vehicula nunc id orci convallis, eget tincidunt ipsum consectetur.
+      Praesent aliquam, magna vitae ultricies finibus, urna dui porta nibh, id
+      tempor felis erat quis mauris. Sed consequat pulvinar tellus a
+      scelerisque. Nullam enim nulla, tincidunt eu quam pulvinar, molestie
+      vulputate lectus. Nulla et mi in arcu efficitur eleifend eu at quam.
+      Donec lobortis, dolor id pellentesque mattis, nibh urna molestie nunc,
+      varius elementum urna nisl a ante. Aenean sapien libero, hendrerit a
+      ornare feugiat, hendrerit quis turpis. Pellentesque habitant morbi
+      tristique senectus et netus et malesuada fames ac turpis egestas.
+      Integer vel posuere nulla. Sed lacinia, velit at luctus eleifend, odio
+      mi vulputate nibh, a dignissim sem mi sed nisl. Aenean sodales tristique
+      neque, et sagittis odio ultrices non. Phasellus auctor molestie risus
+      non pharetra. Sed odio dolor, cursus ac dolor quis, suscipit maximus
+      tortor. Aliquam venenatis sodales posuere. Sed ullamcorper accumsan nisl
+      et iaculis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Pellentesque in pulvinar enim. Maecenas dictum ligula at scelerisque
+      maximus. Cras ut mi id nulla aliquet consectetur. Duis eget ex
+      tincidunt, accumsan nulla sed, finibus nulla. Nullam sed sem rutrum,
+      finibus nisi et, tristique dolor. Sed egestas nisl vel elit vehicula,
+      vel viverra nulla facilisis. Nam tempus lobortis odio, at placerat
+      sapien variusVestibulum sodales sapien turpis. Vestibulum dictum urna et
+      pharetra convallis. Proin vel elit at eros malesuada vulputate sit amet
+      et est. Aliquam nec gravida elit. Mauris consectetur magna at augue
+      molestie, ac lacinia nunc sollicitudin. In hac habitasse platea
+      dictumst. Aliquam id nibh eu ante egestas vulputate. Nam id lectus
+      condimentum sapien placerat rhoncus. Etiam vitae elementum lectus.
+      Phasellus a dolor iaculis, scelerisque quam cursus, laoreet libero.
+      Donec ac finibus enim. Donec vel mi dictum, aliquet augue eu, sodales
+      nisl. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+      venenatis lacus vitae pretium mattis. Quisque ullamcorper faucibus dui,
+      eget posuere nunc tristique sed. Praesent luctus tellus ac elit sodales
+      condimentum. Aenean euismod turpis ligula, eu lobortis velit sodales in.
+      Curabitur hendrerit leo neque, eget pretium velit posuere nec. In mattis
+      dui lacinia, vehicula elit a, tristique quam. Quisque leo eros,
+      ultricies. El venenatis in, pulvinar sit amet sapien. Nam nec tortor non
+      elit tempus iaculis. Sed volutpat luctus magna non facilisis. Proin
+      fringilla fringilla congue. Etiam a tempor felis. Pellentesque et turpis
+      facilisis purus aliquam lobortis. Nulla interdum mauris eget metus
+      congue laoreet. Vivamus ante mauris, fermentum vel maximus eget, lacinia
+      sed orci. Integer ac lorem lobortis, consectetur risus et, pharetra ex.
+      Sed eget nisl vel justo blandit auctor a a nisl. Nulla a ipsum
+      scelerisque, auctor sapien et, posuere sapien. Pellentesque habitant
+      morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+      Quisque quis est vel ante mollis vehicula. Proin ut lectus velit. Aenean
+      non rhoncus tellus. Aenean eu massa a ipsum placerat gravida. Integer
+      pulvinar volutpat rhoncus. Aenean tempor ex id sem vestibulum consequat.
+      Sed vehicula nunc id orci convallis, eget tincidunt ipsum consectetur.
+      Praesent aliquam, magna vitae ultricies finibus, urna dui porta nibh, id
+      tempor felis erat quis mauris. Sed consequat pulvinar tellus a
+      scelerisque. Nullam enim nulla, tincidunt eu quam pulvinar, molestie
+      vulputate lectus. Nulla et mi in arcu efficitur eleifend eu at quam.
+      Donec lobortis, dolor id pellentesque mattis, nibh urna molestie nunc,
+      varius elementum urna nisl a ante. Aenean sapien libero, hendrerit a
+      ornare feugiat, hendrerit quis turpis. Pellentesque habitant morbi
+      tristique senectus et netus et malesuada fames ac turpis egestas.
+      Integer vel posuere nulla. Sed lacinia, velit at luctus eleifend, odio
+      mi vulputate nibh, a dignissim sem mi sed nisl. Aenean sodales tristique
+      neque, et sagittis odio ultrices non. Phasellus auctor molestie risus
+      non pharetra. Sed odio dolor, cursus ac dolor quis, suscipit maximus
+      tortor. Aliquam venenatis sodales posuere. Sed ullamcorper accumsan nisl
+      et iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Mauris venenatis lacus vitae pretium mattis. Quisque ullamcorper
+      faucibus dui, eget posuere nunc tristique sed. Praesent luctus tellus ac
+      elit sodales condimentum. Aenean euismod turpis ligula, eu lobortis
+      velit sodales in. Curabitur hendrerit leo neque, eget pretium velit
+      posuere nec. In mattis dui lacinia, vehicula elit a, tristique quam.
+      Quisque leo eros, ultricies. El venenatis in, pulvinar sit amet sapien.
+      Nam nec tortor non elit tempus iaculis. Sed volutpat luctus magna non
+      facilisis. Proin fringilla fringilla congue. Etiam a tempor felis.
+      Pellentesque et turpis facilisis purus aliquam lobortis. Nulla interdum
+      mauris eget metus congue laoreet. Vivamus ante mauris, fermentum vel
+      maximus eget, lacinia sed orci. Integer ac lorem lobortis, consectetur
+      risus et, pharetra ex. Sed eget nisl vel justo blandit auctor a a nisl.
+      Nulla a ipsum scelerisque, auctor sapien et, posuere sapien.
+      Pellentesque habitant morbi tristique senectus et netus et malesuada
+      fames ac turpis egestas. Quisque quis est vel ante mollis vehicula.
+      Proin ut lectus velit. Aenean non rhoncus tellus. Aenean eu massa a
+      ipsum placerat gravida. Integer pulvinar volutpat rhoncus. Aenean tempor
+      ex id sem vestibulum consequat. Sed vehicula nunc id orci convallis,
+      eget tincidunt ipsum consectetur. Praesent aliquam, magna vitae
+      ultricies finibus, urna dui porta nibh, id tempor felis erat quis
+      mauris. Sed consequat pulvinar tellus a scelerisque. Nullam enim nulla,
+      tincidunt eu quam pulvinar, molestie vulputate lectus. Nulla et mi in
+      arcu efficitur eleifend eu at quam. Donec lobortis, dolor id
+      pellentesque mattis, nibh urna molestie nunc, varius elementum urna nisl
+      a ante. Aenean sapien libero, hendrerit a ornare feugiat, hendrerit quis
+      turpis. Pellentesque habitant morbi tristique senectus et netus et
+      malesuada fames ac turpis egestas. Integer vel posuere nulla. Sed
+      lacinia, velit at luctus eleifend, odio mi vulputate nibh, a dignissim
+      sem mi sed nisl. Aenean sodales tristique neque, et sagittis odio
+      ultrices non. Phasellus auctor molestie risus non pharetra. Sed odio
+      dolor, cursus ac dolor quis, suscipit maximus tortor. Aliquam venenatis
+      sodales posuere. Sed ullamcorper accumsan nisl et iaculis.Lorem ipsum
+      dolor sit amet, consectetur adipiscing elit. Pellentesque in pulvinar
+      enim. Maecenas dictum ligula at scelerisque maximus. Cras ut mi id nulla
+      aliquet consectetur. Duis eget ex tincidunt, accumsan nulla sed, finibus
+      nulla. Nullam sed sem rutrum, finibus nisi et, tristique dolor. Sed
+      egestas nisl vel elit vehicula, vel viverra nulla facilisis. Nam tempus
+      lobortis odio, at placerat sapien variusVestibulum sodales sapien
+      turpis. Vestibulum dictum urna et pharetra convallis. Proin vel elit at
+      eros malesuada vulputate sit amet et est. Aliquam nec gravida elit.
+      Mauris consectetur magna at augue molestie, ac lacinia nunc
+      sollicitudin. In hac habitasse platea dictumst. Aliquam id nibh eu ante
+      egestas vulputate. Nam id lectus condimentum sapien placerat rhoncus.
+      Etiam vitae elementum lectus. Phasellus a dolor iaculis, scelerisque
+      quam cursus, laoreet libero. Donec ac finibus enim. Donec vel mi dictum,
+      aliquet augue eu, sodales nisl. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit. Mauris venenatis lacus vitae pretium mattis. Quisque
+      ullamcorper faucibus dui, eget posuere nunc tristique sed. Praesent
+      luctus tellus ac elit sodales condimentum. Aenean euismod turpis ligula,
+      eu lobortis velit sodales in. Curabitur hendrerit leo neque, eget
+      pretium velit posuere nec. In mattis dui lacinia, vehicula elit a,
+      tristique quam. Quisque leo eros, ultricies. El venenatis in, pulvinar
+      sit amet sapien. Nam nec tortor non elit tempus iaculis. Sed volutpat
+      luctus magna non facilisis. Proin fringilla fringilla congue. Etiam a
+      tempor felis. Pellentesque et turpis facilisis purus aliquam lobortis.
+      Nulla interdum mauris eget metus congue laoreet. Vivamus ante mauris,
+      fermentum vel maximus eget, lacinia sed orci. Integer ac lorem lobortis,
+      consectetur risus et, pharetra ex. Sed eget nisl vel justo blandit
+      auctor a a nisl. Nulla a ipsum scelerisque, auctor sapien et, posuere
+      sapien. Pellentesque habitant morbi tristique senectus et netus et
+      malesuada fames ac turpis egestas. Quisque quis est vel ante mollis
+      vehicula. Proin ut lectus velit. Aenean non rhoncus tellus. Aenean eu
+      massa a ipsum placerat gravida. Integer pulvinar volutpat rhoncus.
+      Aenean tempor ex id sem vestibulum consequat. Sed vehicula nunc id orci
+      convallis, eget tincidunt ipsum consectetur. Praesent aliquam, magna
+      vitae ultricies finibus, urna dui porta nibh, id tempor felis erat quis
+      mauris. Sed consequat pulvinar tellus a scelerisque. Nullam enim nulla,
+      tincidunt eu quam pulvinar, molestie vulputate lectus. Nulla et mi in
+      arcu efficitur eleifend eu at quam. Donec lobortis, dolor id
+      pellentesque mattis, nibh urna molestie nunc, varius elementum urna nisl
+      a ante. Aenean sapien libero, hendrerit a ornare feugiat, hendrerit quis
+      turpis. Pellentesque habitant morbi tristique senectus et netus et
+      malesuada fames ac turpis egestas. Integer vel posuere nulla. Sed
+      lacinia, velit at luctus eleifend, odio mi vulputate nibh, a dignissim
+      sem mi sed nisl. Aenean sodales tristique neque, et sagittis odio
+      ultrices non. Phasellus auctor molestie risus non pharetra. Sed odio
+      dolor, cursus ac dolor quis, suscipit maximus tortor. Aliquam venenatis
+      sodales posuere. Sed ullamcorper accumsan nisl et iaculis.
+    </div>
+    <!-- Inner container with side numbers bg -->
+    <div class="relative pt-570 px-40 pb-100 bg-no-repeat bg-left-top" style="
           background-image: url(./assets/lfs/sidenumbers.png);
           background-size: auto 100%;
-        "
-      >
-        <!-- Black box -->
-        <div class="bg-black pt-26 px-30 pb-30 text-white text-left sm:ml-80 relative" style="max-width:762px">
-          <div class="caps-sm">According to a study in 2019:</div>
-          <div class="subheadline">
-            84% of B2B marketers outsource their content creation
-          </div>
-          <div class="body-small">*According Content Marketing Institute</div>
-          <!-- Black shape  -->
-          <div 
-            class="absolute hidden sm:block bg-black" 
-            style="
+        ">
+      <!-- Black box -->
+      <div class="bg-black pt-26 px-30 pb-30 text-white text-left sm:ml-80 relative" style="max-width:762px">
+        <div class="caps-sm">According to a study in 2019:</div>
+        <div class="subheadline mb-16">
+          84% of B2B marketers outsource their content creation
+        </div>
+        <div class="body-small">*According Content Marketing Institute</div>
+        <!-- Black shape  -->
+        <div class="absolute hidden sm:block bg-black" style="
               height: 26px;
               width: 26px;
               bottom: 29px;
               left: -12px;
               transform: rotate(45deg);
-            "
-          ></div>
+            "></div>
+      </div>
+    </div>
+  </div>
+  @@include('./partials/marquee.html', { pathToRoot: '.', text: 'what is your story?'})
+  <!-- Team -->
+  <div class="px-40 sm:pl-0">
+    <p class="mt-80 mb-40 mx-auto subheadline" style="max-width: 600px">
+      Meet our small, humble team of content thinkers, thought leaders, and
+      producers
+    </p>
+    <div class="sm:-mt-60">
+      <figure class="inline-block mb-68 sm:mx-40 align-top" style="width: 293px">
+        <div class="relative">
+          <div class="absolute" style="top:140px;left:-20px;">@@include('./partials/nameTag.html', { pathToRoot: '.',
+            text: 'Bianca Sparacino'})</div>
+          <img class="mb-33" src="./assets/lfs/bianca.png" />
         </div>
-      </div>
+        <figcaption class="body-small">
+          Thought leadership in publishing, business, and marketing
+        </figcaption>
+      </figure>
+      <figure class="inline-block mb-68 sm:mx-40 align-top" style="width: 293px">
+        <div class="relative">
+          <div class="absolute" style="top:173px;left:135px;">@@include('./partials/nameTag.html', { pathToRoot: '.',
+            text: 'briana wiest'})</div>
+          <img class="mb-33" src="./assets/lfs/briana.png" />
+        </div>
+        <figcaption class="body-small">
+          Thought leadership in publishing, business, and marketing
+        </figcaption>
+      </figure>
+      <figure class="inline-block mb-68 sm:mx-40 align-top" style="width: 293px">
+        <div class="relative">
+          <div class="absolute" style="top:187px;left:20px;">@@include('./partials/nameTag.html', { pathToRoot: '.',
+            text: 'patrick algrim'})</div>
+          <img class="mb-33" src="./assets/lfs/patrick.png" />
+        </div>
+        <figcaption class="body-small">GM of Thought Catalog Agency</figcaption>
+      </figure>
+      <figure class="inline-block mb-68 sm:mx-40 align-top" style="width: 293px">
+        <div class="relative">
+          <div class="absolute" style="top:130px;left:-26px;">@@include('./partials/nameTag.html', { pathToRoot: '.',
+            text: 'Noelle Beams'})</div>
+          <img class="mb-33" src="./assets/lfs/noelle.png" />
+        </div>
+        <figcaption class="body-small">
+          COO of Thought Catalog Agency
+        </figcaption>
+      </figure>
+      <figure class="inline-block mb-68 sm:mx-40 align-top" style="width: 293px">
+        <div class="relative">
+          <div class="absolute" style="top: 180px;left: 37px;">@@include('./partials/nameTag.html', { pathToRoot: '.',
+            text: 'Robbie Burton'})</div>
+          <img class="mb-33" src="./assets/lfs/robbie.png" />
+        </div>
+        <figcaption class="body-small">
+          CSO of Thought Catalog Agency
+        </figcaption>
+      </figure>
+      <figure class="inline-block mb-68 sm:mx-40 align-top" style="width: 293px">
+        <div class="relative">
+          <div class="absolute" style="top:125px;left:165px;">@@include('./partials/nameTag.html', { pathToRoot: '.',
+            text: 'Chris Lavergne'})</div>
+          <img class="mb-33" src="./assets/lfs/chris.png" />
+        </div>
+        <figcaption class="body-small">
+          CEO of Thought CatalogThought Catalog Agency
+        </figcaption>
+      </figure>
+      <figure class="inline-block mb-68 sm:mx-40 align-top" style="width: 293px">
+        <div class="relative">
+          <div class="absolute" style="top:151px;left:132px;">@@include('./partials/nameTag.html', { pathToRoot: '.',
+            text: 'Jacqueline Whitney'})</div>
+          <img class="mb-33" src="./assets/lfs/jacqueline.png" />
+        </div>
+        <figcaption class="body-small">
+          Thought leadership in publishing, business, and marketing
+        </figcaption>
+      </figure>
+      <figure class="inline-block mb-68 sm:mx-40 align-top" style="width: 293px">
+        <div class="relative">
+          <div class="absolute" style="top:137px;left:152px;">@@include('./partials/nameTag.html', { pathToRoot: '.',
+            text: 'Douglas Johnson'})</div>
+          <img class="mb-33" src="./assets/lfs/doug.png" />
+        </div>
+        <figcaption class="body-small">
+          Technology Officer Thought Catalog, Thought Catalog Agency
+        </figcaption>
+      </figure>
     </div>
-    @@include('./partials/marquee.html', { pathToRoot: '.', text: 'what is your story? '})
-    <!-- Team -->
-    <div class="px-40 sm:pl-0">
-      <p class="mt-80 mb-40 mx-auto subheadline" style="max-width: 877px">
-        Meet our small, humble team of content thinkers, thought leaders, and
-        producers
-      </p>
-      <div class="sm:-mt-60">
-        <figure
-          class="inline-block mb-68 sm:mx-40 align-top"
-          style="width: 293px"
-        >
-          <div class="relative">
-            <div class="absolute" style="top:140px;left:-20px;">@@include('./partials/nameTag.html', { pathToRoot: '.', text: 'Bianca Sparacino'})</div>
-            <img class="mb-33" src="./assets/lfs/bianca.png" />
-          </div>
-          <figcaption class="body-small">
-            Thought leadership in publishing, business, and marketing
-          </figcaption>
-        </figure>
-        <figure
-          class="inline-block mb-68 sm:mx-40 align-top"
-          style="width: 293px"
-        >
-          <div class="relative">
-            <div class="absolute" style="top:173px;left:135px;">@@include('./partials/nameTag.html', { pathToRoot: '.', text: 'briana wiest'})</div>
-            <img class="mb-33" src="./assets/lfs/briana.png" />
-          </div>
-          <figcaption class="body-small">
-            Thought leadership in publishing, business, and marketing
-          </figcaption>
-        </figure>
-        <figure
-          class="inline-block mb-68 sm:mx-40 align-top"
-          style="width: 293px"
-        >
-          <div class="relative">
-            <div class="absolute" style="top:187px;left:20px;">@@include('./partials/nameTag.html', { pathToRoot: '.', text: 'patrick algrim'})</div>
-            <img class="mb-33" src="./assets/lfs/patrick.png" />
-          </div>
-          <figcaption class="body-small">GM of Thought Catalog Agency</figcaption>
-        </figure>
-        <figure
-          class="inline-block mb-68 sm:mx-40 align-top"
-          style="width: 293px"
-        >
-          <div class="relative">
-            <div class="absolute" style="top:130px;left:-26px;">@@include('./partials/nameTag.html', { pathToRoot: '.', text: 'Noelle Beams'})</div>
-            <img class="mb-33" src="./assets/lfs/noelle.png" />
-          </div>
-          <figcaption class="body-small">
-            COO of Thought Catalog Agency
-          </figcaption>
-        </figure>
-        <figure
-          class="inline-block mb-68 sm:mx-40 align-top"
-          style="width: 293px"
-        >
-          <div class="relative">
-            <div class="absolute" style="top: 180px;left: 37px;">@@include('./partials/nameTag.html', { pathToRoot: '.', text: 'Robbie Burton'})</div>
-            <img class="mb-33" src="./assets/lfs/robbie.png" />
-          </div>
-          <figcaption class="body-small">
-            CSO of Thought Catalog Agency
-          </figcaption>
-        </figure>
-        <figure
-          class="inline-block mb-68 sm:mx-40 align-top"
-          style="width: 293px"
-        >
-          <div class="relative">
-            <div class="absolute" style="top:125px;left:165px;">@@include('./partials/nameTag.html', { pathToRoot: '.', text: 'Chris Lavergne'})</div>
-            <img class="mb-33" src="./assets/lfs/chris.png" />
-          </div>
-          <figcaption class="body-small">
-            CEO of Thought CatalogThought Catalog Agency
-          </figcaption>
-        </figure>
-        <figure
-          class="inline-block mb-68 sm:mx-40 align-top"
-          style="width: 293px"
-        >
-          <div class="relative">
-            <div class="absolute" style="top:151px;left:132px;">@@include('./partials/nameTag.html', { pathToRoot: '.', text: 'Jacqueline Whitney'})</div>
-            <img class="mb-33" src="./assets/lfs/jacqueline.png" />
-          </div>
-          <figcaption class="body-small">
-            Thought leadership in publishing, business, and marketing
-          </figcaption>
-        </figure>
-        <figure
-          class="inline-block mb-68 sm:mx-40 align-top"
-          style="width: 293px"
-        >
-          <div class="relative">
-            <div class="absolute" style="top:137px;left:152px;">@@include('./partials/nameTag.html', { pathToRoot: '.', text: 'Douglas Johnson'})</div>
-            <img class="mb-33" src="./assets/lfs/doug.png" />
-          </div>
-          <figcaption class="body-small">
-            Technology Officer Thought Catalog, Thought Catalog Agency
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-    <div class="caps-lg text-stroke-1px px-45 mb-115 mx-auto" style="max-width:772px">
-      Available for speaking engagements & digital events
-    </div>
-    @@include('./partials/footer.html', {pathToRoot:'.'})
-  </body>
+  </div>
+  <div class="caps-lg text-stroke-1px px-45 mb-115 mx-auto" style="max-width:772px">
+    Available for speaking engagements & digital events
+  </div>
+  @@include('./partials/footer.html', {pathToRoot:'.'})
+</body>
+
 </html>

@@ -19,6 +19,7 @@
 }
 
 .bubble {
+  padding: 10px;
   border-radius: 100%;
   text-transform: none;
   transform: translate(-50%, -50%);
@@ -36,14 +37,14 @@
   border-top: 2px solid white;
   color: white;
   font-family: "oswald", "Avenir Next Condensed", "Arial Narrow", Impact, sans-serif;
-  font-size: 138px;
+  font-size: 120px;
   font-style: normal;
   font-weight: 500;
   letter-spacing: -0.02em;
-  line-height: 138px;
+  line-height: 120px;
   overflow: hidden;
-  padding-bottom: 30px;
-  padding-top: 26px;
+  padding-bottom: 26px;
+  padding-top: 22px;
   text-transform: uppercase;
   white-space: nowrap;
   position: relative;
@@ -68,8 +69,38 @@
     }
 
     100% {
-        transform: translateX(-1000vw);
+        transform: translateX(-300vw);
     }
+}
+
+.handwriting-left {
+  background: url(../assets/lfs/handwriting-left.png?nf_resize=fit&w=1080);
+  height: 269px;
+  width: 540px;
+  top: 25%;
+  left: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+
+  @media (min-width: 790px) {
+    top: 35%;
+  }
+}
+
+.handwriting-right {
+  background: url(../assets/lfs/handwriting-right.png?nf_resize=fit&w=1080);
+  height: 684px;
+  width: 357px;
+  top: 46%;
+  right: -80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+
+  @media (min-width: 790px) {
+    top: 20%;
+  }
 }
 
 .text-bg {

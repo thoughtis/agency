@@ -17,7 +17,7 @@
   @mixin responsive-bg-img ../assets/lfs/wine-mobile.png, ../assets/lfs/wine.png,
     ../assets/lfs/wine.png;
 
-  background-size: cover;
+  background-size: 100% auto;
 
   @screen lg {
     background-size: auto 100%;
@@ -40,8 +40,13 @@
   @mixin responsive-bg-img ../assets/lfs/mountains-mobile.png,
     ../assets/lfs/mountains.png, ../assets/lfs/mountains.png;
 
-  background-size: cover;
-  background-position: top right;
+  background-size: 100% auto;
+  background-position: bottom -120px right;
+
+  @screen sm {
+    background-size: cover;
+    background-position: top right;
+  }
 }
 
 .responsive-bg-img-stars {

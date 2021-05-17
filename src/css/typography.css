@@ -35,15 +35,9 @@
   font-style: normal;
   font-weight: 500;
   text-transform: uppercase;
-  font-size: 60px;
-  line-height: 66px;
+  font-size: 138px;
+  line-height: 247px;
   letter-spacing: -0.02em;
-
-  @screen sm {
-    font-size: 138px;
-    line-height: 247px;
-    letter-spacing: -0.02em;
-  }
 }
 
 .caps-lg {

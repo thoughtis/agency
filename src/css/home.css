@@ -4,6 +4,6 @@ body.home {
 
 .home__hero {
   @screen lg {
-    height: 100vh;
+    height: 120vh;
   }
 }

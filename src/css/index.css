@@ -1,9 +1,11 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "./definitions.css";
 @import "./typography.css";
 @import "./home.css";
 @import "./components.css";
+@import "./bubbles.css";
 @import "./responsive-bg-images.css";
 @import "./utilities.css";
 

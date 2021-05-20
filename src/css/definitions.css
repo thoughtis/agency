@@ -9,3 +9,13 @@
     transform: scale(1) translate(-50%, -50%);
   }
 }
+
+@keyframes floating {
+    0% { transform: translate(-50%,  -50%); }
+    25%  { transform: rotate(1deg) translate(calc(-50%), calc(-50% + 1px)); }
+    /* 40%  { transform: rotate(0deg) translate(-50%, calc(-50% + 1px)); } */
+    /* 45%  { transform: rotate(0deg) translate(-50%, calc(-50% + 1px)); } */
+    50%  { transform: rotate(0deg) translate(calc(-50% + 1px), calc(-50%)); }
+    75%  { transform: rotate(-1deg) translate(calc(-50%), calc(-50% + 1px)); }
+    100%   { transform: translate(-50%, -50%); }    
+}

@@ -26,58 +26,61 @@
       @@include('./partials/homeBubbles.html', { pathToRoot: '.' })
     </div>
   </div>
-  <div class="-mt-14 mb-63 sm:mt-0 relative">
+  <div class="-mt-14 sm:mt-0 relative">
     @@include('./partials/marquee.html', { pathToRoot: '.', text: 'that’s where we fit in –'})
   </div>
-  <div class="mx-21">
-    <h2 class="subheadline mb-7 sm:mb-10 mx-auto" style="max-width: 860px">
-      Building an audience creates a recurring source of lead generation.
-    </h2>
-    <p class="mb-50 mx-auto" style="max-width: 668px">
-      We help companies find their audience and channel them toward their
-      products and services through content.
-    </p>
-    <!-- 3-col -->
-    <div
-      class="mb-47 mx-auto pb-30 flex flex-col lg:flex-row items-center lg:items-start justify-center w-350 sm:w-375 lg:w-auto"
-      style="max-width: 1200px;">
-      <div class="mb-60 mx-40 flex-1 relative">
-        <!-- Arrows -->
-        <img src="./assets/svg/1-2-arrows.svg" class="absolute z-30 arrows-1" />
-        @@include('./partials/01.html', { pathToRoot: '.' })
-        <h3 class="caps-sm mb-9">Platforms</h3>
-        <p class="body-small mx-10">We identify which platforms resonate with your audience.</p>
-      </div>
-      <div class="mb-60 mx-40 flex-1 relative">
-        <!-- Arrows -->
-        <img src="./assets/svg/2-3-arrows.svg" class="absolute z-30 arrows-2" />
-        @@include('./partials/02.html', { pathToRoot: '.' })
-        <h3 class="caps-sm mb-9">Planning</h3>
-        <p class="body-small mx-10">We create compelling content based on strategically chosen subjects.</p>
-      </div>
-      <div class="mb-60 mx-40 flex-1">
-        @@include('./partials/03.html', { pathToRoot: '.' })
-        <h3 class="caps-sm mb-9">Performance</h3>
-        <p class="body-small mx-10">We promote and measure inbound lead generation in order to tweak for
-          performance.</p>
+  <!-- Extra div to wrap this and logos -->
+  <div style="min-height: 96vh">
+    <div class="mx-21 pt-63">
+      <h2 class="subheadline mb-7 sm:mb-10 mx-auto" style="max-width: 860px">
+        Building an audience creates a recurring source of lead generation.
+      </h2>
+      <p class="mb-50 mx-auto" style="max-width: 668px">
+        We help companies find their audience and channel them toward their
+        products and services through content.
+      </p>
+      <!-- 3-col -->
+      <div
+        class="mb-47 mx-auto pb-30 flex flex-col lg:flex-row items-center lg:items-start justify-center w-350 sm:w-375 lg:w-auto"
+        style="max-width: 1200px;">
+        <div class="mb-60 mx-40 flex-1 relative">
+          <!-- Arrows -->
+          <img src="./assets/svg/1-2-arrows.svg" class="absolute z-30 arrows-1" />
+          @@include('./partials/01.html', { pathToRoot: '.' })
+          <h3 class="caps-sm mb-9">Platforms</h3>
+          <p class="body-small mx-10">We identify which platforms resonate with your audience.</p>
+        </div>
+        <div class="mb-60 mx-40 flex-1 relative">
+          <!-- Arrows -->
+          <img src="./assets/svg/2-3-arrows.svg" class="absolute z-30 arrows-2" />
+          @@include('./partials/02.html', { pathToRoot: '.' })
+          <h3 class="caps-sm mb-9">Planning</h3>
+          <p class="body-small mx-10">We create compelling content based on strategically chosen subjects.</p>
+        </div>
+        <div class="mb-60 mx-40 flex-1">
+          @@include('./partials/03.html', { pathToRoot: '.' })
+          <h3 class="caps-sm mb-9">Performance</h3>
+          <p class="body-small mx-10">We promote and measure inbound lead generation in order to tweak for
+            performance.</p>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- logos -->
-  <div class="flex flex-wrap mx-20 md:mx-150 mb-99">
-    <div class="flex flex-grow justify-around mb-20">
-      <img class="mx-10" src="./assets/svg/hbo.svg" width="60" />
-      <img class="mx-10" src="./assets/svg/titos.svg" width="67" />
-      <img class="mx-10" src="./assets/svg/perrier.svg" width="64" />
-    </div>
-    <div class="flex flex-grow justify-around mb-20">
-      <img class="mx-10" src="./assets/svg/fx.svg" width="49" />
-      <img class="mx-10" src="./assets/svg/netflix.svg" width="101" />
-      <img class="mx-10" src="./assets/svg/google.svg" width="71" />
+    <!-- logos -->
+    <div class="flex flex-wrap mx-20 md:mx-150 mb-99">
+      <div class="flex flex-grow justify-around mb-20">
+        <img class="mx-10" src="./assets/svg/hbo.svg" width="60" />
+        <img class="mx-10" src="./assets/svg/titos.svg" width="67" />
+        <img class="mx-10" src="./assets/svg/perrier.svg" width="64" />
+      </div>
+      <div class="flex flex-grow justify-around mb-20">
+        <img class="mx-10" src="./assets/svg/fx.svg" width="49" />
+        <img class="mx-10" src="./assets/svg/netflix.svg" width="101" />
+        <img class="mx-10" src="./assets/svg/google.svg" width="71" />
+      </div>
     </div>
   </div>
   <!-- 01 video -->
-  <div style="background-color: #e68d6d"
+  <div style="background-color: #e68d6d; min-height: 96vh;"
     class="relative bg-no-repeat bg-contain bg-right-bottom w-full box-border text-white text-left pt-127 pl-30 pr-40 pb-302 sm:pb-401 md:pl-100 xl:pl-190 sm:pt-200 md:pr-100 lg:pr-180 responsive-bg-img-wine">
     <div class="absolute top-32 left-39 sm:top-87 md:left-100 xl:left-190">
       <div class="caps-sm text-black">01</div>
@@ -108,7 +111,7 @@
   <!-- 02 editorial -->
   <div
     class="-mt-1 pt-142 pl-30 pb-113 md:pl-100 xl:pl-190 sm:pt-180 text-white text-left responsive-bg-img-house bg-right-bottom relative overflow-hidden"
-    style="background-color: #7cada7">
+    style="background-color: #7cada7; min-height: 96vh;">
     <div class="absolute top-38 left-39 sm:top-87 md:left-100 xl:left-190">
       <div class="caps-sm text-black">02</div>
       <div class="caps-xl text-black text-stroke-2px" style="line-height: 128px">
@@ -156,7 +159,7 @@
     <img src="./assets/lfs/Group4277.png?nf_resize=fit&w=600" />
   </div>
   <!-- 03 photo -->
-  <div style="background-color: #dabc84"
+  <div style="background-color: #dabc84; min-height: 96vh;"
     class="relative z-10 bg-no-repeat bg-right-bottom w-full box-border text-white text-left pt-127 pl-30 pr-40 pb-302 sm:pb-10 md:pl-100 xl:pl-190 sm:pt-180 md:pr-100 lg:pr-180 responsive-bg-img-mountains">
     <div class="absolute top-32 left-39 sm:top-87 md:left-100 xl:left-190">
       <div class="caps-sm text-black">03</div>
@@ -182,7 +185,7 @@
     <img src="./assets/lfs/Group428.png?nf_resize=fit&w=822" style="min-width: 110%; margin-left: -5%" />
   </div>
   @@include('./partials/marquee.html', { pathToRoot: '.', text: 'With over 1B pieces of content produced daily, how will you stand out?'})
-  <div class="pt-150 px-40 pb-170 responsive-bg-img-stars text-left md:text-center text-white bg-cover bg-right-bottom">
+  <div class="pt-150 px-40 pb-170 responsive-bg-img-stars text-left md:text-center text-white bg-cover bg-right-bottom" style="min-height: 96vh;">
     <h2 class="subheadline mb-16 md:mx-auto" style="max-width: 785px">
       Customers interact with content earlier in the sales funnel.
     </h2>

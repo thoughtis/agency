@@ -108,3 +108,43 @@
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
+
+.strategy-shapes-mobile {
+  .caps-sm {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+.strategy-shapes {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+
+ .caps-sm {
+    font-size: 13px;
+    line-height: 15px;
+
+    @media (min-width: 1000px) {
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    @media (min-width: 1120px) {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  & > div {
+    transition: 1s opacity;
+    position: relative;
+  }
+}
+
+.strategy-shapes__dotted-line {
+  border-top: 2px dashed white;
+  position: absolute;
+  right: 0;
+  transition: 1s opacity;
+}

@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const postcss = require('gulp-postcss');
 const fileinclude = require('gulp-file-include');
 const rename = require('gulp-rename');
+const babel = require('gulp-babel');
 
 function css() {
   return gulp
@@ -25,9 +26,19 @@ function fileInclude() {
     }));
 }
 
+function js() {
+  return gulp
+    .src('src/js/index.js')
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
+    .pipe(gulp.dest('dist/js'))
+}
+
 const all = gulp.parallel(
   css,
-  fileInclude
+  fileInclude,
+  js
 )
 
 exports.build = (cb) => {

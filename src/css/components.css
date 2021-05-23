@@ -103,3 +103,8 @@
   font-weight: normal;
   overflow: hidden;
 }
+
+.show-at-hover-position__elt-to-show {
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}

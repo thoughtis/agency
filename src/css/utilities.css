@@ -5,6 +5,13 @@
   animation-timing-function: linear;
 }
 
+.floating-top-left {
+  animation-name: floating-top-left;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
 .text-stroke-2px {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;

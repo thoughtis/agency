@@ -1,4 +1,3 @@
-
 // Definitions
 const toggleShowAtHoverPosition = (e, showOrHide) => {
   const elt = e.target.querySelector('.show-at-hover-position__elt-to-show');
@@ -53,5 +52,28 @@ ScrollTrigger.create({
         delay = delay + 100
       }
     })
+  }
+});
+
+
+// Line chart line - animate on scroll
+ScrollTrigger.create({
+  trigger: ".chart-line",
+  start: "top bottom",
+  onEnter: () => {
+    const elt = document.querySelector('.chart-line')
+      if (elt && elt.classList) {
+        elt.classList.remove('dashoffset-999')
+        elt.classList.add('dashoffset-0')
+      }
+    }
+});
+
+// Bg text reveal - animate on scroll
+ScrollTrigger.create({
+  trigger: ".text-bg",
+  start: "top middle",
+  onEnter: () => {
+    gsap.to('.text-bg__inner', { duration: 2, y: "100%" })
   }
 });

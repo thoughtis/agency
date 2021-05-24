@@ -41,10 +41,7 @@ const all = gulp.parallel(
   js
 )
 
-exports.build = (cb) => {
-  all()
-  cb()
-}
+exports.build = all
 
 exports.watch = (cb) => {
   all()

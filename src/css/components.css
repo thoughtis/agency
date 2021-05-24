@@ -18,6 +18,12 @@
   }
 }
 
+.footer {
+  @screen md {
+    background-image: url(../assets/svg/globe.svg);
+  }
+}
+
 .marquee {
   background: black;
   border-bottom: 2px solid white;
@@ -111,6 +117,11 @@
   right: 0;
   bottom: 0;
   left: 0;
+  transition: transform linear 2s;
+}
+
+.text-bg__inner--animated {
+  transform: translateY(100%);
 }
 
 .show-at-hover-position__elt-to-show {

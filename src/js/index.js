@@ -72,8 +72,21 @@ ScrollTrigger.create({
 // Bg text reveal - animate on scroll
 ScrollTrigger.create({
   trigger: ".text-bg",
-  start: "top middle",
+  start: "top center",
   onEnter: () => {
-    gsap.to('.text-bg__inner', { duration: 2, y: "100%" })
+    const textElt = document.querySelector(".text-bg__inner")
+    const quoteBoxElt = document.querySelector(".quote-box")
+
+    if(textElt && textElt.classList) {
+      textElt.classList.add("text-bg__inner--animated")
+    }
+
+    setTimeout(() => console.log(textElt.style), 3000);
+
+    if(quoteBoxElt && quoteBoxElt.classList) {
+      setTimeout(() => {
+        quoteBoxElt.classList.add('bubbleIn--top-left--animated')
+      }, 2000)
+    }
   }
 });

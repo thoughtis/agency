@@ -9,9 +9,3 @@
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(1,.02,1,.28);
 }
-
-.footer {
-  @screen md {
-    background-image: url(../assets/svg/globe.svg);
-  }
-}

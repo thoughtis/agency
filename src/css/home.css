@@ -1,5 +1,9 @@
 body.home {
-  
+  .section__video {
+    @screen lg {
+      height: 68vw;
+    }
+  }
 }
 
 .home__hero {
@@ -7,3 +11,4 @@ body.home {
     height: 65vw;
   }
 }
+

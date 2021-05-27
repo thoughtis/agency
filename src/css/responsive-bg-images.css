@@ -19,7 +19,7 @@
 
   background-size: 100% auto;
 
-  @screen lg {
+  @screen sm {
     background-size: auto 100%;
   }
 }

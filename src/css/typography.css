@@ -4,29 +4,25 @@
   font-style: normal;
   font-weight: normal;
   font-size: 38px;
-  line-height: 46px;
   letter-spacing: -0.03em;
+  line-height: 1.08;
+  max-width: 13em;
 
   @screen sm {
-    font-size: 65px;
-    line-height: 70px;
+    font-size: 5.28vw;
   }
 }
+
 
 .subheadline {
   font-family: "minion-pro", "Hoefler Text", "Noto Serif", Palatino,
     "Palatino Linotype", Times, "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
-  /* font-size: 34px;
-  line-height: 42px;
-  letter-spacing: -0.03em; */
-
-    letter-spacing: -0.02em;
-    font-size: 52px;
-    line-height: 56px;
-  @screen sm {
-  }
+  letter-spacing: -0.02em;
+  font-size: max(34px, 4vw);
+  line-height: 1.1;
+  max-width: 18em;
 }
 
 .caps-xl {
@@ -36,7 +32,7 @@
   font-weight: 500;
   text-transform: uppercase;
   font-size: 138px;
-  line-height: 247px;
+  line-height: 1.79;
   letter-spacing: -0.02em;
 }
 
@@ -46,14 +42,12 @@
   font-style: normal;
   font-weight: 500;
   font-size: 42px;
-  line-height: 48px;
-  letter-spacing: -0.01em;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
 
   @screen sm {
     font-size: 60px;
-    line-height: 66px;
-    letter-spacing: -0.02em;
   }
 }
 
@@ -62,14 +56,13 @@
     sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 35px;
-  line-height: 40px;
+  font-size: 42px;
+  line-height: 1.1;
   letter-spacing: -0.02em;
   text-transform: uppercase;
 
   @screen sm {
-    font-size: 45px;
-    line-height: 51px;
+    font-size: 60px;
   }
 }
 
@@ -89,14 +82,9 @@
     "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
-
-  @screen sm {
-    line-height: 34px;
-    font-size: 24px;
-    letter-spacing: -0.01em;
-  }
+  letter-spacing: -0.01em;
+  font-size: max(20px, 1.67vw);
+  line-height: 1.42;
 }
 
 .body-small {
@@ -105,6 +93,6 @@
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 1.57;
   letter-spacing: -0.01em;
 }

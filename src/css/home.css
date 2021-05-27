@@ -5,15 +5,43 @@ body.home {
     }
   }
 
-  .section__editorial {
+  .section__video__inner,
+  .section__editorial,
+  .section__photo {
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-top: 127px;
+  }
+
+  .section__video__inner {
+    @screen lg {
+      padding-top: 12.6vw;
+      padding-left: 13vw;
+    }
+  }
+
+  .section__editorial,
+  .section__photo {
     @screen md {
+      padding-top: 12.6vw;
+      padding-left: 13vw;
       height: 68vw;
     }
   }
 
-  .section__photo {
-    @screen md {
-      height: 65.5vw;
+  .section__editorial {
+    ul {
+      padding-bottom: 194px;
+
+      @screen sm {
+        padding-bottom: 3vw;
+      }
+    }
+  }
+
+  .section__photo__shapes-wrap {
+    @screen sm {
+      height: 38vw;
     }
   }
 
@@ -27,7 +55,7 @@ body.home {
     img {
       width: 40vw;
       margin: 2vw;
-      
+
       @media (min-width: 500px) {
         width: 200px;
         margin: 10px;
@@ -41,4 +69,3 @@ body.home {
     height: 65vw;
   }
 }
-

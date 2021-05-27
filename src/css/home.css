@@ -4,6 +4,18 @@ body.home {
       height: 68vw;
     }
   }
+
+  .section__editorial {
+    @screen md {
+      height: 68vw;
+    }
+  }
+
+  .section__photo {
+    @screen md {
+      height: 65.5vw;
+    }
+  }
 }
 
 .home__hero {

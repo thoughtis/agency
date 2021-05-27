@@ -16,6 +16,24 @@ body.home {
       height: 65.5vw;
     }
   }
+
+  .section__video-mobile {
+    padding: 3vw;
+
+    @media (min-width: 500px) {
+      padding: 27px;
+    }
+
+    img {
+      width: 40vw;
+      margin: 2vw;
+      
+      @media (min-width: 500px) {
+        width: 200px;
+        margin: 10px;
+      }
+    }
+  }
 }
 
 .home__hero {

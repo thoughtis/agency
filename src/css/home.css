@@ -13,13 +13,14 @@ body.home {
     padding-top: 127px;
   }
 
-  .section__video__inner {
+  /* .section__video__inner {
     @screen lg {
       padding-top: 12.6vw;
       padding-left: 13vw;
     }
-  }
+  } */
 
+  .section__video__inner,
   .section__editorial,
   .section__photo {
     @screen md {

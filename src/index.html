@@ -80,7 +80,7 @@
   </div>
   <!-- 01 video -->
   <div style="background-color: #e68d6d;"
-    class="section__video relative bg-no-repeat bg-contain bg-right-bottom w-full box-border text-white text-left pb-302 responsive-bg-img-wine z-10">
+    class="section__video relative bg-no-repeat bg-contain bg-right-bottom w-full box-border text-white text-left pb-302 md:pb-0 responsive-bg-img-wine z-10">
     <div class="section__video__inner relative overflow-hidden">
       <div class="absolute" style="transform: translateY(-85px)">
         <div class="caps-sm text-black">01</div>
@@ -93,7 +93,7 @@
         understand products, services, and the end result of a brand’s value
         proposition.
       </p>
-      <p class="hidden sm:block" style="max-width: 17em">
+      <p class="hidden lg:block" style="max-width: 17em">
         We tookover the social platform for Hausera, then built and managed a
         community on their blog.
       </p>
@@ -137,8 +137,8 @@
     </div>
   </div>
   <!-- 01 video mobile bottom part-->
-  <div class="section__video-mobile text-white text-left lg:hidden" style="background-color: #161513;">
-    <p class="mb-22">We tookover the social platform for Hausera, then built and managed a
+  <div class="section__video-mobile text-white text-center lg:hidden" style="background-color: #161513;">
+    <p class="mb-22 mx-auto" style="max-width: 30em;">We tookover the social platform for Hausera, then built and managed a
       community on their blog.</p>
     <div class="relative mx-auto  flex items-center justify-center flex-wrap">
       <img class="" src="./assets/lfs/video-4.png?nf_resize=fit&w=658" style="
@@ -210,7 +210,7 @@
   </div>
   <!-- 02 editorial mobile bottom part -->
   <div class="py-30 pr-30 pl-40 sm:hidden" style="background-color: #161513">
-    <p class="mb-22 text-white text-left">
+    <p class="mb-22 text-white" style="max-width: 30em;">
       Our expertise in organic search growth has led 0 to 2,000 visitors per
       day for Hausera.
     </p>
@@ -265,8 +265,8 @@
     </div>
   </div>
   <!-- 03 photo mobile bottom part-->
-  <div class="text-white text-left pt-31 pb-37 overflow-hidden sm:hidden" style="background-color: #161513">
-    <p class="pl-27 pb-23" style="max-width: 297px">
+  <div class="text-white pt-31 pb-37 overflow-hidden sm:hidden" style="background-color: #161513">
+    <p class="pl-27 pb-23" style="max-width: 30em">
       We’ve helped tell stories visually for:
     </p>
     <div style="height: 54vw; min-width: 110%; margin-left: -2%" class="z-10 md:-translate-x-120 relative">
@@ -299,11 +299,11 @@
     </div>
   </div>
   @@include('./partials/marquee.html', { pathToRoot: '.', text: 'With over 1B pieces of content produced daily, how will you stand out?'})
-  <div class="pt-150 px-40 pb-170 responsive-bg-img-stars text-left md:text-center text-white bg-cover bg-right-bottom" style="min-height: 96vh;">
+  <div class="pt-150 px-40 responsive-bg-img-stars text-left md:text-center text-white bg-cover bg-right-bottom" style="min-height: 96vh; padding-bottom:11.8vw">
     <h2 class="subheadline mb-16 md:mx-auto" style="max-width: 785px">
       Customers interact with content earlier in the sales funnel.
     </h2>
-    <p class="mb-53 md:mx-auto md:mb-70" style="max-width: 785px">
+    <p class="mb-90 md:mx-auto md:mb-70" style="max-width: 785px">
       Whether it’s interacting with a Tweet, scrolling by an image on
       Instagram, a video they stumbled upon through YouTube or a searching for
       a specific need. Customers' interest is piqued through this awareness.
@@ -385,58 +385,58 @@
         <div>Editorial</div>
       </div>
     </div>
-  </div>
-  <div class="bg-black text-white px-40 pb-60 md:hidden">
-    <h3 class="caps-sm mb-25">We believe a multi-pronged strategy of:</h3>
-    <div class="strategy-shapes-mobile">
-      <div class="flex justify-center">
-        <div class="caps-sm bg-contain bg-no-repeat bg-center flex justify-center items-center mx-10" style="
-          background-image: url(./assets/svg/circle.svg);
-          width: 134px;
-          height: 134px;
-          transform: translateX(3px);
-        ">
-          <div>Search Engine Optimization</div>
+    <div class="md:hidden text-center">
+      <h3 class="caps-sm mb-25">We believe a multi-pronged strategy of:</h3>
+      <div class="strategy-shapes-mobile">
+        <div class="flex justify-center">
+          <div class="caps-sm bg-contain bg-no-repeat bg-center flex justify-center items-center mx-10" style="
+            background-image: url(./assets/svg/circle.svg);
+            width: 134px;
+            height: 134px;
+            transform: translateX(3px);
+          ">
+            <div>Search Engine Optimization</div>
+          </div>
+          <div class="caps-sm bg-contain bg-no-repeat bg-center flex justify-center items-center mx-10" style="
+            background-image: url(./assets/svg/gon.svg);
+            width: 149px;
+            height: 137px;
+            transform: translateX(5px);
+          ">
+            <div>Sponsorships</div>
+          </div>
         </div>
-        <div class="caps-sm bg-contain bg-no-repeat bg-center flex justify-center items-center mx-10" style="
-          background-image: url(./assets/svg/gon.svg);
-          width: 149px;
-          height: 137px;
-          transform: translateX(5px);
-        ">
-          <div>Sponsorships</div>
+        <div class="flex justify-center">
+          <div class="caps-sm bg-contain bg-no-repeat bg-center flex justify-center items-center" style="
+            background-image: url(./assets/svg/tri.svg);
+            width: 169px;
+            height: 169px;
+          ">
+            <div>Audio</div>
+          </div>
+          <div class="caps-sm bg-contain bg-no-repeat bg-center flex justify-center items-center mx-10" style="
+            background-image: url(./assets/svg/rect.svg);
+            width: 138px;
+            height: 168px;
+          ">
+            <div>Photography</div>
+          </div>
         </div>
-      </div>
-      <div class="flex justify-center">
-        <div class="caps-sm bg-contain bg-no-repeat bg-center flex justify-center items-center" style="
-          background-image: url(./assets/svg/tri.svg);
-          width: 169px;
-          height: 169px;
-        ">
-          <div>Audio</div>
-        </div>
-        <div class="caps-sm bg-contain bg-no-repeat bg-center flex justify-center items-center mx-10" style="
-          background-image: url(./assets/svg/rect.svg);
-          width: 138px;
-          height: 168px;
-        ">
-          <div>Photography</div>
-        </div>
-      </div>
-      <div class="flex justify-center">
-        <div class="caps-sm bg-contain bg-no-repeat bg-center flex justify-center items-center mx-10" style="
-          background-image: url(./assets/svg/gon5.svg);
-          width: 157px;
-          height: 157px;
-        ">
-          <div>Video</div>
-        </div>
-        <div class="caps-sm bg-contain bg-no-repeat bg-center flex justify-center items-center mx-10" style="
-          background-image: url(./assets/svg/square.svg);
-          width: 128px;
-          height: 155px;
-        ">
-          <div>Editorial</div>
+        <div class="flex justify-center">
+          <div class="caps-sm bg-contain bg-no-repeat bg-center flex justify-center items-center mx-10" style="
+            background-image: url(./assets/svg/gon5.svg);
+            width: 157px;
+            height: 157px;
+          ">
+            <div>Video</div>
+          </div>
+          <div class="caps-sm bg-contain bg-no-repeat bg-center flex justify-center items-center mx-10" style="
+            background-image: url(./assets/svg/square.svg);
+            width: 128px;
+            height: 155px;
+          ">
+            <div>Editorial</div>
+          </div>
         </div>
       </div>
     </div>

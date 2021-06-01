@@ -19,9 +19,8 @@
 }
 
 .footer {
-  @screen md {
-    background-image: url(../assets/svg/globe.svg);
-  }
+  background-image: url(../assets/svg/globe.svg);
+  background-size: auto 100%;
 }
 
 .marquee {
@@ -117,7 +116,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  transition: transform linear 2s;
+  transition: transform linear 800ms;
 }
 
 .text-bg__inner--animated {
@@ -157,7 +156,7 @@
   }
 
   & > div {
-    transition: 1s opacity;
+    transition: 2s opacity;
     position: relative;
   }
 }
@@ -166,5 +165,5 @@
   border-top: 2px dashed white;
   position: absolute;
   right: 0;
-  transition: 1s opacity;
+  transition: 2s opacity;
 }

@@ -1,14 +1,5 @@
 // Definitions
-const toggleShowAtHoverPosition = (e, showOrHide) => {
-  const elt = e.target.querySelector('.show-at-hover-position__elt-to-show');
-
-  if (!elt) {
-    return
-  }
-
-  elt.style.top = `${e.offsetY}px`;
-  elt.style.left = `${e.offsetX}px`;
-
+const setDisplay = (elt, showOrHide) => {
   if (showOrHide === 'show') {
     elt.classList.remove('hidden');
   } else if (showOrHide === 'hide') {
@@ -16,10 +7,17 @@ const toggleShowAtHoverPosition = (e, showOrHide) => {
   }
 }
 
+const putEltAtMousePosition = (e, elt) => {
+  elt.style.top = `${e.offsetY}px`;
+  elt.style.left = `${e.offsetX}px`;
+}
+
 // Attach event listeners
-document.querySelectorAll('.show-at-hover-position__target').forEach((target) => {
-  target.addEventListener('mouseover', e => toggleShowAtHoverPosition(e, 'show'))
-  target.addEventListener('mouseout', e => toggleShowAtHoverPosition(e, 'hide'))
+document.querySelectorAll('.show-at-hover-position__target').forEach((containerElt) => {
+  const eltToShow = containerElt.querySelector('.show-at-hover-position__elt-to-show')
+  containerElt.addEventListener('mouseover', () => setDisplay(eltToShow, 'show'))
+  containerElt.addEventListener('mouseout', () => setDisplay(eltToShow, 'hide'))
+  containerElt.addEventListener('mousemove', (e) => putEltAtMousePosition(e, eltToShow))
 })
 
 // Strategy shapes - animate on scroll
@@ -37,7 +35,7 @@ ScrollTrigger.create({
           shapeElt.classList.add('opacity-100')
         }, delay) 
         
-        delay = delay + 400
+        delay = delay + 800
       }
     })
 
@@ -49,7 +47,7 @@ ScrollTrigger.create({
           dotsElt.classList.add('opacity-100')
         }, delay) 
         
-        delay = delay + 100
+        delay = delay + 500
       }
     })
   }
@@ -81,12 +79,10 @@ ScrollTrigger.create({
       textElt.classList.add("text-bg__inner--animated")
     }
 
-    setTimeout(() => console.log(textElt.style), 3000);
-
     if(quoteBoxElt && quoteBoxElt.classList) {
       setTimeout(() => {
         quoteBoxElt.classList.add('bubbleIn--top-left--animated')
-      }, 2000)
+      }, 800)
     }
   }
 });

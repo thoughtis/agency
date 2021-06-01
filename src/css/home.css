@@ -5,11 +5,7 @@ body.home {
     padding-left: 30px;
     padding-right: 40px;
     padding-top: 127px;
-  }
-
-  .section__video__inner,
-  .section__editorial,
-  .section__photo {
+  
     @screen md {
       padding-top: 12.6vw;
       padding-left: 13vw;

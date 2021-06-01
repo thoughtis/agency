@@ -29,17 +29,21 @@
   border-top: 2px solid white;
   color: white;
   font-family: "oswald", "Avenir Next Condensed", "Arial Narrow", Impact, sans-serif;
-  font-size: 64px;
   font-style: normal;
   font-weight: 500;
   letter-spacing: -0.02em;
-  line-height: 64px;
+  line-height: 1;
   overflow: hidden;
-  padding-bottom: 14px;
-  padding-top: 10px;
   text-transform: uppercase;
   white-space: nowrap;
   position: relative;
+  font-size: 64px;
+  padding-bottom: 14px;
+  padding-top: 10px;
+
+  @screen xl {
+    font-size: 100px;
+  }
 
   span {
     padding: 0 1vw;

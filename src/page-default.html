@@ -8,73 +8,75 @@
   @@include('./partials/headContent.html', { pathToRoot: '.' })
   <title>Thought Catalog Agency</title>
 </head>
-<body class="text-center home">
-  <div class="home__hero relative overflow-hidden">
+<body class="text-center page-default">
+  <div class="page-default__hero relative overflow-hidden">
     @@include('./partials/pageHeader.html', { pathToRoot: '.' })
     <p class="px-21 headline mb-45 mx-auto">
       Marketers these days have less budget, bigger growth objectives, and
       shorter time frames.
     </p>
     <!-- Mobile bubbles -->
-    @@include('./partials/homeBubblesMobile.html', { pathToRoot: '.' })
+    @@include('./partials/defaultPageBubblesMobile.html', { pathToRoot: '.' })
     <!-- The timeline -->
     <div class="hidden lg:flex absolute caps-sm items-center" style="top: 40.7vw; left: 193px; right: 190px">
       <div>10 years ago</div>
       <div class="border-t border-black h-0 mx-13 flex-grow" style="margin-bottom: -1px"></div>
       <div>present day</div>
-      @@include('./partials/homeBubbles.html', { pathToRoot: '.' })
+      @@include('./partials/defaultPageBubbles.html', { pathToRoot: '.' })
     </div>
   </div>
   <div class="-mt-14 sm:mt-0 relative">
     @@include('./partials/marquee.html', { pathToRoot: '.', text: 'that’s where we fit in –'})
   </div>
   <!-- Extra div to wrap this and logos -->
-  <div class="mx-auto overflow-hidden" style="min-height: 96vh;">
-    <div class="mx-21 pt-63">
-      <h2 class="subheadline mb-7 sm:mb-10 mx-auto">
-        Building an audience creates a recurring source of lead generation.
-      </h2>
-      <p class="mb-50 mx-auto" style="max-width: 27em">
-        We help companies find their audience and channel them toward their
-        products and services through content.
-      </p>
-      <!-- 3-col -->
-      <div
-        class="mb-47 mx-auto pb-30 flex flex-col lg:flex-row items-center lg:items-start justify-center w-full sm:w-375 lg:w-auto"
-        style="max-width: 1200px">
-        <div class="mb-60 mx-auto sm:mx-40 flex-1 relative">
-          <!-- Arrows -->
-          <img src="./assets/svg/1-2-arrows.svg" class="absolute z-30 arrows-1" />
-          @@include('./partials/01.html', { pathToRoot: '.' })
-          <h3 class="caps-sm mb-9">Platforms</h3>
-          <p class="body-small mx-10">We identify which platforms resonate with your audience.</p>
-        </div>
-        <div class="mb-60 mx-auto sm:mx-40 flex-1 relative">
-          <!-- Arrows -->
-          <img src="./assets/svg/2-3-arrows.svg" class="absolute z-30 arrows-2" />
-          @@include('./partials/02.html', { pathToRoot: '.' })
-          <h3 class="caps-sm mb-9">Planning</h3>
-          <p class="body-small mx-10">We create compelling content based on strategically chosen subjects.</p>
-        </div>
-        <div class="mb-60 mx-auto sm:mx-40 flex-1">
-          @@include('./partials/03.html', { pathToRoot: '.' })
-          <h3 class="caps-sm mb-9">Performance</h3>
-          <p class="body-small mx-10">We promote and measure inbound lead generation in order to tweak for
-            performance.</p>
+  <div class="overflow-hidden flex justify-center items-center" style="min-height: 96vh;">
+    <div>
+      <div class="mx-21 pt-63">
+        <h2 class="subheadline mb-7 sm:mb-10 mx-auto">
+          Building an audience creates a recurring source of lead generation.
+        </h2>
+        <p class="mb-50 mx-auto" style="max-width: 27em">
+          We help companies find their audience and channel them toward their
+          products and services through content.
+        </p>
+        <!-- 3-col -->
+        <div
+          class="mb-47 mx-auto pb-30 flex flex-col lg:flex-row items-center lg:items-start justify-center w-full sm:w-375 lg:w-auto"
+          style="max-width: 1200px">
+          <div class="mb-60 mx-auto sm:mx-40 flex-1 relative">
+            <!-- Arrows -->
+            <img src="./assets/svg/1-2-arrows.svg" class="absolute z-30 arrows-1" />
+            @@include('./partials/01-platforms.html', { pathToRoot: '.' })
+            <h3 class="caps-sm mb-9">Platforms</h3>
+            <p class="body-small mx-10">We identify which platforms resonate with your audience.</p>
+          </div>
+          <div class="mb-60 mx-auto sm:mx-40 flex-1 relative">
+            <!-- Arrows -->
+            <img src="./assets/svg/2-3-arrows.svg" class="absolute z-30 arrows-2" />
+            @@include('./partials/02-planning.html', { pathToRoot: '.' })
+            <h3 class="caps-sm mb-9">Planning</h3>
+            <p class="body-small mx-10">We create compelling content based on strategically chosen subjects.</p>
+          </div>
+          <div class="mb-60 mx-auto sm:mx-40 flex-1">
+            @@include('./partials/03-performance.html', { pathToRoot: '.' })
+            <h3 class="caps-sm mb-9">Performance</h3>
+            <p class="body-small mx-10">We promote and measure inbound lead generation in order to tweak for
+              performance.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- logos -->
-    <div class="flex flex-wrap mx-20 md:mx-150 mb-99">
-      <div class="flex flex-grow justify-around mb-20">
-        <img class="mx-10" src="./assets/svg/hbo.svg" width="60" />
-        <img class="mx-10" src="./assets/svg/titos.svg" width="67" />
-        <img class="mx-10" src="./assets/svg/perrier.svg" width="64" />
-      </div>
-      <div class="flex flex-grow justify-around mb-20">
-        <img class="mx-10" src="./assets/svg/fx.svg" width="49" />
-        <img class="mx-10" src="./assets/svg/netflix.svg" width="101" />
-        <img class="mx-10" src="./assets/svg/google.svg" width="71" />
+      <!-- logos -->
+      <div class="flex flex-wrap mx-20 md:mx-150 mb-99">
+        <div class="flex flex-grow justify-around mb-20">
+          <img class="mx-10" src="./assets/svg/hbo.svg" width="60" />
+          <img class="mx-10" src="./assets/svg/titos.svg" width="67" />
+          <img class="mx-10" src="./assets/svg/perrier.svg" width="64" />
+        </div>
+        <div class="flex flex-grow justify-around mb-20">
+          <img class="mx-10" src="./assets/svg/fx.svg" width="49" />
+          <img class="mx-10" src="./assets/svg/netflix.svg" width="101" />
+          <img class="mx-10" src="./assets/svg/google.svg" width="71" />
+        </div>
       </div>
     </div>
   </div>
@@ -230,7 +232,7 @@
         Our photography assists in asset development for social media,
         advertising, marketing campaigns, and more.
       </p>
-      <p class="hidden sm:block pb-10" style="max-width: 444px">
+      <p class="hidden sm:block pb-30">
         We’ve helped tell stories visually for:
       </p>
     </div>
@@ -884,6 +886,30 @@
   <div class="px-45 mb-93 sm:mb-115 mx-auto relative show-at-hover-position__target" style="max-width:772px">
     <img class="absolute show-at-hover-position__elt-to-show hidden" width="414" src="./assets/lfs/Group408.png?nf_resize=fit&w=828" />
     <div class="caps-md text-stroke-1px pointer-events-none z-10 relative">Available for speaking engagements & digital events</div>
+  </div>
+  <div class="footer bg-no-repeat bg-center px-20 sm:px-160">
+    <h2 class="caps-lg mb-60 mt-10">Our Network</h2>
+    <img class="mx-auto mb-80 lg:hidden" src="./assets/svg/network-logos-mobile.svg" />
+    <img
+      class="mx-auto mb-75 hidden lg:block"
+      src="./assets/svg/network-logos.svg"
+      style="
+        transform: translateX(25px);
+      "
+    />
+    <a class="button inline-block mb-50" href="#">Contact us</a>
+    <img
+      class="mx-auto"
+      style="margin-bottom: -75px"
+      src="./assets/svg/thought-catalog-agency.svg"
+    />
+    <div class="overflow-hidden">
+      <img
+        class="mx-auto"
+        style="transform: translateY(100px)"
+        src="./assets/svg/logo.svg"
+      />
+    </div>
   </div>
   @@include('./partials/footer.html', {pathToRoot:'.'})
 </body>

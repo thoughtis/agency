@@ -1,4 +1,4 @@
-body.home {
+body.page-default {
   .section__video__inner,
   .section__editorial,
   .section__photo {
@@ -20,9 +20,22 @@ body.home {
     }
   }
 
-  .section__editorial,
-  .section__photo {
+  .section__editorial {
     @screen md {
+      height: 68vw;
+    }
+  }
+
+  .section__photo {
+    @screen sm {
+      height: 84vw;
+    }
+
+    @screen md {
+      height: 70vw;
+    }
+
+    @screen lg {
       height: 68vw;
     }
   }
@@ -71,7 +84,7 @@ body.home {
   }
 }
 
-.home__hero {
+.page-default__hero {
   @screen lg {
     height: 65vw;
   }

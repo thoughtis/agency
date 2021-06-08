@@ -53,3 +53,17 @@
   @mixin responsive-bg-img ../assets/lfs/stars-mobile.png,
     ../assets/lfs/stars.png, ../assets/lfs/stars.png;
 }
+
+.responsive-bg-img-desertfloor {
+  @mixin responsive-bg-img ../assets/lfs/desertfloor.png,
+    ../assets/lfs/desertfloor.png, ../assets/lfs/desertfloor.png;
+
+  background-size: 1647px auto;
+  background-repeat: no-repeat;
+  background-position: left -414px bottom -124px;
+
+  @screen sm {
+    background-size: 100% auto;
+    background-position: bottom;
+  }
+}

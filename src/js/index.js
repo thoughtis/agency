@@ -5,6 +5,14 @@ const setDisplay = (elt, showOrHide) => {
   } else if (showOrHide === 'hide') {
     elt.classList.add('hidden');
   }
+};
+
+const toggleClass = (elt, classStr) => {
+  if (elt.classList.contains(classStr)) {
+    elt.classList.remove(classStr)
+  } else {
+    elt.classList.add(classStr)
+  }
 }
 
 const putEltAtMousePosition = (e, elt) => {
@@ -15,8 +23,16 @@ const putEltAtMousePosition = (e, elt) => {
 // Attach event listeners
 document.querySelectorAll('.show-at-hover-position__target').forEach((containerElt) => {
   const eltToShow = containerElt.querySelector('.show-at-hover-position__elt-to-show')
-  containerElt.addEventListener('mouseover', () => setDisplay(eltToShow, 'show'))
-  containerElt.addEventListener('mouseout', () => setDisplay(eltToShow, 'hide'))
+  containerElt.addEventListener('mouseover', () => {
+    setDisplay(eltToShow, 'show');
+    toggleClass(containerElt, "z-0");
+    toggleClass(containerElt, "z-10");
+  })
+  containerElt.addEventListener('mouseout', () => {
+    setDisplay(eltToShow, 'hide')
+    toggleClass(containerElt, "z-0");
+    toggleClass(containerElt, "z-10");
+  })
   containerElt.addEventListener('mousemove', (e) => putEltAtMousePosition(e, eltToShow))
 })
 

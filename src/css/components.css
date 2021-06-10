@@ -1,3 +1,19 @@
+.asdf-box {
+  color: white;
+  height: 64vw;
+
+  @screen sm {
+    background: none !important;
+    height: initial;
+
+    .caps-md {
+      color: black;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+    }
+  }
+}
+
 .arrows-1 {
   left: 230px;
   top: 30px;

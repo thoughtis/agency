@@ -91,7 +91,7 @@
 }
 
 .page-content-marketing__hero {
-  @screen lg {
-    height: 65vw;
+  @screen md {
+    height: 62vw;
   }
 }

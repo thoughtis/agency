@@ -13,7 +13,94 @@
     @@include('./partials/pageHeader.html', { pathToRoot: '.' })
     <p class="px-21 headline mb-45 mx-auto">Content isn’t just something to create.</p>
     <p class="px-21 mx-auto pb-40" style="max-width: 36em"> It’s a way to find your audience and nurture that community which can turn your products or services into big businesses.</p>
-    <img class="w-full pb-40" src="./assets/lfs/contentmarketing@2x.png?nf_resize=fit&w=750" />
+    <!-- center bubbles -->
+    <div class="text-white absolute hidden md:block" style="left: 50vw; top: 5vw">
+      @@include('./partials/bubble.html', {
+        pathToRoot: '..',
+        size: '8.5vw',
+        text: 'Forbes',
+        background: '#30B59D',
+        top: '35.5vw',
+        left: '-12vw',
+        start: 0,
+      })
+      @@include('./partials/bubble.html', {
+        pathToRoot: '..',
+        size: '10vw',
+        text: 'AdWeek',
+        background: '#286EFA',
+        top: '33.5vw',
+        left: '0vw',
+        start: 0,
+      })
+      <div class="text-black">
+        @@include('./partials/bubble.html', {
+          pathToRoot: '..',
+          size: '8.5vw',
+          text: 'Buzzfeed',
+          background: '#FFDA18',
+          top: '35.6vw',
+          left: '12vw',
+          start: 0,
+        })
+      </div>
+      @@include('./partials/bubble.html', {
+        pathToRoot: '..',
+        size: '8.5vw',
+        text: 'The Verge',
+        background: '#D511AA',
+        top: '47.5vw',
+        left: '-12vw',
+        start: 0,
+      })
+      @@include('./partials/bubble.html', {
+        pathToRoot: '..',
+        size: '9vw',
+        text: 'New York Times',
+        background: '#000',
+        top: '49.5vw',
+        left: '0vw',
+        start: 0,
+      })
+      @@include('./partials/bubble.html', {
+        pathToRoot: '..',
+        size: '8.5vw',
+        text: 'Newsweek',
+        background: '#EF1021',
+        top: '47.5vw',
+        left: '12vw',
+        start: 0,
+      })
+    </div>
+    <div class="hidden md:flex absolute caps-sm items-center" style="top: 45.7vw; left: 193px; right: 190px">
+      <!-- people -->
+      <img class="hidden md:block absolute" src="./assets/lfs/peope.png?nf_resize=fit&w=600" style="
+        width: 21vw;
+        left: -12vw;
+      " />
+      <!-- right images -->
+      <img class="hidden md:block absolute" src="./assets/lfs/bigsur.png?nf_resize=fit&w=200" style="
+        width: 6vw;
+        right: 0;
+        top: -12vw;
+      " />
+      <img class="hidden md:block absolute" src="./assets/lfs/book357.png?nf_resize=fit&w=400" style="
+        width: 14vw;
+        right: -17vw;
+        top: -6vw;
+      " />
+      <img class="hidden md:block absolute" src="./assets/lfs/empath.png?nf_resize=fit&w=200" style="
+        width: 7vw;
+        right: 6vw;
+        bottom: -11vw;
+      " />
+      <div>your audience</div>
+      <div class="border-t border-black h-0 mx-13 flex-grow" style="margin-bottom: -1px"></div>
+      <div>content</div>
+      <div class="border-t border-black h-0 mx-13 flex-grow" style="margin-bottom: -1px"></div>
+      <div>your product</div>
+    </div>
+    <img class="w-full pb-40 md:hidden" src="./assets/lfs/contentmarketing@2x.png?nf_resize=fit&w=750" />
   </div>
   <div class="-mt-14 sm:mt-0 relative">
     @@include('./partials/marquee.html', { pathToRoot: '.', text: '1 million people spend 3 minutes reading our content every day. '})

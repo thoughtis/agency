@@ -8,13 +8,24 @@
   <title>Thought Catalog Agency - Link Building</title>
 </head>
 <body class="text-center page-link-building">
-  <div class="page-default__hero relative overflow-hidden">
+  <div class="relative overflow-hidden" style="min-height: 53vw;">
+    @@include('./partials/linkBuildingPageBubbles.html', { pathToRoot: '.' })
+    <img class="w-full hidden md:block absolute z-0" src="./assets/svg/linkbuilding-hero-desktop.svg" style="
+      top: 2vw;
+      left: 2vw;
+      width: 89vw;
+      " />
     @@include('./partials/pageHeader.html', { pathToRoot: '.' })
-    <p class="px-21 headline mb-45 mx-auto" style="max-width: 10em">
-      SEO is not just adding keywords anymore...
-    </p>
-    <p class="px-21 mx-auto pb-40" style="max-width: 30em">While content is the most effective way to build an online following, link-building provides credibility.</p>
-    <img class="w-full pb-40" src="./assets/lfs/linkbuilding@2x.png?nf_resize=fit&w=750" />
+    <div class="md:absolute page-link-building__hero-content" style="
+      top: 21vw; 
+      left: 50%; 
+">
+      <p class="px-21 headline mb-45 md:mb-10 mx-auto" style="max-width: 10em">
+        SEO is not just adding keywords anymore...
+      </p>
+      <p class="px-21 mx-auto pb-40" style="max-width: 30em">While content is the most effective way to build an online following, link-building provides credibility.</p>
+    </div>
+    <img class="w-full pb-40 md:hidden" src="./assets/svg/linkbuilding.svg" />
   </div>
   <div class="-mt-14 sm:mt-0 relative">
     @@include('./partials/marquee.html', { pathToRoot: '.', text: 'we can help you out –'})
@@ -38,21 +49,21 @@
               <div class="caps-xl text-stroke-2px">01</div>
               <img class="absolute" style="left:50%;top:50%;transform: translate(-50%, -47%);" src="./assets/svg/linkbuilding-01.svg" />
             </div>
-            <p class="body-small mx-10">Obtain a trusted SEO partner to assist with your needs.</p>
+            <p class="mx-10">Obtain a trusted SEO partner to assist with your needs.</p>
           </div>
           <div class="mb-60 mx-auto sm:mx-40 flex-1 relative">
             <div class="relative">
               <div class="caps-xl text-stroke-2px">02</div>
               <img class="absolute" style="left:50%;top:50%;transform: translate(-52%, -47%);" src="./assets/svg/linkbuilding-02.svg" />
             </div>
-            <p class="body-small mx-10">Sustainable link building drives search ranking and brand reach.</p>
+            <p class="mx-10">Sustainable link building drives search ranking and brand reach.</p>
           </div>
           <div class="mb-60 mx-auto sm:mx-40 flex-1">
             <div class="relative">
               <div class="caps-xl text-stroke-2px">03</div>
               <img class="absolute" style="left:50%;top:50%;transform: translate(-29%, -34%);" src="./assets/svg/linkbuilding-03.svg" />
             </div>
-            <p class="body-small mx-10">Real outreach by our U.S. based team of workers</p>
+            <p class="mx-10">Real outreach by our U.S. based team of workers</p>
           </div>
         </div>
       </div>
@@ -103,7 +114,7 @@
     </div>
   </div>
   <!-- GROWS SEARCH mobile bottom part -->
-  <div class="py-30 pr-30 pl-40 sm:hidden" style="background-color: #161513">
+  <div class="py-30 pr-30 pl-40 sm:hidden text-left" style="background-color: #161513">
     <p class="mb-22 text-white" style="max-width: 30em;">Through the acquisition of more than 500 high-quality, editorial backlinks. Our team assisted in the growth of Hausera.</p>
     <img src="./assets/lfs/Group4277.png?nf_resize=fit&w=600" />
   </div>
@@ -133,7 +144,7 @@
                 " 
                 src="./assets/lfs/2000+.png?nf_resize=fit&w=916" />
             </div>
-            <h3 class="caps-sm mb-9">Links built for clients.</h3>
+            <h3 class="caps-sm mb-9">Links built for clients</h3>
           </div>
           <!-- col 2 -->
           <div class="mb-60 mx-auto sm:mx-40 flex-1 relative w-full text-center">
@@ -149,7 +160,7 @@
                 "
                 src="./assets/lfs/120+.png?nf_resize=fit&w=916" />
             </div>
-            <h3 class="caps-sm mb-9">Average organic search <br />growth over 12 months.</h3>
+            <h3 class="caps-sm mb-9">Average organic search <br />growth over 12 months</h3>
           </div>
         </div>
       </div>

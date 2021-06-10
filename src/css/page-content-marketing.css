@@ -10,6 +10,7 @@
   table {
     margin-left: auto;
     margin-right: auto;
+    width: min(612px, 100%);
 
     img {
       display: inline-block;
@@ -86,5 +87,11 @@
     @screen sm {
       padding-bottom: 3vw;
     }
+  }
+}
+
+.page-content-marketing__hero {
+  @screen lg {
+    height: 65vw;
   }
 }

@@ -77,3 +77,9 @@ body.page-link-building {
     letter-spacing: 0.03em;
   }
 }
+
+.page-link-building__hero-content {
+  @screen md {
+    transform: translateX(-50%);
+  }
+}

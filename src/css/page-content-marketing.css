@@ -82,7 +82,7 @@
   }
 
   .section__grows-search__spacer {
-    padding-bottom: 194px;
+    padding-bottom: 80vw;
 
     @screen sm {
       padding-bottom: 3vw;
@@ -92,6 +92,6 @@
 
 .page-content-marketing__hero {
   @screen md {
-    height: 62vw;
+    height: max(62vw, 628px);
   }
 }

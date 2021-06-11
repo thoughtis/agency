@@ -8,6 +8,8 @@
   <title>Thought Catalog Agency - Link Building</title>
 </head>
 <body class="text-center page-link-building">
+  <!-- Contact form modal -->
+  @@include('./partials/contact.html', { pathToRoot: '.' })
   <div class="relative overflow-hidden" style="min-height: 53vw;">
     @@include('./partials/linkBuildingPageBubbles.html', { pathToRoot: '.' })
     <img class="w-full hidden md:block absolute z-0" src="./assets/svg/linkbuilding-hero-desktop.svg" style="
@@ -20,7 +22,7 @@
       top: 21vw; 
       left: 50%; 
 ">
-      <p class="px-21 headline mb-45 md:mb-10 mx-auto" style="max-width: 10em">
+      <p class="px-21 headline mb-14 md:mb-10 mx-auto" style="max-width: 10em">
         SEO is not just adding keywords anymore...
       </p>
       <p class="px-21 mx-auto pb-40" style="max-width: 30em">While content is the most effective way to build an online following, link-building provides credibility.</p>
@@ -115,8 +117,8 @@
   </div>
   <!-- GROWS SEARCH mobile bottom part -->
   <div class="py-30 pr-30 pl-40 sm:hidden text-left" style="background-color: #161513">
-    <p class="mb-22 text-white" style="max-width: 30em;">Through the acquisition of more than 500 high-quality, editorial backlinks. Our team assisted in the growth of Hausera.</p>
-    <img src="./assets/lfs/Group4277.png?nf_resize=fit&w=600" />
+    <img class="mb-22" src="./assets/lfs/Group4277.png?nf_resize=fit&w=600" />
+    <p class="text-white" style="max-width: 30em;">Through the acquisition of more than 500 high-quality, editorial backlinks. Our team assisted in the growth of Hausera.</p>
   </div>
   <div class="-mt-14 sm:mt-0 relative">
     @@include('./partials/marquee.html', { pathToRoot: '.', text: 'more than 1b posts are made each day, how will you stand out? '})
@@ -206,8 +208,8 @@
     </form>
     <!-- Wider form -->
     <form class="hidden md:flex md:flex-col items-center" onSubmit="nothing(); return false;">
-      <div class="inline-flex mb-64" style="height: 296px">
-        <div class="flex flex-col justify-between py-22 text-right mr-11">
+      <div class="inline-flex mb-64" style="height: 226px">
+        <div class="flex flex-col justify-between py-11 text-right mr-11">
           <label class="text-label">Full name:</label>
           <label class="text-label">Email address:</label>
           <label class="text-label">Phone number:</label>

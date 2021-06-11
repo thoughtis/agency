@@ -24,7 +24,7 @@ body.page-link-building {
   }
 
   .section__grows-search__spacer {
-    padding-bottom: 194px;
+    padding-bottom: 80vw;
 
     @screen sm {
       padding-bottom: 3vw;

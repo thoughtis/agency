@@ -42,7 +42,7 @@ body.page-default {
 
   .section__editorial {
     ul {
-      padding-bottom: 194px;
+      padding-bottom: 80vw;
 
       @screen sm {
         padding-bottom: 3vw;

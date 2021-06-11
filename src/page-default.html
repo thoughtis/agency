@@ -8,12 +8,12 @@
   @@include('./partials/headContent.html', { pathToRoot: '.' })
   <title>Thought Catalog Agency</title>
 </head>
-<body class="text-center page-default">
+<body class="text-center page-default overflow-x-hidden">
   <!-- Contact form modal -->
   @@include('./partials/contact.html', { pathToRoot: '.' })
   <div class="page-default__hero relative overflow-hidden">
     @@include('./partials/pageHeader.html', { pathToRoot: '.' })
-    <p class="px-21 headline mb-45 mx-auto">
+    <p class="px-21 headline mb-14 mx-auto">
       Marketers these days have less budget, bigger growth objectives, and
       shorter time frames.
     </p>
@@ -142,9 +142,7 @@
   </div>
   <!-- 01 video mobile bottom part-->
   <div class="section__video-mobile text-white text-center sm:hidden" style="background-color: #161513;">
-    <p class="mb-22 mx-auto" style="max-width: 30em;">We tookover the social platform for Hausera, then built and managed a
-      community on their blog.</p>
-    <div class="relative mx-auto  flex items-center justify-center flex-wrap">
+    <div class="mb-22 relative mx-auto  flex items-center justify-center flex-wrap">
       <img class="" src="./assets/lfs/video-4.png?nf_resize=fit&w=658" style="
         animation-delay: 2s;
         animation-duration: 6s;
@@ -158,6 +156,7 @@
         animation-duration: 5s;
       " />
     </div>
+    <p class="mx-auto" style="max-width: 30em;">We tookover the social platform for Hausera, then built and managed a community on their blog.</p>
   </div>
   <!-- 02 editorial -->
   <div
@@ -214,11 +213,11 @@
   </div>
   <!-- 02 editorial mobile bottom part -->
   <div class="py-30 pr-30 pl-40 sm:hidden" style="background-color: #161513">
-    <p class="mb-22 text-white" style="max-width: 30em;">
+    <img class="mb-22" src="./assets/lfs/Group4277.png?nf_resize=fit&w=600" />
+    <p class="text-white" style="max-width: 30em;">
       Our expertise in organic search growth has led 0 to 2,000 visitors per
       day for Hausera.
     </p>
-    <img src="./assets/lfs/Group4277.png?nf_resize=fit&w=600" />
   </div>
   <!-- 03 photo -->
   <div style="background-color: #dabc84;"
@@ -395,7 +394,7 @@
       <div class="md:hidden text-center">
         <h3 class="caps-sm mb-25">We believe a multi-pronged strategy of:</h3>
         <div class="strategy-shapes-mobile">
-          <div class="flex justify-center">
+          <div class="flex justify-center flex-wrap">
             <div class="caps-sm bg-contain bg-no-repeat bg-center flex justify-center items-center mx-10" style="
               background-image: url(./assets/svg/circle.svg);
               width: 134px;
@@ -892,8 +891,11 @@
     </div>
   </div>
   <div class="px-45 mb-93 sm:mb-115 mx-auto relative show-at-hover-position__target" style="max-width:772px">
-    <img class="absolute show-at-hover-position__elt-to-show hidden" width="414" src="./assets/lfs/Group408.png?nf_resize=fit&w=828" />
-    <div class="caps-md text-stroke-1px pointer-events-none z-10 relative">Available for speaking engagements & digital events</div>
+    @@include('./partials/asdfBox.html', {
+      pathToRoot:'.',
+      text: 'Available for speaking engagements & digital events',
+      imgName: 'Group408.png'
+    })
   </div>
   <div class="footer bg-no-repeat bg-center px-20 sm:px-160">
     <h2 class="caps-lg mb-60 mt-10">Our Network</h2>

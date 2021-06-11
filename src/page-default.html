@@ -31,7 +31,7 @@
     @@include('./partials/marquee.html', { pathToRoot: '.', text: 'that’s where we fit in –'})
   </div>
   <!-- Extra div to wrap this and logos -->
-  <div class="overflow-hidden flex justify-center items-center" style="min-height: min(96vh, 1500px);">
+  <div class="overflow-hidden flex justify-center items-center">
     <div>
       <div class="mx-21 pt-63">
         <h2 class="subheadline mb-7 sm:mb-10 mx-auto">
@@ -303,7 +303,7 @@
     </div>
   </div>
   @@include('./partials/marquee.html', { pathToRoot: '.', text: 'With over 1B pieces of content produced daily, how will you stand out?'})
-  <div class="pt-150 px-40 responsive-bg-img-stars text-left md:text-center text-white bg-cover bg-right-bottom flex flex-col justify-center" style="min-height: min(96vh, 1500px); padding-bottom:11.8vw">
+  <div class="pt-150 px-40 responsive-bg-img-stars text-left md:text-center text-white bg-cover bg-right-bottom flex flex-col justify-center" style="padding-bottom:11.8vw">
     <div class="w-full">
       <h2 class="subheadline mb-16 md:mx-auto" style="max-width: 14em">
         Customers interact with content earlier in the sales funnel.
@@ -316,6 +316,7 @@
       <h3 class="caps-sm mb-25 hidden md:block">
         We believe a multi-pronged strategy of:
       </h3>
+      <!-- Space section, md up -->
       <div class="hidden md:flex justify-between items-center strategy-shapes">
         <div class="caps-sm bg-contain bg-no-repeat bg-center flex items-center justify-center mx-10 opacity-0" style="
           background-image: url(./assets/svg/circle.svg);
@@ -390,6 +391,7 @@
           <div>Editorial</div>
         </div>
       </div>
+      <!-- Space section, md down -->
       <div class="md:hidden text-center">
         <h3 class="caps-sm mb-25">We believe a multi-pronged strategy of:</h3>
         <div class="strategy-shapes-mobile">
@@ -397,6 +399,7 @@
             <div class="caps-sm bg-contain bg-no-repeat bg-center flex justify-center items-center mx-10" style="
               background-image: url(./assets/svg/circle.svg);
               width: 134px;
+              min-width: 150px;
               height: 134px;
               transform: translateX(3px);
             ">
@@ -405,16 +408,16 @@
             <div class="caps-sm bg-contain bg-no-repeat bg-center flex justify-center items-center mx-10" style="
               background-image: url(./assets/svg/gon.svg);
               width: 149px;
+              min-width: 150px;
               height: 137px;
               transform: translateX(5px);
             ">
               <div>Sponsorships</div>
             </div>
-          </div>
-          <div class="flex justify-center">
             <div class="caps-sm bg-contain bg-no-repeat bg-center flex justify-center items-center" style="
               background-image: url(./assets/svg/tri.svg);
               width: 169px;
+              min-width: 150px;
               height: 169px;
             ">
               <div>Audio</div>
@@ -422,15 +425,15 @@
             <div class="caps-sm bg-contain bg-no-repeat bg-center flex justify-center items-center mx-10" style="
               background-image: url(./assets/svg/rect.svg);
               width: 138px;
+              min-width: 150px;
               height: 168px;
             ">
               <div>Photography</div>
             </div>
-          </div>
-          <div class="flex justify-center">
             <div class="caps-sm bg-contain bg-no-repeat bg-center flex justify-center items-center mx-10" style="
               background-image: url(./assets/svg/gon5.svg);
               width: 157px;
+              min-width: 150px;
               height: 157px;
             ">
               <div>Video</div>
@@ -438,6 +441,7 @@
             <div class="caps-sm bg-contain bg-no-repeat bg-center flex justify-center items-center mx-10" style="
               background-image: url(./assets/svg/square.svg);
               width: 128px;
+              min-width: 150px;
               height: 155px;
             ">
               <div>Editorial</div>

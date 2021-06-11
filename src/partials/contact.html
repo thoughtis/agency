@@ -1,0 +1,194 @@
+<!-- Delete me -- prevents form from submitting -->
+<script>
+  const nothing = () => false;
+</script>
+
+<style>
+  .contact__wrap input[type="checkbox"],
+  .contact__wrap input[type="radio"] {
+    visibility: hidden;
+    position: absolute;
+  } 
+
+  .contact__wrap input[type="checkbox"]:checked ~ .contact__checkbox-text {
+    color: white;
+  }
+
+  .contact__wrap input[type="checkbox"]:checked ~ svg {
+    fill: black;
+  }
+
+  .contact__wrap input[type="radio"]:checked ~ .contact__radio-dot {
+    opacity: 1;
+  }
+
+  .contact__checkbox-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    flex: 1 1 0;
+    margin: 2vw;
+  }
+
+  .contact__checkbox-label svg {
+    position: absolute;
+  }
+
+  .contact__overlay {
+    background: grey;
+    opacity: .8;
+  }
+
+  .contact__inner {
+    width: min(839px, 95vw);
+    left: 50vw;
+    transform: translateX(-50%);
+  }
+
+  .contact__radio-dot {
+    border: 3px solid white;
+    width: 22px;
+    height: 22px;
+    border-radius: 99px;
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  .contact__radio-line {
+    height: 41px;
+    border-right: 1px solid black;
+  }
+</style>
+
+<div class="contact__wrap absolute z-50 hidden">
+  <div class="contact__overlay fixed top-0 right-0 bottom-0 left-0"></div>
+  <div class="contact__inner bg-white border border-black absolute p-80">
+    <div class="contact__header flex justify-between mb-80">
+      <div class="contact__heading caps-md mr-20">Schedule a strategy call</div>
+      <button type="button" class="contact__close ml-20">
+        <svg width="43" height="41" viewBox="0 0 43 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="41.5289" y1="1.28035" x2="2.61848" y2="40.1908" stroke="black" stroke-width="2"/>
+          <line y1="-1" x2="55.0276" y2="-1" transform="matrix(0.707107 0.707107 0.707107 -0.707107 1.91138 0.573242)" stroke="black" stroke-width="2"/>
+          </svg>      
+      </button>
+    </div>
+    <!-- Mobile form -->
+    <form class="text-left" onSubmit="nothing(); return false;">
+      <div class="caps-sm">Reason:</div>
+      <div class="flex justify-between" style="height: min(17vw, 270px)">
+        <label class="contact__checkbox-label">
+          <input type="checkbox" value="search-engine-optimization" />
+          <div class="contact__checkbox-text relative z-10 caps-sm">Search Engine Optimization</div>
+          <svg viewBox="0 0 135 135" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="67.2779" cy="67.3366" r="66.389" stroke="black" stroke-width="1.6198"/>
+          </svg>          
+        </label>
+        <label class="contact__checkbox-label">
+          <input type="checkbox" value="sponsorships" />
+          <div class="contact__checkbox-text relative z-10 caps-sm">Sponsorships</div>
+          <svg viewBox="2.5 0 146 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32.0748 15.3092L75.5458 1.18459L119.017 15.3092L145.883 52.2878V97.9959L119.017 134.975L75.5458 149.099L32.0748 134.975L5.20825 97.9959V52.2878L32.0748 15.3092Z" stroke="black" stroke-width="1.6198"/>
+          </svg>            
+        </label>
+        <label class="contact__checkbox-label">
+          <input type="checkbox" value="audio" />
+          <div class="contact__checkbox-text relative z-10 caps-sm">Audio</div>
+          <svg viewBox="10 -10 151 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6208 126.13L85.4741 1.67644L157.327 126.13H13.6208Z" stroke="black" stroke-width="1.6198"/>
+          </svg>            
+        </label>
+      </div>
+      <div class="flex justify-between mb-40" style="height: min(17vw, 270px)">
+        <label class="contact__checkbox-label">
+          <input type="checkbox" value="photography" />
+          <div class="contact__checkbox-text relative z-10 caps-sm">Photography</div>
+          <svg viewBox="-5 0 139 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1.07955" y="1.34994" width="126.649" height="84.7195" stroke="black" stroke-width="1.6198"/>
+          </svg>            
+        </label>
+        <label class="contact__checkbox-label">
+          <input type="checkbox" value="square" />
+          <div class="contact__checkbox-text relative z-10 caps-sm">Editorial</div>
+          <svg viewBox="0 0 129 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1.45431" y="1.57357" width="126.649" height="126.649" stroke="black" stroke-width="1.6198"/>
+          </svg>            
+        </label>
+        <label class="contact__checkbox-label">
+          <input type="checkbox" value="video" />
+          <div class="contact__checkbox-text relative z-10 caps-sm">Video</div>
+          <svg viewBox="5 0 148 158" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M42.38 28.2065L79.2884 1.48523L116.197 28.2065L116.199 28.2081L153.018 55.0528L139.01 98.4121L139.009 98.4146L124.856 141.727L79.2897 141.803H79.287L33.7211 141.727L19.568 98.4146L19.5672 98.4121L5.55899 55.0528L42.3778 28.2081L42.38 28.2065Z" stroke="black" stroke-width="1.6198"/>
+          </svg>            
+        </label>
+      </div>
+      <div class="caps-sm mb-55">Best time to chat:</div>
+      <div class="flex justify-between contact__radio-wrap mb-100">
+        <label class="contact__radio-label flex flex-col items-center">
+          <input type="radio" name="contact-time" value="morning" />
+          <div class="contact__radio-dot bg-black absolute"></div>
+          <div class="contact__radio-line mb-10"></div>
+          <div class="contact__radio-text">morning</div>
+        </label>
+        <label class="contact__radio-label flex flex-col items-center">
+          <input type="radio" name="contact-time" value="lunch" />
+          <div class="contact__radio-dot bg-black absolute"></div>
+          <div class="contact__radio-line mb-10"></div>
+          <div class="contact__radio-text">around lunchtime</div>
+        </label>
+        <label class="contact__radio-label flex flex-col items-center">
+          <input type="radio" name="contact-time" value="early-afternoon" />
+          <div class="contact__radio-dot bg-black absolute"></div>
+          <div class="contact__radio-line mb-10"></div>
+          <div class="contact__radio-text">early afternoon</div>
+        </label>
+        <label class="contact__radio-label flex flex-col items-center">
+          <input type="radio" name="contact-time" value="late-afternoon" />
+          <div class="contact__radio-dot bg-black absolute"></div>
+          <div class="contact__radio-line mb-10"></div>
+          <div class="contact__radio-text">late afternoon</div>
+        </label>
+      </div>
+      <!-- Mobile text inputs -->
+      <div class="md:hidden inline-flex flex-col text-left items-center">
+        <label>
+          <div class="text-label mb-14">Full name:</div>
+          <input class="input mb-23" type="text" />
+        </label>
+        <label>
+          <div class="text-label mb-14">Email address:</div>
+          <input class="input mb-23" type="email" placeholder="you@email.com" />
+        </label>
+        <label>
+          <div class="text-label mb-14">Phone number:</div>
+          <input class="input mb-30" type="tel" />
+        </label>
+        <button class="button mb-76 inline-block" type="submit">Send message</button>
+      </div>
+      <!-- Wider text inputs -->
+      <div class="hidden md:flex md:flex-col items-start">
+        <div class="inline-flex mb-64" style="height: 296px">
+          <div class="flex flex-col justify-between">
+            <div class="flex justify-between items-center">
+              <label class="text-label mr-18">Full name:</label>
+              <input class="input" type="text" />
+            </div>
+            <div class="flex justify-between items-center">
+              <label class="text-label mr-18">Email address:</label>
+              <input class="input" type="email" placeholder="you@email.com" />
+            </div>
+            <div class="flex justify-between items-center">
+              <label class="text-label mr-18">Phone number:</label>
+              <input class="input" type="tel" />
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <button class="button inline-block mr-22" type="submit">Send message</button>
+          <div>or <button class="inline underline contact__close">cancel</button></div>
+        </div>
+      </div>
+    </form>
+  </div> <!-- .contact__inner -->
+</div>

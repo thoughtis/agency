@@ -9,6 +9,8 @@
   <title>Thought Catalog Agency</title>
 </head>
 <body class="text-center page-default">
+  <!-- Contact form modal -->
+  @@include('./partials/contact.html', { pathToRoot: '.' })
   <div class="page-default__hero relative overflow-hidden">
     @@include('./partials/pageHeader.html', { pathToRoot: '.' })
     <p class="px-21 headline mb-45 mx-auto">
@@ -899,7 +901,7 @@
         transform: translateX(25px);
       "
     />
-    <a class="button inline-block mb-50" href="#">Contact us</a>
+    <button class="button inline-block mb-50 contact-button">Contact us</button>
     <img
       class="mx-auto"
       style="margin-bottom: -75px"

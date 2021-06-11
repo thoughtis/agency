@@ -20,6 +20,16 @@ const putEltAtMousePosition = (e, elt) => {
   elt.style.left = `${e.offsetX}px`;
 }
 
+const toggleModal = (openOrClose) => {
+  const modalElt = document.querySelector(".contact__wrap");
+
+  if (openOrClose === "open") {
+    modalElt.classList.remove('hidden');
+  } else if (openOrClose === "close") {
+    modalElt.classList.add('hidden');
+  }
+}
+
 // Attach event listeners
 document.querySelectorAll('.show-at-hover-position__target').forEach((containerElt) => {
   const eltToShow = containerElt.querySelector('.show-at-hover-position__elt-to-show')
@@ -34,6 +44,14 @@ document.querySelectorAll('.show-at-hover-position__target').forEach((containerE
     toggleClass(containerElt, "z-10");
   })
   containerElt.addEventListener('mousemove', (e) => putEltAtMousePosition(e, eltToShow))
+})
+
+document.querySelectorAll('.contact-button').forEach((btnElt) => {
+  btnElt.addEventListener('click', () => toggleModal('open'))
+})
+
+document.querySelectorAll('.contact__close').forEach((btnElt) => {
+  btnElt.addEventListener('click', () => toggleModal('close'))
 })
 
 // Strategy shapes - animate on scroll

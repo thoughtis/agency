@@ -1,3 +1,12 @@
+@font-face {
+	font-family: 'Graphik';
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	src: local('Graphik'), url('/assets/fonts/graphik-normal.woff2') format('woff2');
+}
+
 .headline {
   font-family: "minion-pro", "Hoefler Text", "Noto Serif", Palatino,
     "Palatino Linotype", Times, "Times New Roman", serif;

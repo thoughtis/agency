@@ -58,6 +58,25 @@
     position: absolute;
   }
 
+  .contact__checkbox-label:hover svg,
+  .contact__checkbox-label:focus svg {
+    fill: #c4c4c4;
+  }
+
+  .contact__checkbox-label:hover path,
+  .contact__checkbox-label:focus path,
+  .contact__checkbox-label:hover circle,
+  .contact__checkbox-label:focus circle,
+  .contact__checkbox-label:hover rect,
+  .contact__checkbox-label:focus rect {
+    stroke: #c4c4c4;
+  }
+  
+  .contact__checkbox-label:hover,
+  .contact__checkbox-label:focus {
+    color: white;
+  }
+
   .contact__overlay {
     background: grey;
     opacity: .8;
@@ -91,7 +110,7 @@
   }
 
   .contact__radio-label {
-    border-radius: 20px;
+    border-radius: 2px;
     display: flex;
     flex: 1 1 0;
     margin-right: min(17px, 2vw);
@@ -99,6 +118,11 @@
     padding: 4px;
     text-align: center;
     cursor: pointer;
+  }
+
+  .contact__radio-label:hover,
+  .contact__radio-label:focus {
+    border-color: #c4c4c4;
   }
   
   .contact__radio-label:last-child {
@@ -154,7 +178,7 @@
         <svg width="43" height="41" viewBox="0 0 43 41" fill="none" xmlns="http://www.w3.org/2000/svg">
           <line x1="41.5289" y1="1.28035" x2="2.61848" y2="40.1908" stroke="black" stroke-width="2"/>
           <line y1="-1" x2="55.0276" y2="-1" transform="matrix(0.707107 0.707107 0.707107 -0.707107 1.91138 0.573242)" stroke="black" stroke-width="2"/>
-          </svg>      
+        </svg>    
       </button>
     </div>
     <!-- Mobile form -->

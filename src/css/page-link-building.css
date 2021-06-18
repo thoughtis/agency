@@ -62,7 +62,7 @@ body.page-link-building {
         margin-left: calc(41vw / 2 * -1);
         bottom: initial;
         left: 14.5vw;
-        top: 13.5vw;
+        bottom: 0;
       }
     }
   }

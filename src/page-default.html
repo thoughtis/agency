@@ -899,14 +899,15 @@
   </div>
   <div class="footer bg-no-repeat bg-center px-20 sm:px-160">
     <h2 class="caps-lg mb-60 mt-10">Our Network</h2>
-    <img class="mx-auto mb-80 lg:hidden" src="./assets/svg/network-logos-mobile.svg" />
+    <!-- <img class="mx-auto mb-80 lg:hidden" src="./assets/svg/network-logos-mobile.svg" />
     <img
       class="mx-auto mb-75 hidden lg:block"
       src="./assets/svg/network-logos.svg"
       style="
         transform: translateX(25px);
       "
-    />
+    /> -->
+    @@include('./partials/footerLogos.html', { pathToRoot:'.' })
     <button class="button inline-block mb-50 contact-button">Contact us</button>
     <img
       class="mx-auto"

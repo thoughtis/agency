@@ -1,8 +1,3 @@
-<!-- Delete me -- prevents form from submitting -->
-<script>
-  const nothing = () => false;
-</script>
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js"></script>
 
@@ -181,26 +176,25 @@
         </svg>    
       </button>
     </div>
-    <!-- Mobile form -->
-    <form class="text-left" onSubmit="nothing(); return false;">
+    <form  name="contact" method="POST" data-netlify="true" class="text-left">
       <div class="caps-sm">Reason:</div>
       <div class="contact__checkbox-wrap flex justify-between">
         <label class="contact__checkbox-label">
-          <input type="checkbox" value="search-engine-optimization" />
+          <input type="checkbox" name="reason" value="search-engine-optimization" />
           <div class="contact__checkbox-text relative z-10 caps-sm">Search Engine Optimization</div>
           <svg viewBox="0 0 135 135" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="67.2779" cy="67.3366" r="66.389" stroke="black" stroke-width="2"/>
           </svg>          
         </label>
         <label class="contact__checkbox-label">
-          <input type="checkbox" value="sponsorships" />
+          <input type="checkbox" name="reason" value="sponsorships" />
           <div class="contact__checkbox-text relative z-10 caps-sm">Sponsorships</div>
           <svg viewBox="2.5 0 146 150" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M32.0748 15.3092L75.5458 1.18459L119.017 15.3092L145.883 52.2878V97.9959L119.017 134.975L75.5458 149.099L32.0748 134.975L5.20825 97.9959V52.2878L32.0748 15.3092Z" stroke="black" stroke-width="2"/>
           </svg>            
         </label>
         <label class="contact__checkbox-label">
-          <input type="checkbox" value="audio" />
+          <input type="checkbox" name="reason" value="audio" />
           <div class="contact__checkbox-text relative z-10 caps-sm">Audio</div>
           <svg viewBox="10 -10 151 160" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.6208 126.13L85.4741 1.67644L157.327 126.13H13.6208Z" stroke="black" stroke-width="2"/>
@@ -209,21 +203,21 @@
       </div>
       <div class="flex justify-between" style="height: 200px">
         <label class="contact__checkbox-label">
-          <input type="checkbox" value="photography" />
+          <input type="checkbox" name="reason" value="photography" />
           <div class="contact__checkbox-text relative z-10 caps-sm">Photography</div>
           <svg viewBox="-5 0 139 87" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="1.07955" y="1.34994" width="126.649" height="84.7195" stroke="black" stroke-width="2"/>
           </svg>            
         </label>
         <label class="contact__checkbox-label">
-          <input type="checkbox" value="square" />
+          <input type="checkbox" name="reason" value="square" />
           <div class="contact__checkbox-text relative z-10 caps-sm">Editorial</div>
           <svg style="max-width: 160px"viewBox="0 0 129 130" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="1.45431" y="1.57357" width="126.649" height="126.649" stroke="black" stroke-width="2"/>
           </svg>            
         </label>
         <label class="contact__checkbox-label">
-          <input type="checkbox" value="video" />
+          <input type="checkbox" name="reason" value="video" />
           <div class="contact__checkbox-text relative z-10 caps-sm">Video</div>
           <svg viewBox="5 0 148 158" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M42.38 28.2065L79.2884 1.48523L116.197 28.2065L116.199 28.2081L153.018 55.0528L139.01 98.4121L139.009 98.4146L124.856 141.727L79.2897 141.803H79.287L33.7211 141.727L19.568 98.4146L19.5672 98.4121L5.55899 55.0528L42.3778 28.2081L42.38 28.2065Z" stroke="black" stroke-width="2"/>
@@ -266,15 +260,15 @@
           <div class="flex flex-col justify-between" style="max-width: 100%;">
             <div class="grid items-center" style="grid-template-columns: 1fr 2fr;">
               <label class="caps-sm mr-18" style="flex: .5 1 0">Full name:</label>
-              <input class="input flex-1" style="min-width: 0" type="text" />
+              <input class="input flex-1" name="full-name" style="min-width: 0" type="text" />
             </div>
             <div class="grid items-center" style="grid-template-columns: 1fr 2fr;">
               <label class="caps-sm mr-18" style="flex: .5 1 0">Email address:</label>
-              <input class="input flex-1" style="min-width: 0" type="email" placeholder="you@email.com" />
+              <input class="input flex-1" name="email" style="min-width: 0" type="email" placeholder="you@email.com" />
             </div>
             <div class="grid items-center" style="grid-template-columns: 1fr 2fr;">
               <label class="caps-sm mr-18" style="flex: .5 1 0">Phone number:</label>
-              <input id="phone" class="input flex-1" style="min-width: 0" type="tel" />
+              <input id="phone" name="phone" class="input flex-1" style="min-width: 0" type="tel" />
             </div>
           </div>
         </div>

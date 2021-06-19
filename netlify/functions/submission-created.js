@@ -1,5 +1,5 @@
 exports.handler = async function(event, context) {
-  console.log("Hello function");
-  console.log(event);
+  const formValues = event.body.payload
+  console.log(formValues);
   return { statusCode: 200 };
 }

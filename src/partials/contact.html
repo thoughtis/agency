@@ -1,21 +1,4 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js"></script>
-
 <style>
-  .iti__flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/img/flags.png");}
-
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .iti__flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/img/flags@2x.png");}
-  }
-
-  .iti.iti--allow-dropdown {
-    min-width: 0;
-  }
-
-  .iti.iti--allow-dropdown #phone {
-    width: 100%;
-  }
-
   .contact__wrap input[type="checkbox"],
   .contact__wrap input[type="radio"] {
     visibility: hidden;
@@ -268,7 +251,7 @@
             </div>
             <div class="grid items-center" style="grid-template-columns: 1fr 2fr;">
               <label class="caps-sm mr-18" style="flex: .5 1 0">Phone number:</label>
-              <input id="phone" name="phone" class="input flex-1" style="min-width: 0" type="tel" />
+              <input name="phone" class="input flex-1" style="min-width: 0" type="tel" />
             </div>
           </div>
         </div>
@@ -280,12 +263,3 @@
     </form>
   </div> <!-- .contact__inner -->
 </div>
-
-
-<script>
-  const input = document.querySelector("#phone");
-  intlTelInput(input, {
-    autoPlaceholder: "polite",
-    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/utils.min.js"
-  });
-</script>

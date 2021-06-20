@@ -120,3 +120,11 @@ ScrollTrigger.create({
     }
   }
 });
+
+// Intl tel input
+const inputs = document.querySelectorAll("input[type=\"tel\"");
+
+inputs.forEach(input => intlTelInput(input, {
+  autoPlaceholder: "polite",
+  utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/utils.min.js"
+}));

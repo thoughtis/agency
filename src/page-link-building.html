@@ -191,23 +191,23 @@
       const nothing = () => false;
     </script>
     <!-- Mobile form -->
-    <form class="md:hidden inline-flex flex-col text-left items-center" onSubmit="nothing(); return false;">
+    <form name="contact" method="POST" data-netlify="true" class="md:hidden inline-flex flex-col text-left items-center">
       <label>
         <div class="text-label mb-14">Full name:</div>
-        <input class="input mb-23" type="text" />
+        <input name="full-name" class="input mb-23" type="text" />
       </label>
       <label>
         <div class="text-label mb-14">Email address:</div>
-        <input class="input mb-23" type="email" placeholder="you@email.com" />
+        <input name="email" class="input mb-23" type="email" placeholder="you@email.com" />
       </label>
-      <label>
+      <label class="mb-30" style="width: 293px">
         <div class="text-label mb-14">Phone number:</div>
-        <input class="input mb-30" type="tel" />
+        <input name="phone" class="input" type="tel" />
       </label>
       <button class="button mb-76 inline-block" type="submit">Send message</button>
     </form>
     <!-- Wider form -->
-    <form class="hidden md:flex md:flex-col items-center" onSubmit="nothing(); return false;">
+    <form name="contact" method="POST" data-netlify="true" class="hidden md:flex md:flex-col items-center">
       <div class="inline-flex mb-64" style="height: 184px">
         <div class="flex flex-col justify-between py-11 text-right mr-11">
           <label class="text-label">Full name:</label>
@@ -215,9 +215,9 @@
           <label class="text-label">Phone number:</label>
         </div>
         <div class="flex flex-col justify-between ml-11">
-          <input class="input" type="text" />
-          <input class="input" type="email" placeholder="you@email.com" />
-          <input class="input" type="tel" />
+          <input name="full-name" class="input" type="text" />
+          <input name="email" class="input" type="email" placeholder="you@email.com" />
+          <input name="phone" class="input" type="tel" />
         </div>
       </div>
       <button class="button mb-76 inline-block" type="submit">Send message</button>

@@ -208,7 +208,7 @@
         </label>
       </div>
       <div class="caps-sm mb-15">Best time to chat:</div>
-      <div class="contact__radio-wrap mb-35">
+      <div class="contact__radio-wrap mb-25 md:mb-35">
         <label class="contact__radio-label flex-col justify-center items-center">
           <input type="radio" name="contact-time" value="morning" />
           <div class="contact__radio-dot">
@@ -238,27 +238,23 @@
           <div class="contact__radio-text body-small">late afternoon</div>
         </label>
       </div>
-      <div class="flex flex-col items-start">
-        <div class="flex mb-40" style="height: 184px; max-width: 100%;">
-          <div class="flex flex-col justify-between" style="max-width: 100%;">
-            <div class="grid items-center" style="grid-template-columns: 1fr 2fr;">
-              <label class="caps-sm mr-18" style="flex: .5 1 0">Full name:</label>
-              <input class="input flex-1" name="full-name" style="min-width: 0" type="text" />
-            </div>
-            <div class="grid items-center" style="grid-template-columns: 1fr 2fr;">
-              <label class="caps-sm mr-18" style="flex: .5 1 0">Email address:</label>
-              <input class="input flex-1" name="email" style="min-width: 0" type="email" placeholder="you@email.com" />
-            </div>
-            <div class="grid items-center" style="grid-template-columns: 1fr 2fr;">
-              <label class="caps-sm mr-18" style="flex: .5 1 0">Phone number:</label>
-              <input name="phone" class="input flex-1" style="min-width: 0" type="tel" />
-            </div>
-          </div>
+      <div class="mb-30 md:mb-0">
+        <div class="input-group mb-13 md:mb-23">
+          <label class="caps-sm text-left" for="modal-name">Full name:</label>
+          <input id="modal-name" name="full-name" class="input" type="text" style="min-width: 0;" />
         </div>
-        <div class="flex items-center">
-          <button class="button inline-block mr-22" type="submit">Send message</button>
-          <div>or <button class="inline underline contact__close">cancel</button></div>
+        <div class="input-group mb-13 md:mb-23">
+          <label class="caps-sm text-left" for="modal-email">Email address:</label>
+          <input id="modal-email" name="email" class="input" type="email" placeholder="you@email.com" style="min-width: 0;" />
         </div>
+        <div class="input-group mb-13 md:mb-23">
+          <label class="caps-sm text-left" for="modal-phone">Phone number:</label>
+          <input id="modal-phone" name="phone" class="input" type="tel" placeholder="you@email.com" />
+        </div>
+      </div>
+      <div class="flex items-center">
+        <button class="button inline-block mr-22" type="submit">Send message</button>
+        <div>or <button class="inline underline contact__close">cancel</button></div>
       </div>
     </form>
   </div> <!-- .contact__inner -->

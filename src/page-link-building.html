@@ -9,7 +9,7 @@
 </head>
 <body class="text-center page-link-building">
   <!-- Contact form modal -->
-  @@include('./partials/contact.html', { pathToRoot: '.' })
+  @@include('./partials/contact/modal.html', { pathToRoot: '.' })
   <div class="relative overflow-hidden" style="min-height: 53vw;">
     @@include('./partials/linkBuildingPageBubbles.html', { pathToRoot: '.' })
     <img class="w-full hidden lg:block absolute z-0" src="./assets/svg/linkbuilding-hero-desktop.svg" style="
@@ -190,35 +190,13 @@
     <script>
       const nothing = () => false;
     </script>
-    <!-- Mobile form -->
-    <form name="contact" method="POST" data-netlify="true" class="md:hidden inline-flex flex-col text-left items-center">
-      <label>
-        <div class="text-label mb-14">Full name:</div>
-        <input name="full-name" class="input mb-23" type="text" />
-      </label>
-      <label>
-        <div class="text-label mb-14">Email address:</div>
-        <input name="email" class="input mb-23" type="email" placeholder="you@email.com" />
-      </label>
-      <label class="mb-30" style="width: 293px">
-        <div class="text-label mb-14">Phone number:</div>
-        <input name="phone" class="input" type="tel" />
-      </label>
-      <button class="button mb-76 inline-block" type="submit">Send message</button>
-    </form>
-    <!-- Wider form -->
-    <form name="contact" method="POST" data-netlify="true" class="hidden md:flex md:flex-col items-center">
-      <div class="inline-flex mb-64" style="height: 184px">
-        <div class="flex flex-col justify-between py-11 text-right mr-11">
-          <label class="text-label">Full name:</label>
-          <label class="text-label">Email address:</label>
-          <label class="text-label">Phone number:</label>
-        </div>
-        <div class="flex flex-col justify-between ml-11">
-          <input name="full-name" class="input" type="text" />
-          <input name="email" class="input" type="email" placeholder="you@email.com" />
-          <input name="phone" class="input" type="tel" />
-        </div>
+    <!-- Form -->
+    <form name="contact" method="POST" data-netlify="true">
+      <div class="mb-30 md:mb-60">
+        @@include('./partials/contact/textAndTel.html', {
+          pathToRoot: '.',
+          idPrefix: "footer"
+        })
       </div>
       <button class="button mb-76 inline-block" type="submit">Send message</button>
     </form>
@@ -236,6 +214,7 @@
       />
     </div>
   </div>
+  <div>
   @@include('./partials/footer.html', {pathToRoot:'.'})
 </body>
 </html>

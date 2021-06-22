@@ -177,6 +177,16 @@
     font-size: 15px;
     line-height: 22px;
   }
+  
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 370px;
+    
+    @screen sm {
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 600px;
+    }
+  }
 }
 
 .strategy-shapes {

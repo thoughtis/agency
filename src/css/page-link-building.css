@@ -79,7 +79,7 @@ body.page-link-building {
 }
 
 .page-link-building__hero-content {
-  @screen md {
+  @screen lg {
     transform: translateX(-50%);
   }
 }

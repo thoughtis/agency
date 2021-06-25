@@ -47,7 +47,10 @@ document.querySelectorAll('.show-at-hover-position__target').forEach((containerE
 })
 
 document.querySelectorAll('.contact-button').forEach((btnElt) => {
-  btnElt.addEventListener('click', () => toggleModal('open'))
+  btnElt.addEventListener('click', () => {
+    scrollTo(0,0)
+    toggleModal('open')
+  })
 })
 
 document.querySelectorAll('.contact__close').forEach((btnElt) => {

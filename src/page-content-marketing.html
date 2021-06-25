@@ -13,7 +13,7 @@
   @@include('./partials/contact/modal.html', { pathToRoot: '.' })
   <div class="page-content-marketing__hero relative overflow-hidden">
     @@include('./partials/pageHeader.html', { pathToRoot: '.' })
-    <p class="px-21 headline mb-14 mx-auto">Content isn’t just something to create.</p>
+    <p class="px-21 headline mb-14 mx-auto" style="max-width: 15em">Content isn’t just something to create.</p>
     <p class="px-21 mx-auto pb-40" style="max-width: 36em"> It’s a way to find your audience and nurture that community which can turn your products or services into big businesses.</p>
     <div class="hidden md:flex absolute caps-sm items-center" style="bottom: 14.5vw; left: min(193px, 13.5vw); right: min(193px, 13.5vw)">
       <!-- people -->
@@ -44,13 +44,13 @@
       <div>your product</div>
     </div>
      <!-- center bubbles -->
-     <div class="text-white absolute hidden md:block" style="left: 50vw; bottom: 0">
+     <div class="text-white absolute hidden md:block" style="bottom: 14.5vw; left: 50vw;">
       @@include('./partials/bubble.html', {
         pathToRoot: '..',
         size: '8.5vw',
         text: 'Twitter',
         background: '#1DA1F2',
-        bottom: '13vw',
+        bottom: '-1.5vw',
         left: '-12vw',
         start: 0,
       })
@@ -59,7 +59,7 @@
         size: '10vw',
         text: 'Facebook',
         background: '#4267B2',
-        bottom: '13.5vw',
+        bottom: '-1.5vw',
         left: '0vw',
         start: 0,
       })
@@ -68,7 +68,7 @@
         size: '8.5vw',
         text: 'Instagram',
         background: '#E1306C',
-        bottom: '13vw',
+        bottom: '-1.5vw',
         left: '12vw',
         start: 0,
       })
@@ -77,7 +77,7 @@
         size: '8.5vw',
         text: 'Linkedin',
         background: '#0077B5',
-        bottom: '1vw',
+        bottom: '-13.5vw',
         left: '-12vw',
         start: 0,
       })
@@ -86,7 +86,7 @@
         size: '9vw',
         text: 'Tiktok',
         background: '#101010',
-        bottom: '-1.5vw',
+        bottom: '-16vw',
         left: '0vw',
         start: 0,
       })
@@ -95,7 +95,7 @@
         size: '8.5vw',
         text: 'Youtube',
         background: '#FF0000',
-        bottom: '1vw',
+        bottom: '-13vw',
         left: '12vw',
         start: 0,
       })
@@ -456,7 +456,7 @@
     @@include('./partials/asdfBox.html', {
       pathToRoot:'.',
       text: 'Create whitepapers & ebooks',
-      imgName: 'C4C4C4.png'
+      imgName: 'Whitepaper@2x.jpg'
     })
     @@include('./partials/asdfBox.html', {
       pathToRoot:'.',

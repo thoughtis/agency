@@ -92,6 +92,6 @@
 
 .page-content-marketing__hero {
   @screen md {
-    height: max(62vw, 628px);
+    height: max(56vw, 628px);
   }
 }

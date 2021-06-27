@@ -131,3 +131,13 @@ inputs.forEach(input => intlTelInput(input, {
   autoPlaceholder: "polite",
   utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/utils.min.js"
 }));
+
+// Lottie globe spin
+const globeContainer = document.querySelector('.lottie-globe');
+
+bodymovin.loadAnimation({
+  wrapper: globeContainer,
+  animType: 'svg',
+  loop: true,
+  path: './assets/lottie-globe.json'
+});

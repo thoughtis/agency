@@ -6,7 +6,16 @@
   } 
 
   .contact__checkbox-wrap {
-    height: 200px;   
+    height: 380px;   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: 850px) {
+    .contact__checkbox-wrap {
+      height: 200px;
+      grid-template-columns: repeat(6, 1fr);
+    }
   }
 
   .contact__wrap input[type="checkbox"]:checked ~ .contact__checkbox-text {
@@ -34,6 +43,7 @@
 
   .contact__checkbox-label svg {
     position: absolute;
+    max-height: 100%;
   }
 
   .contact__checkbox-label:hover svg,
@@ -66,7 +76,7 @@
   }
 
   .contact__inner {
-    width: min(590px, 95vw);
+    width: min(940px, 95vw);
     left: 50vw;
     top: 50px;
     transform: translateX(-50%);
@@ -114,7 +124,7 @@
 
   @media (max-width: 500px) {
     .contact__checkbox-wrap {
-      height: 150px;
+      height: 300px;
     }
   }
 
@@ -155,56 +165,54 @@
       <div class="contact__heading caps-md mr-20" style="font-size: 40px">Schedule a strategy call</div>
       <button type="button" class="contact__close ml-20">
         <svg width="43" height="41" viewBox="0 0 43 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <line x1="41.5289" y1="1.28035" x2="2.61848" y2="40.1908" stroke="black" stroke-width="2"/>
-          <line y1="-1" x2="55.0276" y2="-1" transform="matrix(0.707107 0.707107 0.707107 -0.707107 1.91138 0.573242)" stroke="black" stroke-width="2"/>
+          <line x1="41.5289" y1="1.28035" x2="2.61848" y2="40.1908" stroke="black" stroke-width="1"/>
+          <line y1="-1" x2="55.0276" y2="-1" transform="matrix(0.707107 0.707107 0.707107 -0.707107 1.91138 0.573242)" stroke="black" stroke-width="1"/>
         </svg>    
       </button>
     </div>
     <form  name="contact" method="POST" data-netlify="true" class="text-left">
       <div class="caps-sm">Reason:</div>
-      <div class="contact__checkbox-wrap flex justify-between">
-        <label class="contact__checkbox-label">
+      <div class="contact__checkbox-wrap mb-6">
+        <label class="contact__checkbox-label sm:px-10">
           <input type="checkbox" name="reason" value="search-engine-optimization" />
-          <div class="contact__checkbox-text relative z-10 caps-sm">Search Engine Optimization</div>
+          <div class="contact__checkbox-text relative z-10 caps-sm">Search Engine<br />Optimization</div>
           <svg viewBox="0 0 135 135" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="67.2779" cy="67.3366" r="66.389" stroke="black" stroke-width="2"/>
+            <circle cx="67.2779" cy="67.3366" r="66.389" stroke="black" stroke-width="1"/>
           </svg>          
         </label>
-        <label class="contact__checkbox-label">
+        <label class="contact__checkbox-label sm:px-10">
           <input type="checkbox" name="reason" value="sponsorships" />
           <div class="contact__checkbox-text relative z-10 caps-sm">Sponsorships</div>
           <svg viewBox="2.5 0 146 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M32.0748 15.3092L75.5458 1.18459L119.017 15.3092L145.883 52.2878V97.9959L119.017 134.975L75.5458 149.099L32.0748 134.975L5.20825 97.9959V52.2878L32.0748 15.3092Z" stroke="black" stroke-width="2"/>
+            <path d="M32.0748 15.3092L75.5458 1.18459L119.017 15.3092L145.883 52.2878V97.9959L119.017 134.975L75.5458 149.099L32.0748 134.975L5.20825 97.9959V52.2878L32.0748 15.3092Z" stroke="black" stroke-width="1"/>
           </svg>            
         </label>
-        <label class="contact__checkbox-label">
+        <label class="contact__checkbox-label sm:px-10">
           <input type="checkbox" name="reason" value="audio" />
           <div class="contact__checkbox-text relative z-10 caps-sm">Audio</div>
           <svg viewBox="10 -10 151 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.6208 126.13L85.4741 1.67644L157.327 126.13H13.6208Z" stroke="black" stroke-width="2"/>
+            <path d="M13.6208 126.13L85.4741 1.67644L157.327 126.13H13.6208Z" stroke="black" stroke-width="1"/>
           </svg>            
         </label>
-      </div>
-      <div class="flex justify-between" style="height: 200px">
-        <label class="contact__checkbox-label">
+        <label class="contact__checkbox-label sm:px-10">
           <input type="checkbox" name="reason" value="photography" />
           <div class="contact__checkbox-text relative z-10 caps-sm">Photography</div>
           <svg viewBox="-5 0 139 87" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="1.07955" y="1.34994" width="126.649" height="84.7195" stroke="black" stroke-width="2"/>
+            <rect x="1.07955" y="1.34994" width="126.649" height="84.7195" stroke="black" stroke-width="1"/>
           </svg>            
         </label>
-        <label class="contact__checkbox-label">
+        <label class="contact__checkbox-label sm:px-10">
           <input type="checkbox" name="reason" value="editorial" />
           <div class="contact__checkbox-text relative z-10 caps-sm">Editorial</div>
           <svg style="max-width: 160px"viewBox="0 0 129 130" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="1.45431" y="1.57357" width="126.649" height="126.649" stroke="black" stroke-width="2"/>
+            <rect x="1.45431" y="1.57357" width="126.649" height="126.649" stroke="black" stroke-width="1"/>
           </svg>            
         </label>
-        <label class="contact__checkbox-label">
+        <label class="contact__checkbox-label sm:px-10">
           <input type="checkbox" name="reason" value="video" />
           <div class="contact__checkbox-text relative z-10 caps-sm">Video</div>
           <svg viewBox="5 0 148 158" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M42.38 28.2065L79.2884 1.48523L116.197 28.2065L116.199 28.2081L153.018 55.0528L139.01 98.4121L139.009 98.4146L124.856 141.727L79.2897 141.803H79.287L33.7211 141.727L19.568 98.4146L19.5672 98.4121L5.55899 55.0528L42.3778 28.2081L42.38 28.2065Z" stroke="black" stroke-width="2"/>
+            <path d="M42.38 28.2065L79.2884 1.48523L116.197 28.2065L116.199 28.2081L153.018 55.0528L139.01 98.4121L139.009 98.4146L124.856 141.727L79.2897 141.803H79.287L33.7211 141.727L19.568 98.4146L19.5672 98.4121L5.55899 55.0528L42.3778 28.2081L42.38 28.2065Z" stroke="black" stroke-width="1"/>
           </svg>            
         </label>
       </div>
@@ -255,7 +263,7 @@
       </div>
       <div class="flex items-center">
         <button class="button inline-block mr-22" type="submit">Send message</button>
-        <div style="font-size: 14px">or <button type="text" class="inline underline contact__close">cancel</button></div>
+        <div style="font-size: 14px">or <button type="button" class="inline underline contact__close">cancel</button></div>
       </div>
     </form>
   </div> <!-- .contact__inner -->

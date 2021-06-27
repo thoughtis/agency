@@ -86,6 +86,34 @@
     column-gap: 1em;
     max-width: initial;
   }
+
+  .validation-message {
+    display: none;
+  }
+
+  &.invalid {
+    label {
+      color: #f29573;
+    }
+
+    input {
+      border-color: #f29573;
+      color: #f29573;
+
+      &::placeholder {
+        color: #f29573;
+      }
+    }
+
+    .validation-message {
+      display: block;
+      color: #f29573;
+      margin-top: .5em;
+      justify-self: left;
+      text-align: left;
+      grid-column: 2;
+    }
+  }
 }
 
 .marquee {

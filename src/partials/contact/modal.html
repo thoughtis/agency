@@ -170,7 +170,7 @@
         </svg>    
       </button>
     </div>
-    <form  name="contact" method="POST" data-netlify="true" class="text-left">
+    <form  name="contact" method="POST" data-netlify="true" class="text-left" action="/contact-success.html">
       <div class="caps-sm">Reason:</div>
       <div class="contact__checkbox-wrap mb-6">
         <label class="contact__checkbox-label sm:px-10">
@@ -251,14 +251,17 @@
         <div class="input-group mb-14 md:mb-24">
           <label class="caps-sm text-left" for="modal-name">Full name:</label>
           <input style="font-size: 14px" id="modal-name" name="full-name" class="input" type="text" style="min-width: 0;" />
+          <div class="validation-message">Please enter your name.</div>
         </div>
         <div class="input-group mb-14 md:mb-24">
           <label class="caps-sm text-left" for="modal-email">Email address:</label>
           <input style="font-size: 14px" id="modal-email" name="email" class="input" type="email" placeholder="you@email.com" style="min-width: 0;" />
+          <div class="validation-message">Please enter an email address.</div>
         </div>
         <div class="input-group mb-14 md:mb-24">
           <label class="caps-sm text-left" for="modal-phone">Phone number:</label>
-          <input style="font-size: 14px" id="modal-phone" name="phone" class="input" type="tel" placeholder="you@email.com" />
+          <input style="font-size: 14px" id="modal-phone" name="phone" class="input" type="tel" />
+          <div class="validation-message">Please enter a phone number.</div>
         </div>
       </div>
       <div class="flex items-center">

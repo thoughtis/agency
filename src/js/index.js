@@ -57,6 +57,40 @@ document.querySelectorAll('.contact__close').forEach((btnElt) => {
   btnElt.addEventListener('click', () => toggleModal('close'))
 })
 
+document.querySelectorAll('form[name="contact"]').forEach((formElt) => {
+  formElt.addEventListener('submit', e => {
+    e.preventDefault();
+
+    // Validate
+    const nameElt = formElt.querySelector('input[name="full-name"');
+    const emailElt = formElt.querySelector('input[name="email"');
+    const phoneEltWrapper = formElt.querySelector('.iti');
+    const phoneElt = formElt.querySelector('input[name="phone"');
+
+    if (!nameElt?.value) {
+      nameElt.parentNode.classList.add('invalid')
+    } else {
+      nameElt.parentNode.classList.remove('invalid')
+    }
+
+    if (!emailElt?.value) {
+      emailElt.parentNode.classList.add('invalid')
+    } else {
+      emailElt.parentNode.classList.remove('invalid')
+    }
+
+    if (!phoneElt?.value) {
+      phoneEltWrapper .parentNode.classList.add('invalid')
+    } else {
+      phoneEltWrapper .parentNode.classList.remove('invalid')
+    }
+
+    if (nameElt?.value && emailElt?.value && phoneElt?.value) {
+      formElt.submit()
+    }
+  });
+});
+
 // Strategy shapes - animate on scroll
 ScrollTrigger.create({
   trigger: ".strategy-shapes",

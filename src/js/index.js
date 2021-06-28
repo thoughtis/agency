@@ -30,6 +30,16 @@ const toggleModal = (openOrClose) => {
   }
 }
 
+const toggleSuccessModal = (openOrClose) => {
+  const modalElt = document.querySelector(".success__wrap");
+
+  if (openOrClose === "open") {
+    modalElt.classList.remove('hidden');
+  } else if (openOrClose === "close") {
+    modalElt.classList.add('hidden');
+  }
+}
+
 const formSubmit = (formElt) => {
   const formData = new FormData(formElt)
 
@@ -38,7 +48,9 @@ const formSubmit = (formElt) => {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString()
   }).then(() => {
-    console.log('submitted');
+    formElt.reset();
+    toggleModal('close')
+    toggleSuccessModal('open')
   }).catch((err) => {
     console.log(err);
   })
@@ -71,6 +83,10 @@ document.querySelectorAll('.contact__close').forEach((btnElt) => {
   btnElt.addEventListener('click', () => toggleModal('close'))
 })
 
+document.querySelectorAll('.success__close').forEach((btnElt) => {
+  btnElt.addEventListener('click', () => toggleSuccessModal('close'))
+})
+
 document.querySelectorAll('form[name="contact"]').forEach((formElt) => {
   formElt.addEventListener('submit', e => {
     e.preventDefault();
@@ -100,7 +116,6 @@ document.querySelectorAll('form[name="contact"]').forEach((formElt) => {
     }
 
     if (nameElt?.value && emailElt?.value && phoneElt?.value) {
-      // formElt.submit()
       formSubmit(formElt)
     }
   });

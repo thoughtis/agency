@@ -30,6 +30,20 @@ const toggleModal = (openOrClose) => {
   }
 }
 
+const formSubmit = (formElt) => {
+  const formData = new FormData(formElt)
+
+  fetch('/', {
+    method: 'POST',
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString()
+  }).then(() => {
+    console.log('submitted');
+  }).catch((err) => {
+    console.log(err);
+  })
+}
+
 // Attach event listeners
 document.querySelectorAll('.show-at-hover-position__target').forEach((containerElt) => {
   const eltToShow = containerElt.querySelector('.show-at-hover-position__elt-to-show')
@@ -80,13 +94,14 @@ document.querySelectorAll('form[name="contact"]').forEach((formElt) => {
     }
 
     if (!phoneElt?.value) {
-      phoneEltWrapper .parentNode.classList.add('invalid')
+      phoneEltWrapper.parentNode.classList.add('invalid')
     } else {
-      phoneEltWrapper .parentNode.classList.remove('invalid')
+      phoneEltWrapper.parentNode.classList.remove('invalid')
     }
 
     if (nameElt?.value && emailElt?.value && phoneElt?.value) {
-      formElt.submit()
+      // formElt.submit()
+      formSubmit(formElt)
     }
   });
 });

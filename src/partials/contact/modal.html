@@ -5,6 +5,12 @@
     position: absolute;
   } 
 
+  @media (min-width: 768px) {
+    .contact__wrap .input-group:not(.invalid) {
+      margin-bottom: 24px;
+    }
+  }
+
   .contact__checkbox-wrap {
     height: 380px;   
     display: grid;
@@ -170,7 +176,7 @@
         </svg>    
       </button>
     </div>
-    <form  name="contact" method="POST" data-netlify="true" class="text-left" action="/contact-success.html">
+    <form  name="contact" method="POST" data-netlify="true" class="text-left">
       <div class="caps-sm">Reason:</div>
       <div class="contact__checkbox-wrap mb-6">
         <label class="contact__checkbox-label sm:px-10">
@@ -248,20 +254,20 @@
         </label>
       </div>
       <div class="mb-30 md:mb-0">
-        <div class="input-group mb-14 md:mb-24">
+        <div class="input-group mb-14">
           <label class="caps-sm text-left" for="modal-name">Full name:</label>
           <input style="font-size: 14px" id="modal-name" name="full-name" class="input" type="text" style="min-width: 0;" />
-          <div class="validation-message">Please enter your name.</div>
+          <div class="validation-message body-small">Please enter your name.</div>
         </div>
-        <div class="input-group mb-14 md:mb-24">
+        <div class="input-group mb-14">
           <label class="caps-sm text-left" for="modal-email">Email address:</label>
           <input style="font-size: 14px" id="modal-email" name="email" class="input" type="email" placeholder="you@email.com" style="min-width: 0;" />
-          <div class="validation-message">Please enter an email address.</div>
+          <div class="validation-message body-small">Please enter an email address.</div>
         </div>
-        <div class="input-group mb-14 md:mb-24">
+        <div class="input-group mb-14">
           <label class="caps-sm text-left" for="modal-phone">Phone number:</label>
           <input style="font-size: 14px" id="modal-phone" name="phone" class="input" type="tel" />
-          <div class="validation-message">Please enter a phone number.</div>
+          <div class="validation-message body-small">Please enter a phone number.</div>
         </div>
       </div>
       <div class="flex items-center">

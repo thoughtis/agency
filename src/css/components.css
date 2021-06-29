@@ -150,7 +150,12 @@
     animation: marquee 5s linear infinite;
     animation-play-state: running;
     animation-duration: 100s;
+
+    @media (prefers-reduced-motion) {
+      animation: initial;
+    }
 }
+
 
 @keyframes marquee {
     0% {
@@ -239,6 +244,16 @@
       grid-template-columns: repeat(3, 1fr);
       max-width: 600px;
     }
+  }
+}
+
+.strategy-shapes__triangle {
+  @screen md {
+    background-position: center top calc(115px - 10vw);
+  }
+
+  @screen lg {
+    background-position: center top calc(115px - 10vw);
   }
 }
 

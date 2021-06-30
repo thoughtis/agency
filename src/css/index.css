@@ -1,3 +1,31 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "./definitions.css";
+@import "./typography.css";
+@import "./page-default.css";
+@import "./page-link-building.css";
+@import "./page-content-marketing.css";
+@import "./components.css";
+@import "./bubbles.css";
+@import "./responsive-bg-images.css";
+@import "./utilities.css";
+
+html, body {
+  @extend .body;
+}
+
+/* Intl tel inputs */
+.iti__flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/img/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/img/flags@2x.png");}
+}
+
+.iti.iti--allow-dropdown {
+  min-width: 0;
+}
+
+.iti.iti--allow-dropdown input[type="tel"] {
+  width: 100%;
+}

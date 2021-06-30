@@ -2,6 +2,8 @@ gitignored
 .DS_Store
 node_modules
 Untitled.code-workspace
-dist
+dist/**/*.css
+dist/**/*.js
+dist/**/*.html
 # Local Netlify folder
 .netlify

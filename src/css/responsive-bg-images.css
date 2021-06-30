@@ -1,0 +1,69 @@
+@define-mixin responsive-bg-img $src, $srcSm, $srcMd {
+  /* Using Tailwindcss's default breakpoints, multiplied by two */
+  background-image: url("$(src)?nf_resize=fit&w=800");
+
+  @screen sm {
+    /* ATOW, sm breakpoint is 640. 640 * 2 = 1280 */
+    background-image: url("$(srcSm)?nf_resize=fit&w=1280");
+  }
+
+  @screen md {
+    /* ATOW, md breakpoint is 1024. 1024 * 2 = 2048 */
+    background-image: url("$(srcMd)?nf_resize=fit&w=2048");
+  }
+}
+
+.responsive-bg-img-wine {
+  @mixin responsive-bg-img ../assets/lfs/wine-mobile.png, ../assets/lfs/wine.png,
+    ../assets/lfs/wine.png;
+
+  background-size: 100% auto;
+
+  @screen sm {
+    background-size: auto 100%;
+  }
+}
+
+.responsive-bg-img-house {
+  @mixin responsive-bg-img ../assets/lfs/house-mobile.png,
+    ../assets/lfs/house.png, ../assets/lfs/house.png;
+
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  @screen sm {
+    background-size: 65%;
+  }
+}
+
+.responsive-bg-img-mountains {
+  @mixin responsive-bg-img ../assets/lfs/mountains-mobile.png,
+    ../assets/lfs/mountains.png, ../assets/lfs/mountains.png;
+
+  background-size: 100% auto;
+  background-position: bottom -120px right;
+
+  @screen sm {
+    background-size: cover;
+    background-position: top right;
+  }
+}
+
+.responsive-bg-img-stars {
+  @mixin responsive-bg-img ../assets/lfs/stars-mobile.png,
+    ../assets/lfs/stars.png, ../assets/lfs/stars.png;
+}
+
+.responsive-bg-img-desertfloor {
+  @mixin responsive-bg-img ../assets/lfs/desertfloor.png,
+    ../assets/lfs/desertfloor.png, ../assets/lfs/desertfloor.png;
+
+  background-size: 1647px auto;
+  background-repeat: no-repeat;
+  background-position: left -414px bottom -124px;
+
+  @screen sm {
+    background-size: 100% auto;
+    background-position: bottom;
+  }
+}

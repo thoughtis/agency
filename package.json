@@ -20,5 +20,11 @@
     "postcss-nested": "^5.0.5",
     "postcss-simple-vars": "^6.0.3",
     "tailwindcss": "^2.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "gulp-babel": "^8.0.0",
+    "postcss-extend": "^1.0.5"
   }
 }

@@ -1,0 +1,12 @@
+.bubble {
+  padding: 10px;
+  border-radius: 100%;
+  text-transform: none;
+  font-weight: 500;
+  opacity: 0;
+  transform: scale(.95) translate(-50%, calc(-50% + 5px));
+  animation-name: bubbleIn;
+  animation-duration: 50ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(1,.02,1,.28);
+}

@@ -1,0 +1,97 @@
+.page-content-marketing {
+  .page-content-marketing__3col {
+    .caps-sm {
+      max-width: 11em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  table {
+    margin-left: auto;
+    margin-right: auto;
+    width: min(612px, 100%);
+
+    img {
+      display: inline-block;
+    }
+
+    tr {
+      display: grid;
+      grid-template-columns: 3fr minmax(47px, 1fr) minmax(47px, 1fr);
+
+      @screen md {
+        padding-left: 60px;
+        padding-right: 74px;
+      }
+    }
+  }
+
+
+  .section__increase-sales {
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-top: 127px;
+    padding-bottom: 311px;
+
+    @screen md {
+      height: 83.5vw;
+      padding-top: 12.6vw;
+      padding-left: 13vw;
+    }
+
+    @screen lg {
+      height: 68vw;
+    }
+
+    .subheadline {
+      margin-top: 60px;
+
+      @screen sm {
+        margin-top: 15.5vw;
+      }
+
+      @screen lg {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .section__grows-search {
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-top: 127px;
+
+    @screen md {
+      height: 83.5vw;
+      padding-top: 12.6vw;
+      padding-left: 13vw;
+    }
+
+    @screen lg {
+      height: 68vw;
+    }
+
+    .subheadline {
+      margin-top: 15.5vw;
+
+      @screen lg {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .section__grows-search__spacer {
+    padding-bottom: 80vw;
+
+    @screen sm {
+      padding-bottom: 3vw;
+    }
+  }
+}
+
+.page-content-marketing__hero {
+  @screen md {
+    height: max(56vw, 628px);
+  }
+}

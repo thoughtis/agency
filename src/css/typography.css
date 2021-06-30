@@ -1,0 +1,132 @@
+@font-face {
+	font-family: 'Graphik';
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	src: local('Graphik'), url('/assets/fonts/graphik-normal.woff2') format('woff2');
+}
+
+.headline {
+  font-family: "minion-pro", "Hoefler Text", "Noto Serif", Palatino,
+    "Palatino Linotype", Times, "Times New Roman", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+  max-width: 13em;
+
+  @screen sm {
+    font-size: 5.28vw;
+  }
+}
+
+
+.subheadline {
+  font-family: "minion-pro", "Hoefler Text", "Noto Serif", Palatino,
+    "Palatino Linotype", Times, "Times New Roman", serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  font-size: max(34px, 4vw);
+  line-height: 1.1;
+  max-width: 18em;
+}
+
+.caps-xl {
+  font-family: "oswald", "Avenir Next Condensed", "Arial Narrow", Impact,
+    sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 138px;
+  line-height: 1.79;
+  letter-spacing: -0.02em;
+}
+
+/* Used for .section__* titles */
+.caps-xl--responsive {
+  font-family: "oswald", "Avenir Next Condensed", "Arial Narrow", Impact, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 78px;
+  line-height: 1.79;
+  letter-spacing: -0.02em;
+
+  @screen sm {
+    font-size: 138px;
+  }
+}
+
+.caps-lg {
+  font-family: "oswald", "Avenir Next Condensed", "Arial Narrow", Impact,
+    sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  @screen sm {
+    font-size: 60px;
+  }
+}
+
+.caps-md {
+  font-family: "oswald", "Avenir Next Condensed", "Arial Narrow", Impact,
+    sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  @screen sm {
+    font-size: 60px;
+  }
+}
+
+.caps-sm {
+  font-family: "oswald", "Avenir Next Condensed", "Arial Narrow", Impact,
+    sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.body {
+  font-family: Graphik, -apple-system, system-ui, BlinkMacSystemFont,
+    "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0.01em;
+  font-size: max(20px, 1.67vw);
+  line-height: 1.42;
+}
+
+.body-small {
+  font-family: Graphik, -apple-system, system-ui, BlinkMacSystemFont,
+    "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: -0.01em;
+}
+
+.text-label {
+  font-family: "oswald", "Avenir Next Condensed", "Arial Narrow", Impact, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}

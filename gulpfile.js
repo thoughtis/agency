@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const postcss = require('gulp-postcss');
 const fileinclude = require('gulp-file-include');
 const rename = require('gulp-rename');
+const babel = require('gulp-babel');
 
 function css() {
   return gulp
@@ -19,21 +20,28 @@ function fileInclude() {
       basepath: '@file'
     }))
     .pipe(gulp.dest((file) => {
-      const destpath = file.base.replace(__dirname + '/src', __dirname + '/dist',)
+      const destpath = file.base.replace(__dirname + '/src', __dirname + '/dist')
       console.log(destpath)
       return destpath
     }));
 }
 
+function js() {
+  return gulp
+    .src('src/js/index.js')
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
+    .pipe(gulp.dest('dist/js'))
+}
+
 const all = gulp.parallel(
   css,
-  fileInclude
+  fileInclude,
+  js
 )
 
-exports.build = (cb) => {
-  all()
-  cb()
-}
+exports.build = all
 
 exports.watch = (cb) => {
   all()

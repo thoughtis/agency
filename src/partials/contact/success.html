@@ -1,0 +1,31 @@
+<style>
+  .success__overlay {
+    background: grey;
+    opacity: .8;
+  }
+
+  .success__inner {
+    width: min(838px, 95vw);
+    top: 50px;
+    left: 50vw;
+    transform: translateX(-50%);
+  }
+</style>
+
+<div class="success__wrap absolute z-50 hidden">
+  <div class="success__overlay fixed top-0 right-0 bottom-0 left-0"></div>
+  <div class="success__inner bg-white border border-black absolute text-left">
+    <div class="p-50 sm:p-70">
+      <div class="flex justify-between mb-38">
+        <h1 class="caps-lg">Thank you</h1>
+        <button type="button" class="success__close ml-20">
+          <svg width="43" height="41" viewBox="0 0 43 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="41.5289" y1="1.28035" x2="2.61848" y2="40.1908" stroke="black" stroke-width="1"/>
+            <line y1="-1" x2="55.0276" y2="-1" transform="matrix(0.707107 0.707107 0.707107 -0.707107 1.91138 0.573242)" stroke="black" stroke-width="1"/>
+          </svg>    
+        </button>
+      </div>
+      <p style="max-width: 424px">We recieved your message, you should expect hear back from us shortly.</p>
+    </div>
+  </div> <!-- .success__inner -->
+</div>

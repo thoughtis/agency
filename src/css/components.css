@@ -249,16 +249,6 @@
   }
 }
 
-.strategy-shapes__triangle {
-  @screen md {
-    background-position: center top calc(115px - 10vw);
-  }
-
-  @screen lg {
-    background-position: center top calc(115px - 10vw);
-  }
-}
-
 .strategy-shapes {
   max-width: 1180px;
   margin-left: auto;

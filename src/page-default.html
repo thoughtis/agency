@@ -580,11 +580,13 @@
     </div>
   </div>
   <div class="px-46 mb-94 sm:mb-116 mx-auto relative show-at-hover-position__target" style="max-width:772px">
-    @@include('./partials/asdfBox.html', {
-      pathToRoot:'.',
-      text: 'Available for speaking engagements & digital events',
-      imgName: 'Speaking.gif'
-    })
+    <div class="asdf-box sm:hidden bg-no-repeat bg-cover mb-30 p-30 flex items-center justify-center" style="background-image: url(./assets/lfs/Group410.png?nf_resize=fit&w=700);">
+      <div class="caps-md cursor-default">Available for speaking engagements & digital events</div>
+    </div>  
+    <div class="asdf-box hidden sm:block show-at-hover-position__target z-10 relative mb-5">
+      <div class="caps-md cursor-default relative z-10 pointer-events-none">Available for speaking engagements & digital events</div>
+      <img class="show-at-hover-position__elt-to-show hidden absolute z-0 pointer-events-none" width="376" src="./assets/lfs/Speaking.gif" />
+    </div>  
   </div>
   <div class="footer bg-no-repeat bg-center relative">
     <div class="lottie-globe absolute h-full"></div>

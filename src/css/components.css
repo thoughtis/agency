@@ -49,11 +49,13 @@
 }
 
 .lottie-globe {
-  margin-left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  opacity: 0.6;
 
   svg {
     width: auto !important;
+    margin-left: 50%;
+    transform: translateX(-50%) !important;
   }
 }
 

@@ -203,5 +203,5 @@ bodymovin.loadAnimation({
   wrapper: globeContainer,
   animType: 'svg',
   loop: true,
-  path: './assets/lottie-globe.json'
+  path: '/assets/lottie-globe.json'
 });

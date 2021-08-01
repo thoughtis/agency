@@ -5,36 +5,36 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  @@include('./partials/headContent.html', { pathToRoot: '.' })
+  @@include('../partials/headContent.html')
   <title>Thought Catalog Agency - Content Marketing</title>
 </head>
 <body class="text-center page-content-marketing">
   <!-- Contact form modal -->
-  @@include('./partials/contact/modal.html', { pathToRoot: '.' })
+  @@include('../partials/contact/modal.html')
   <!-- Form success modal -->
-  @@include('./partials/contact/success.html', { pathToRoot: '.' })
+  @@include('../partials/contact/success.html')
   <div class="page-content-marketing__hero relative overflow-hidden">
-    @@include('./partials/pageHeader.html', { pathToRoot: '.' })
+    @@include('../partials/pageHeader.html')
     <p class="px-22 headline mb-14 mx-auto" style="max-width: 15em">Content isn’t just something to create.</p>
     <p class="px-22 mx-auto pb-40" style="max-width: 36em"> It’s a way to find your audience and nurture that community which can turn your products or services into big businesses.</p>
     <div class="hidden md:flex absolute caps-sm items-center" style="bottom: 14.5vw; left: min(193px, 13.5vw); right: min(193px, 13.5vw)">
       <!-- people -->
-      <img class="hidden md:block absolute" src="./assets/lfs/peope.png?nf_resize=fit&w=600" style="
+      <img class="hidden md:block absolute" src="/assets/lfs/peope.png?nf_resize=fit&w=600" style="
         width: 21vw;
         left: -12vw;
       " />
       <!-- right images -->
-      <img class="hidden md:block absolute" src="./assets/lfs/bigsur.png?nf_resize=fit&w=200" style="
+      <img class="hidden md:block absolute" src="/assets/lfs/bigsur.png?nf_resize=fit&w=200" style="
         width: 6vw;
         right: 0;
         top: -12vw;
       " />
-      <img class="hidden md:block absolute" src="./assets/lfs/book357.png?nf_resize=fit&w=400" style="
+      <img class="hidden md:block absolute" src="/assets/lfs/book357.png?nf_resize=fit&w=400" style="
         width: 14vw;
         right: -17vw;
         top: -6vw;
       " />
-      <img class="hidden md:block absolute" src="./assets/lfs/empath.png?nf_resize=fit&w=200" style="
+      <img class="hidden md:block absolute" src="/assets/lfs/empath.png?nf_resize=fit&w=200" style="
         width: 7vw;
         right: 6vw;
         bottom: -11vw;
@@ -47,8 +47,8 @@
     </div>
      <!-- center bubbles -->
      <div class="text-white absolute hidden md:block" style="bottom: 14.5vw; left: 50vw;">
-      @@include('./partials/bubble.html', {
-        pathToRoot: '..',
+      @@include('../partials/bubble.html', {
+        
         size: '8.5vw',
         text: 'Twitter',
         background: '#1DA1F2',
@@ -56,8 +56,8 @@
         left: '-12vw',
         start: 0,
       })
-      @@include('./partials/bubble.html', {
-        pathToRoot: '..',
+      @@include('../partials/bubble.html', {
+        
         size: '10vw',
         text: 'Facebook',
         background: '#4267B2',
@@ -65,8 +65,8 @@
         left: '0vw',
         start: 0,
       })
-      @@include('./partials/bubble.html', {
-        pathToRoot: '..',
+      @@include('../partials/bubble.html', {
+        
         size: '8.5vw',
         text: 'Instagram',
         background: '#E1306C',
@@ -74,8 +74,8 @@
         left: '12vw',
         start: 0,
       })
-      @@include('./partials/bubble.html', {
-        pathToRoot: '..',
+      @@include('../partials/bubble.html', {
+        
         size: '8.5vw',
         text: 'Linkedin',
         background: '#0077B5',
@@ -83,8 +83,8 @@
         left: '-12vw',
         start: 0,
       })
-      @@include('./partials/bubble.html', {
-        pathToRoot: '..',
+      @@include('../partials/bubble.html', {
+        
         size: '9vw',
         text: 'Tiktok',
         background: '#101010',
@@ -92,8 +92,8 @@
         left: '0vw',
         start: 0,
       })
-      @@include('./partials/bubble.html', {
-        pathToRoot: '..',
+      @@include('../partials/bubble.html', {
+        
         size: '8.5vw',
         text: 'Youtube',
         background: '#FF0000',
@@ -102,10 +102,10 @@
         start: 0,
       })
     </div>
-    <img class="w-full pb-40 md:hidden" src="./assets/lfs/contentmarketing@2x.png?nf_resize=fit&w=750" />
+    <img class="w-full pb-40 md:hidden" src="/assets/lfs/contentmarketing@2x.png?nf_resize=fit&w=750" />
   </div>
   <div class="-mt-14 sm:mt-0 relative">
-    @@include('./partials/marquee.html', { pathToRoot: '.', text: '1 million people spend 3 minutes reading our content every day. '})
+    @@include('../partials/marquee.html', {  text: '1 million people spend 3 minutes reading our content every day. '})
   </div>
    <!-- Extra div to wrap this and logos -->
    <div class="overflow-hidden flex justify-center items-center">
@@ -127,7 +127,7 @@
               <div class="caps-xl text-stroke-2px relative z-10">01</div>
               <div class="absolute" style="left: 50%; top: 50%">
                 <img
-                  src="./assets/svg/03arrows.svg"
+                  src="/assets/svg/03arrows.svg"
                   class="absolute max-w-none z-20"
                   width="195"
                   style="
@@ -137,7 +137,7 @@
                   "
                 />
                 <img
-                  src="./assets/svg/031.svg"
+                  src="/assets/svg/031.svg"
                   class="floating absolute max-w-none z-20"
                   style="
                     transform: translate(-50%, -50%);
@@ -149,7 +149,7 @@
                   "
                 />
                 <img
-                  src="./assets/svg/032.svg"
+                  src="/assets/svg/032.svg"
                   class="floating absolute max-w-none"
                   style="
                     transform: translate(-50%, -50%);
@@ -170,7 +170,7 @@
               <div class="caps-xl text-stroke-2px relative z-10">02</div>
               <div class="absolute" style="left: 50%; top: 50%">
                 <img
-                  src="./assets/lfs/021@1.png"
+                  src="/assets/lfs/021@1.png"
                   class="floating absolute max-w-none z-20"
                   width="80"
                   style="
@@ -182,7 +182,7 @@
                   "
                 />
                 <img
-                  src="./assets/lfs/022@1.png"
+                  src="/assets/lfs/022@1.png"
                   class="floating absolute max-w-none z-20"
                   width="70"
                   style="
@@ -194,7 +194,7 @@
                   "
                 />
                 <img
-                  src="./assets/lfs/023@1.png"
+                  src="/assets/lfs/023@1.png"
                   class="floating absolute max-w-none"
                   width="83"
                   style="
@@ -207,7 +207,7 @@
                   "
                 />
                 <img
-                  src="./assets/lfs/024@1.png"
+                  src="/assets/lfs/024@1.png"
                   class="floating absolute max-w-none z-20"
                   width="61"
                   style="
@@ -240,7 +240,7 @@
               <div class="caps-xl text-stroke-2px">04</div>
               <div class="absolute" style="left: 50%; top: 50%">
                 <img
-                  src="./assets/svg/clubhouse.svg"
+                  src="/assets/svg/clubhouse.svg"
                   class="floating absolute max-w-none"
                   style="
                     transform: translate(-50%, -50%);
@@ -250,7 +250,7 @@
                   "
                 />
                 <img
-                  src="./assets/svg/facebook.svg"
+                  src="/assets/svg/facebook.svg"
                   class="floating absolute max-w-none"
                   style="
                     transform: translate(-50%, -50%);
@@ -260,7 +260,7 @@
                   "
                 />
                 <img
-                  src="./assets/svg/insta.svg"
+                  src="/assets/svg/insta.svg"
                   class="floating absolute max-w-none"
                   style="
                     transform: translate(-50%, -50%);
@@ -270,7 +270,7 @@
                   "
                 />
                 <img
-                  src="./assets/svg/tiktok.svg"
+                  src="/assets/svg/tiktok.svg"
                   class="floating absolute max-w-none"
                   style="
                     transform: translate(-50%, -50%);
@@ -280,7 +280,7 @@
                   "
                 />
                 <img
-                  src="./assets/svg/twitter.svg"
+                  src="/assets/svg/twitter.svg"
                   class="floating absolute max-w-none"
                   style="
                     transform: translate(-50%, -50%);
@@ -297,7 +297,7 @@
           <div class="mb-60 mx-auto sm:mx-60 flex-1 relative">
             <div class="relative">
               <div class="caps-xl text-stroke-2px">05</div>
-              <img class="absolute" style="left:50%;top:50%;transform: translate(-52%, -47%);" src="./assets/svg/linkbuilding-02.svg" />
+              <img class="absolute" style="left:50%;top:50%;transform: translate(-52%, -47%);" src="/assets/svg/linkbuilding-02.svg" />
             </div>
             <h3 class="caps-sm mb-9">Search engine optimization</h3>
           </div>
@@ -314,14 +314,14 @@
       <!-- logos -->
       <div class="flex flex-wrap mx-20 md:mx-150 mb-60">
         <div class="flex flex-grow justify-around mb-20">
-          <img class="mx-10" src="./assets/svg/hbo.svg" width="60" />
-          <img class="mx-10" src="./assets/svg/titos.svg" width="67" />
-          <img class="mx-10" src="./assets/svg/perrier.svg" width="64" />
+          <img class="mx-10" src="/assets/svg/hbo.svg" width="60" />
+          <img class="mx-10" src="/assets/svg/titos.svg" width="67" />
+          <img class="mx-10" src="/assets/svg/perrier.svg" width="64" />
         </div>
         <div class="flex flex-grow justify-around mb-20">
-          <img class="mx-10" src="./assets/svg/fx.svg" width="49" />
-          <img class="mx-10" src="./assets/svg/netflix.svg" width="101" />
-          <img class="mx-10" src="./assets/svg/google.svg" width="71" />
+          <img class="mx-10" src="/assets/svg/fx.svg" width="49" />
+          <img class="mx-10" src="/assets/svg/netflix.svg" width="101" />
+          <img class="mx-10" src="/assets/svg/google.svg" width="71" />
         </div>
       </div>
     </div>
@@ -339,12 +339,12 @@
     <p class="subheadline mb-12 relative w-268 sm:w-full" style="max-width: 13em">
       We created a whole book for Tito's, driving 20% lift in sales
     </p>
-    <img class="absolute sm:hidden" src="./assets/lfs/titos.png?nf_resize=fit&w=600" style="
+    <img class="absolute sm:hidden" src="/assets/lfs/titos.png?nf_resize=fit&w=600" style="
       width: min(70vw, 261px);
       right: 0;
       bottom: 0;
     " />
-    <img class="absolute hidden sm:block" src="./assets/lfs/titos-desktop.png?nf_resize=fit&w=2000" style="
+    <img class="absolute hidden sm:block" src="/assets/lfs/titos-desktop.png?nf_resize=fit&w=2000" style="
       width: 60vw;
       left: max(calc(100% - 60vw), 500px);
       bottom: 4vw;
@@ -353,7 +353,7 @@
   </div>
   <!-- INCREASE SALES mobile bottom part -->
   <div class="py-30 pr-30 pl-40 sm:hidden text-left relative" style="background-color: #161513">
-    <img class="mb-30 mr-auto" src="./assets/svg/titos-stat.svg" style="
+    <img class="mb-30 mr-auto" src="/assets/svg/titos-stat.svg" style="
       width: min(50vw, 200px);
       margin-top: -170px;
       " />
@@ -386,17 +386,17 @@
           left: 2vw;
         "
       ><path d="M2.836 300.853L11 308.694l12.419 5.881 12.742-5.881h8.821l9.801-7.841 9.802 7.841v-7.841L81 297.913h10.05v-10.782h11.761l9.801 10.782L121 282.23l10.235 4.901 10.782-20.583h5.881v-5.881l8.821-6.861 5.146-6.371 8.576-3.431 5.391 6.371 8.576-2.94 6.592-9.067 5.415-3.43 12.252 18.868 6.616-3.431 3.185-6.371L231 231.263l5.356-10.047 2.206-12.007 3.43-4.656 4.901 1.226 13.722 8.821h14.702l5.881-8.821 6.861-6.861 4.901-3.431 6.08 5.146 9.602-1.715v-15.683l6.861-8.331 1.961-11.272 2.695-11.027 4.166-14.457 10.781-9.801 5.894 5.145 12.484-2.205 5.881 6.861 2.695 7.841 9.312 5.882 6.861 11.761 9.801 7.841 9.802-7.841 6.861-11.761-3.431-17.153 6.616-12.007 5.881-21.318 6.616-15.193 9.312-2.94 4.9-10.537L451 79.34l10.546 13.722 33.325-6.86 8.821-24.504 11.272-4.901 8.331-35.53 13.967 3.675 6.616-11.517L561 2.89" stroke="#BFF944" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <img src="./assets/lfs/Group424.png?nf_resize=fit&w=1200"
+      <img src="/assets/lfs/Group424.png?nf_resize=fit&w=1200"
         style="background-color: #7cada7; width: 41.7vw" />
     </div>
   </div>
   <!-- GROWS SEARCH mobile bottom part -->
   <div class="py-30 pr-30 pl-40 sm:hidden text-left" style="background-color: #161513">
-    <img class="mb-22" src="./assets/lfs/Group4277.png?nf_resize=fit&w=600" />
+    <img class="mb-22" src="/assets/lfs/Group4277.png?nf_resize=fit&w=600" />
     <p class="text-white" style="max-width: 30em;">Through the acquisition of more than 500 high-quality, editorial backlinks. Our team assisted in the growth of Hausera.</p>
   </div>
   <div class="-mt-14 sm:mt-0 relative">
-    @@include('./partials/marquee.html', { pathToRoot: '.', text: 'do you know your customers? '})
+    @@include('../partials/marquee.html', {  text: 'do you know your customers? '})
   </div>
   <div class="bg-black text-white text-left md:text-center px-30 pt-112 pb-124 flex justify-center items-center">
     <div>
@@ -411,6 +411,7 @@
           </tr>
           <tr class="border-b border-white pt-14 pb-16">
             <th class="text-left">Research</th>
+<<<<<<< HEAD:src/page-content-marketing.html
             <td class="text-center"><img width="42" src="/assets/lfs/x.png" /></td>
             <td class="text-center"><img width="57" src="/assets/lfs/c.png" /></td>
           </tr>
@@ -433,6 +434,30 @@
             <th class="text-left">Distribution</th>
             <td class="text-center"><img width="42" src="/assets/lfs/x.png" /></td>
             <td class="text-center"><img width="57" src="/assets/lfs/c.png" /></td>
+=======
+            <td class="text-center"><img width="47" src="/assets/lfs/x.png" /></td>
+            <td class="text-center"><img width="47" src="/assets/lfs/c.png" /></td>
+          </tr>
+          <tr class="border-b border-white pt-14 pb-16">
+            <th class="text-left">Goal Setting</th>
+            <td class="text-center"><img width="47" src="/assets/lfs/x.png" /></td>
+            <td class="text-center"><img width="47" src="/assets/lfs/c.png" /></td>
+          </tr>
+          <tr class="border-b border-white pt-14 pb-16">
+            <th class="text-left">Creative Direction</th>
+            <td class="text-center"><img width="47" src="/assets/lfs/c.png" /></td>
+            <td class="text-center"><img width="47" src="/assets/lfs/c.png" /></td>
+          </tr>
+          <tr class="border-b border-white pt-14 pb-16">
+            <th class="text-left">Execution</th>
+            <td class="text-center"><img width="47" src="/assets/lfs/c.png" /></td>
+            <td class="text-center"><img width="47" src="/assets/lfs/c.png" /></td>
+          </tr>
+          <tr class="pt-14 pb-16">
+            <th class="text-left">Distribution</th>
+            <td class="text-center"><img width="47" src="/assets/lfs/x.png" /></td>
+            <td class="text-center"><img width="47" src="/assets/lfs/c.png" /></td>
+>>>>>>> main:src/content-marketing/index.html
           </tr>
         <tbody>
       </table>
@@ -440,33 +465,27 @@
   </div>
   <div class="px-30 mb-140">
     <p class="mt-80 mb-20">All the things you can do with our work:</p>
-    @@include('./partials/asdfBox.html', {
-      pathToRoot:'.',
+    @@include('../partials/asdfBox.html', {
       text: 'Gear up your sales team',
       imgName: 'bg-sales-team.png'
     })
-    @@include('./partials/asdfBox.html', {
-      pathToRoot:'.',
+    @@include('../partials/asdfBox.html', {
       text: 'Start a newsletter',
       imgName: 'bg-newsletter.png'
     })
-    @@include('./partials/asdfBox.html', {
-      pathToRoot:'.',
+    @@include('../partials/asdfBox.html', {
       text: 'Start a new social channel',
       imgName: 'bg-new-social-channel.png'
     })
-    @@include('./partials/asdfBox.html', {
-      pathToRoot:'.',
+    @@include('../partials/asdfBox.html', {
       text: 'Create whitepapers & ebooks',
       imgName: 'Group412.png'
     })
-    @@include('./partials/asdfBox.html', {
-      pathToRoot:'.',
+    @@include('../partials/asdfBox.html', {
       text: 'Create printed books/magazines',
       imgName: 'bg-magazines.png'
     })
-    @@include('./partials/asdfBox.html', {
-      pathToRoot:'.',
+    @@include('../partials/asdfBox.html', {
       text: 'Gear up your PR outreach',
       imgName: 'bg-outreach.png'
     })
@@ -481,8 +500,8 @@
     <!-- Form -->
     <form name="contact" method="POST" data-netlify="true">
       <div class="mb-30 md:mb-60">
-        @@include('./partials/contact/textAndTel.html', {
-          pathToRoot: '.',
+        @@include('../partials/contact/textAndTel.html', {
+          
           idPrefix: "footer"
         })
       </div>
@@ -492,16 +511,16 @@
     <img
       class="mx-auto"
       style="margin-bottom: -75px"
-      src="./assets/svg/thought-catalog-agency.svg"
+      src="/assets/svg/thought-catalog-agency.svg"
     />
     <div class="overflow-hidden">
       <img
         class="mx-auto"
         style="transform: translateY(100px)"
-        src="./assets/svg/logo.svg"
+        src="/assets/svg/logo.svg"
       />
     </div>
   </div>
-  @@include('./partials/footer.html', {pathToRoot:'.'})
+  @@include('../partials/footer.html')
 </body>
 </html>

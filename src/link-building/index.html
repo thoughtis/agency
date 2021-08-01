@@ -4,22 +4,22 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  @@include('./partials/headContent.html', { pathToRoot: '.' })
+  @@include('../partials/headContent.html')
   <title>Thought Catalog Agency - Link Building</title>
 </head>
 <body class="text-center page-link-building">
   <!-- Contact form modal -->
-  @@include('./partials/contact/modal.html', { pathToRoot: '.' })
+  @@include('../partials/contact/modal.html')
   <!-- Form success modal -->
-  @@include('./partials/contact/success.html', { pathToRoot: '.' })
+  @@include('../partials/contact/success.html')
   <div class="relative overflow-hidden" style="min-height: 53vw;">
-    @@include('./partials/linkBuildingPageBubbles.html', { pathToRoot: '.' })
-    <img class="w-full hidden lg:block absolute z-0" src="./assets/svg/linkbuilding-hero-desktop.svg" style="
+    @@include('../partials/linkBuildingPageBubbles.html')
+    <img class="w-full hidden lg:block absolute z-0" src="/assets/svg/linkbuilding-hero-desktop.svg" style="
       top: 2vw;
       left: 2vw;
       width: 89vw;
       " />
-    @@include('./partials/pageHeader.html', { pathToRoot: '.' })
+    @@include('../partials/pageHeader.html')
     <div class="lg:absolute page-link-building__hero-content" style="
       top: 21vw; 
       left: 50%; 
@@ -29,10 +29,10 @@
       </p>
       <p class="px-22 mx-auto pb-40" style="max-width: 30em">While content is the most effective way to build an online following, link-building provides credibility.</p>
     </div>
-    <img class="w-full pb-40 lg:hidden" src="./assets/svg/linkbuilding.svg" />
+    <img class="w-full pb-40 lg:hidden" src="/assets/svg/linkbuilding.svg" />
   </div>
   <div class="-mt-14 sm:mt-0 relative">
-    @@include('./partials/marquee.html', { pathToRoot: '.', text: 'we can help you out –'})
+    @@include('../partials/marquee.html', {  text: 'we can help you out –'})
   </div>
   <!-- Extra div to wrap this and logos -->
   <div class="overflow-hidden flex justify-center items-center">
@@ -51,21 +51,21 @@
           <div class="mb-60 mx-auto sm:mx-40 flex-1 relative">
             <div class="relative">
               <div class="caps-xl text-stroke-2px">01</div>
-              <img class="absolute" style="left:50%;top:50%;transform: translate(-50%, -47%);" src="./assets/svg/linkbuilding-01.svg" />
+              <img class="absolute" style="left:50%;top:50%;transform: translate(-50%, -47%);" src="/assets/svg/linkbuilding-01.svg" />
             </div>
             <p class="mx-10">Obtain a trusted SEO partner to assist with your needs.</p>
           </div>
           <div class="mb-60 mx-auto sm:mx-40 flex-1 relative">
             <div class="relative">
               <div class="caps-xl text-stroke-2px">02</div>
-              <img class="absolute" style="left:50%;top:50%;transform: translate(-52%, -47%);" src="./assets/svg/linkbuilding-02.svg" />
+              <img class="absolute" style="left:50%;top:50%;transform: translate(-52%, -47%);" src="/assets/svg/linkbuilding-02.svg" />
             </div>
             <p class="mx-10">Sustainable link building drives search ranking and brand reach.</p>
           </div>
           <div class="mb-60 mx-auto sm:mx-40 flex-1">
             <div class="relative">
               <div class="caps-xl text-stroke-2px">03</div>
-              <img class="absolute" style="left:50%;top:50%;transform: translate(-29%, -34%);" src="./assets/svg/linkbuilding-03.svg" />
+              <img class="absolute" style="left:50%;top:50%;transform: translate(-29%, -34%);" src="/assets/svg/linkbuilding-03.svg" />
             </div>
             <p class="mx-10">Real outreach by our U.S. based team of workers</p>
           </div>
@@ -74,14 +74,14 @@
       <!-- logos -->
       <div class="flex flex-wrap mx-20 md:mx-150 mb-60">
         <div class="flex flex-grow justify-around mb-20">
-          <img class="mx-10" src="./assets/svg/hbo.svg" width="60" />
-          <img class="mx-10" src="./assets/svg/titos.svg" width="67" />
-          <img class="mx-10" src="./assets/svg/perrier.svg" width="64" />
+          <img class="mx-10" src="/assets/svg/hbo.svg" width="60" />
+          <img class="mx-10" src="/assets/svg/titos.svg" width="67" />
+          <img class="mx-10" src="/assets/svg/perrier.svg" width="64" />
         </div>
         <div class="flex flex-grow justify-around mb-20">
-          <img class="mx-10" src="./assets/svg/fx.svg" width="49" />
-          <img class="mx-10" src="./assets/svg/netflix.svg" width="101" />
-          <img class="mx-10" src="./assets/svg/google.svg" width="71" />
+          <img class="mx-10" src="/assets/svg/fx.svg" width="49" />
+          <img class="mx-10" src="/assets/svg/netflix.svg" width="101" />
+          <img class="mx-10" src="/assets/svg/google.svg" width="71" />
         </div>
       </div>
     </div>
@@ -113,17 +113,17 @@
           left: 2vw;
         "
       ><path d="M2.836 300.853L11 308.694l12.419 5.881 12.742-5.881h8.821l9.801-7.841 9.802 7.841v-7.841L81 297.913h10.05v-10.782h11.761l9.801 10.782L121 282.23l10.235 4.901 10.782-20.583h5.881v-5.881l8.821-6.861 5.146-6.371 8.576-3.431 5.391 6.371 8.576-2.94 6.592-9.067 5.415-3.43 12.252 18.868 6.616-3.431 3.185-6.371L231 231.263l5.356-10.047 2.206-12.007 3.43-4.656 4.901 1.226 13.722 8.821h14.702l5.881-8.821 6.861-6.861 4.901-3.431 6.08 5.146 9.602-1.715v-15.683l6.861-8.331 1.961-11.272 2.695-11.027 4.166-14.457 10.781-9.801 5.894 5.145 12.484-2.205 5.881 6.861 2.695 7.841 9.312 5.882 6.861 11.761 9.801 7.841 9.802-7.841 6.861-11.761-3.431-17.153 6.616-12.007 5.881-21.318 6.616-15.193 9.312-2.94 4.9-10.537L451 79.34l10.546 13.722 33.325-6.86 8.821-24.504 11.272-4.901 8.331-35.53 13.967 3.675 6.616-11.517L561 2.89" stroke="#BFF944" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <img src="./assets/lfs/Group424.png?nf_resize=fit&w=1200"
+      <img src="/assets/lfs/Group424.png?nf_resize=fit&w=1200"
         style="background-color: #7cada7; width: 41.7vw" />
     </div>
   </div>
   <!-- GROWS SEARCH mobile bottom part -->
   <div class="py-30 pr-30 pl-40 sm:hidden text-left" style="background-color: #161513">
-    <img class="mb-22" src="./assets/lfs/Group4277.png?nf_resize=fit&w=600" />
+    <img class="mb-22" src="/assets/lfs/Group4277.png?nf_resize=fit&w=600" />
     <p class="text-white" style="max-width: 30em;">Through the acquisition of more than 500 high-quality, editorial backlinks. Our team assisted in the growth of Hausera.</p>
   </div>
   <div class="-mt-14 sm:mt-0 relative">
-    @@include('./partials/marquee.html', { pathToRoot: '.', text: 'more than 1b posts are made each day, how will you stand out? '})
+    @@include('../partials/marquee.html', {  text: 'more than 1b posts are made each day, how will you stand out? '})
   </div>
   <!-- 2-col -->
   <div class="overflow-hidden flex justify-center items-center">
@@ -146,7 +146,7 @@
                   left: 50%;
                   transform: translateX(-50%);
                 " 
-                src="./assets/lfs/2000+.png?nf_resize=fit&w=916" />
+                src="/assets/lfs/2000+.png?nf_resize=fit&w=916" />
             </div>
             <h3 class="caps-sm mb-9">Links built for clients</h3>
           </div>
@@ -162,7 +162,7 @@
                   left: 50%;
                   transform: translateX(-50%);
                 "
-                src="./assets/lfs/120+.png?nf_resize=fit&w=916" />
+                src="/assets/lfs/120+.png?nf_resize=fit&w=916" />
             </div>
             <h3 class="caps-sm mb-9">Average organic search <br />growth over 12 months</h3>
           </div>
@@ -172,7 +172,7 @@
   </div>
   <!-- Q&A -->
   <div class="section__qna relative overflow-hidden flex flex-col md:flex-row bg-black text-white pt-110 pb-280 md:pb-94 justify-between text-left mb-150 md:mb-100">
-    <img class="absolute" src="./assets/lfs/getthroughthis@2x.png?nf_resize=fit&w=1168" />
+    <img class="absolute" src="/assets/lfs/getthroughthis@2x.png?nf_resize=fit&w=1168" />
     <div class="w-full flex-1 md:pr-40 flex items-start">
       <svg class="w-full mb-20 md:mb-0" viewBox="0 0 444 165" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M135.435 160.784c-18.6-8.4-36.4-19.4-48.8-28 23.6-7.4 45.4-30.2 45.4-65.6 0-40.4-30.2-67-63.8-67-42.8 0-68 33.2-68 70.2 0 19.8 8.6 37 20.8 48.4 12.6 12.2 30 16.6 41.2 17.2 24.4 17 39.8 24.4 46 26 6 1.6 16 3.2 25.6 3l1.6-4.2zm-74.4-32.6c-23.4-4.8-40.4-29.4-40.4-63.2 0-38.2 20.6-57.4 42.8-57.4 27.4 0 48.2 23.6 48.2 65.2 0 32-15.6 50.2-31.6 54.8-1.8-1.2-3.6-2.6-5.4-3.8l-13.6 4.4zm218.823-80.4h-45.8v5.6c14.2 1.8 16 4.2 12.2 13.4-3.8 9-7.2 15.6-12 23-12.8-13-27-25.4-33.6-31 7.8-5.2 12.6-9 16.2-12 4.2-3.6 8.4-9.4 8.4-17.6 0-16-13.4-27.6-29.6-27.6-17.6 0-32.8 13.8-32.8 31.6 0 10.8 5.4 19.2 14.4 27.8-16.8 12.2-30 20.2-30 38.6 0 17.4 14.2 36.4 39.6 36.4 14.2 0 27.4-7.2 41.8-26.6 6.6 7 15 16.4 17.4 19.4 2.4 2.6 13.4 7.2 24.4 8.2l1.4-2c-6-11.6-24.2-31.8-32.6-40.2 7-10.6 11.8-18.8 17.4-26.6 6.6-9.6 9.2-13.2 23.2-14.8v-5.6zm-86.2-39.4c9.8 0 16.6 9.6 16.6 21 0 10.8-5.2 18.6-14.8 25.6-12-9.2-18.2-16.2-18.2-26.6 0-12 7-20 16.4-20zm-1.8 113.8c-13 0-27.6-9.2-27.6-28.2 0-9.8 5-19.4 18.2-28.6 18.2 14.8 31 27 41.6 38.6-6.6 9.2-18.6 18.2-32.2 18.2zm217.388 11v-5.6c-13-1.2-15.6-3-22-20.2-12.8-34.8-26.2-72.8-38.6-107.2l-6.2 1.8-41.4 105c-7 17.6-9.8 18.8-22.4 20.6v5.6h43.4v-5.6c-15-1.4-16.8-3.4-12.4-16 2.6-8.4 5.6-16.8 8.8-25.8h42.6c4.4 12.2 8.4 23 11 30.8 2.6 7.8.8 9.4-11.8 11v5.6h49zm-51-56h-36.8c6-16.4 12.4-33.8 18.8-51h.4l17.6 51zm73.481-26.2c-6.4 0-11 4.6-11 11.2 0 6.8 4.6 11.6 11 11.6s11.2-4.8 11.2-11.6c0-6.6-4.8-11.2-11.2-11.2zm.2 84.6c6.4 0 11.2-4.6 11.2-11.6 0-6.4-4.8-11.4-11.2-11.4-6.4 0-11.2 5-11.2 11.4 0 7 4.8 11.6 11.2 11.6z" fill="#fff"/></svg>
     </div>
@@ -195,8 +195,8 @@
     <!-- Form -->
     <form name="contact" method="POST" data-netlify="true">
       <div class="mb-30 md:mb-60">
-        @@include('./partials/contact/textAndTel.html', {
-          pathToRoot: '.',
+        @@include('../partials/contact/textAndTel.html', {
+          
           idPrefix: "footer"
         })
       </div>
@@ -206,17 +206,17 @@
     <img
       class="mx-auto"
       style="margin-bottom: -75px"
-      src="./assets/svg/thought-catalog-agency.svg"
+      src="/assets/svg/thought-catalog-agency.svg"
     />
     <div class="overflow-hidden">
       <img
         class="mx-auto"
         style="transform: translateY(100px)"
-        src="./assets/svg/logo.svg"
+        src="/assets/svg/logo.svg"
       />
     </div>
   </div>
   <div>
-  @@include('./partials/footer.html', {pathToRoot:'.'})
+  @@include('../partials/footer.html')
 </body>
 </html>

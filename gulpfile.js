@@ -14,7 +14,11 @@ function css() {
 
 function fileInclude() {
   return gulp
-    .src(['src/*.html'])
+    .src([
+      'src/index.html',
+      'src/content-marketing/index.html',
+      'src/link-building/index.html',
+    ])
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'

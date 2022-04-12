@@ -4,6 +4,10 @@ module.exports = {
   ],
   theme: {
 	  extend: {
+		fontFamily: {
+			serif: 'Editorial New, Times, serif',
+			sans: 'Tomato Grotesk, Helvetica, Arial, sans-serif'
+		},
 		fontSize: {
 			xs: [
 				'clamp( 0.75rem, calc((0.9375rem + 0.3125vw) * 0.75), 0.9375rem)',

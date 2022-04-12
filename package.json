@@ -8,7 +8,8 @@
 	"license": "GPL-3.0",
 	"scripts": {
 		"dev": "npx tailwindcss -i ./src/assets/css/index.css -o ./dist/assets/css/index.css --watch",
-		"build": "npx tailwindcss -i ./src/assets/css/index.css -o ./dist/assets/css/index.css --minify"
+		"build": "cp ./src/index.html ./dist/index.html && npx tailwindcss -i ./src/assets/css/index.css -o ./dist/assets/css/index.css --minify",
+		"serve": "netlify dev --dir=./dist"
 	},
 	"dependencies": {},
 	"devDependencies": {

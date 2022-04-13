@@ -41,3 +41,18 @@
 		transform: rotate3d(0,1,0,calc( var(--globe-animation-order,0) * 22.5deg + 11.25deg ) );
 	}
 }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+	@apply border-blue-700;
+}
+
+input:placeholder-shown {
+	@apply border-blue-400;
+}
+
+.background-blob {
+	background-image: url('../svg/button-blob-background.svg');
+	background-size: 100% 100%;
+}

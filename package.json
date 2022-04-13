@@ -12,6 +12,7 @@
 		"serve": "netlify dev --dir=./dist"
 	},
 	"devDependencies": {
+		"@tailwindcss/forms": "^0.5.0",
 		"autoprefixer": "^10.4.4",
 		"tailwindcss": "^3.0.23"
 	}

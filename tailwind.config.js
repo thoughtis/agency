@@ -40,7 +40,7 @@ module.exports = {
 					'1.1875'
 				],
 				'3xl': [
-					'clamp( 5rem, calc((0.9375rem + 0.3125vw) * 5), 6.25rem )',
+					'clamp( 3.75rem, calc((0.9375rem + 0.3125vw) * 3.75), 4.6875rem )',
 					'1.1875'
 				]
 			},

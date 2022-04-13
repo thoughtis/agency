@@ -5,3 +5,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+	--position-0: 0;
+	--position-1: 1;
+	--position-2: 2;
+	--position-3: 3;
+	--position-4: 4;
+	--position-5: 5;
+	--position-6: 6;
+	--position-7: 7;
+}

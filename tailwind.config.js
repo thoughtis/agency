@@ -4,6 +4,26 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			keyframes: {
+				globe: {
+					'from': { transform: 'rotate3d(0,1,0,0deg)' },
+					'to': { transform: 'rotate3d(0,1,0,180deg)' }
+				}
+			},
+			animation: {
+				globe: 'globe 8s ease-out infinite',
+				// delay: 'animation-delay: calc(1s * var(--position))'
+			},
+			// position: {
+			// 	"0": "var(--position-0)",
+			// 	"1": "var(--position-1)",
+			// 	"2": "var(--position-2)",
+			// 	"3": "var(--position-3)",
+			// 	"4": "var(--position-4)",
+			// 	"5": "var(--position-5)",
+			// 	"6": "var(--position-6)",
+			// 	"7": "var(--position-7)"
+			// },
 			fontFamily: {
 				serif: 'Editorial New, Times, serif',
 				sans: 'Tomato Grotesk, Helvetica, Arial, sans-serif'
@@ -37,5 +57,8 @@ module.exports = {
 				'42': '42ch'
 			}
 		}	
-	}
+	},
+	plugins: [
+		require("tailwindcss-animation-delay"),
+	]
 };

@@ -12,18 +12,7 @@ module.exports = {
 			},
 			animation: {
 				globe: 'globe 8s ease-out infinite',
-				// delay: 'animation-delay: calc(1s * var(--position))'
 			},
-			// position: {
-			// 	"0": "var(--position-0)",
-			// 	"1": "var(--position-1)",
-			// 	"2": "var(--position-2)",
-			// 	"3": "var(--position-3)",
-			// 	"4": "var(--position-4)",
-			// 	"5": "var(--position-5)",
-			// 	"6": "var(--position-6)",
-			// 	"7": "var(--position-7)"
-			// },
 			fontFamily: {
 				serif: 'Editorial New, Times, serif',
 				sans: 'Tomato Grotesk, Helvetica, Arial, sans-serif'
@@ -41,7 +30,10 @@ module.exports = {
 					'clamp( 1rem, calc(0.9375rem + 0.3125vw), 1.25rem)',
 					'1.5'
 				],
-				// lg: [],
+				lg: [
+					'clamp( 1rem, calc(0.75rem + 1.25vw), 2rem)',
+					'1.5'
+				],
 				// xl: [],
 				'2xl': [
 					'clamp( 2.6667rem, calc((0.9375rem + 0.3125vw) * 2.6667), 3.33334rem )',

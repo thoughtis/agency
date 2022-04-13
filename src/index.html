@@ -194,9 +194,36 @@
 				</div>
 			</div>
 		</section>
-		<section id="contact"></section>
+		<section id="contact">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.8 141.25" class="h-40 w-auto mx-auto">
+				<path d="M0,116.05c13.68,0,23.36,7.76,26.24,18.4h.32V0h3.68V134.45h.32c2.88-10.64,12.56-18.4,26.24-18.4v3.76c-13.44,0-21.92,7.92-27.28,21.44H27.28C21.92,127.73,13.44,119.81,0,119.81Z"/>
+			</svg>
+			<h2 class="text-3xl text-center font-serif font-light">Contact us</h2>
+			<p class="text-base max-w-28 mx-auto px-4 text-center">Say hello and we’ll create a custom proposal for you.</p>
+			<form class="mt-8">
+				<fieldset class="space-y-4 px-4 max-w-[35ch] mx-auto">
+					<div>
+						<label for="input-name" class="block">Full name</label>
+						<input class="w-full rounded-md placeholder:text-blue-300 text-blue-700" type="text" name="name" id="input-name" placeholder="Your Name" required/>
+					</div>
+					<div>
+						<label for="input-email" class="block">Email</label>
+						<input class="w-full rounded-md placeholder:text-blue-300 text-blue-700 invalid:text-red-800" type="email" name="email" id="input-email" placeholder="yourname@example.com" required/>
+					</div>
+					<div>
+						<label for="input-phone" class="block">Phone</label>
+						<input class="w-full rounded-md placeholder:text-blue-300 text-blue-700" type="tel" name="phone" id="input-phone" placeholder="+0 (000) 000-0000" required/>
+					</div>
+					<div class="text-center">
+						<button type="submit" class="background-blob bg-no-repeat text-white text-lg py-6 px-8">Send</button>
+					</div>
+				</fieldset>
+			</form>
+		</section>
 	</main>
-	<footer></footer>
+	<footer>
+		<p class="text-center text-xs text-gray-600">&copy; 2022 The Thought & Expression Company, Inc.</p>
+	</footer>
 	<link rel="stylesheet" media="print" href="/assets/css/fonts.css" onload="this.media='screen'; this.onload=null;">
 </body>
 </html>

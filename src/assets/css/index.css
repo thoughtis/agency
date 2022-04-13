@@ -6,13 +6,35 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-	--position-0: 0;
-	--position-1: 1;
-	--position-2: 2;
-	--position-3: 3;
-	--position-4: 4;
-	--position-5: 5;
-	--position-6: 6;
-	--position-7: 7;
+/**
+ * Clients
+ */
+
+.logos {
+	grid-template-columns: repeat(auto-fit, minmax(9em,1fr));
+}
+
+.logos > * {
+	padding: 1.5em;
+	@apply grid aspect-square place-content-center border-b border-r border-gray-400;
+}
+
+/**
+ * Network
+ */
+
+.globe-colors {
+	@apply fill-transparent stroke-gray-400;
+}
+
+.globe-longitude {
+	@apply origin-center;
+	animation-delay: calc( var(--globe-animation-order,0) * 1s );
+}
+
+@media(prefers-reduced-motion:reduce) {
+	.globe-longitude {
+		animation: none;
+		transform: rotate3d(0,1,0,calc( var(--globe-animation-order,0) * 22.5deg + 11.25deg ) );
+	}
 }

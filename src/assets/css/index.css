@@ -15,8 +15,11 @@
 }
 
 .logos > * {
-	padding: 1.5em;
 	@apply grid aspect-square place-content-center border-b border-r border-gray-400;
+}
+
+.logos img {
+	@apply px-4;
 }
 
 /**

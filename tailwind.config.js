@@ -45,7 +45,7 @@ module.exports = {
 				]
 			},
 			maxWidth: {
-				'28': '28ch',
+				'27': '27ch',
 				'42': '42ch'
 			}
 		}	

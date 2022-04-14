@@ -11,7 +11,7 @@ module.exports = {
 				}
 			},
 			animation: {
-				globe: 'globe 8s ease-out infinite',
+				globe: 'globe 12s ease-out infinite',
 			},
 			fontFamily: {
 				serif: 'Editorial New, Times, serif',

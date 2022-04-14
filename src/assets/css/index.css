@@ -32,7 +32,7 @@
 
 .globe-longitude {
 	@apply origin-center;
-	animation-delay: calc( var(--globe-animation-order,0) * 1s );
+	animation-delay: calc( var(--globe-animation-order,0) * 1.5s );
 }
 
 @media(prefers-reduced-motion:reduce) {

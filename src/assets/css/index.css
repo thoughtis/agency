@@ -1,0 +1,60 @@
+/**
+ * Index
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html {
+		scroll-behavior: smooth;
+	}
+}
+
+/**
+ * Clients
+ */
+
+.logos > * {
+	@apply grid aspect-square place-content-center border-b border-r border-gray-200;
+}
+
+.logos img {
+	@apply px-4;
+}
+
+/**
+ * Network
+ */
+
+.globe-colors {
+	@apply fill-transparent stroke-gray-400;
+}
+
+.globe-longitude {
+	@apply origin-center;
+	animation-delay: calc( var(--globe-animation-order,0) * 1.5s );
+}
+
+@media(prefers-reduced-motion:reduce) {
+	.globe-longitude {
+		animation: none;
+		transform: rotate3d(0,1,0,calc( var(--globe-animation-order,0) * 22.5deg + 11.25deg ) );
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+	@apply border-space-blue-500;
+}
+
+input:placeholder-shown {
+	@apply border-space-blue-200;
+}
+
+.background-blob {
+	background-image: url('../svg/button-blob-background.svg');
+	background-size: 100% 100%;
+}

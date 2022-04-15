@@ -16,10 +16,6 @@
  * Clients
  */
 
-.logos {
-	grid-template-columns: repeat(auto-fit, minmax(9em,1fr));
-}
-
 .logos > * {
 	@apply grid aspect-square place-content-center border-b border-r border-gray-200;
 }

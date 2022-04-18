@@ -16,12 +16,29 @@
  * Clients
  */
 
+.logos {
+	@apply grid-cols-2;
+}
+
+@media screen and (min-width: 512px) {
+	.logos {
+		@apply grid-cols-4;
+	}
+}
+
 .logos > * {
-	@apply grid aspect-square place-content-center border-b border-r border-gray-200;
+	@apply grid place-content-center border-b border-r border-gray-200;
+	aspect-ratio: 2/1;
+}
+
+@media screen and (min-width: 512px) {
+	.logos > * {
+		aspect-ratio: 1/1;
+	}
 }
 
 .logos img {
-	@apply px-4;
+	@apply px-5;
 }
 
 /**

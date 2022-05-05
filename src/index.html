@@ -219,8 +219,13 @@
 			</svg>
 			<h2 class="text-3xl text-center font-serif font-light">Contact us</h2>
 			<p class="text-base max-w-27 mx-auto px-4 text-center font-medium">Say hello and we’ll create a custom proposal for you.</p>
-			<form class="mt-8" name="Agency_Contact" method="POST" data-netlify="true">
+			<form class="mt-8" name="Agency_Contact" method="POST" data-netlify="true" netlify-honeypot="input-non-human">
 				<fieldset class="space-y-4 px-4 max-w-[35ch] mx-auto">
+					<div class="hidden">
+						<label>Don't fill this out if you're human.
+							<input name="input-non-human"/>
+						</label>
+					</div>
 					<div>
 						<label for="input-name" class="block">Full name</label>
 						<input class="w-full rounded-md placeholder:text-space-blue-200 text-space-blue-500" type="text" name="name" id="input-name" placeholder="Your Name" required/>

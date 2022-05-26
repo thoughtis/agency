@@ -232,7 +232,7 @@
 					</div>
 					<div>
 						<label for="input-email" class="block">Work Email</label>
-						<input class="w-full rounded-md placeholder:text-space-blue-200 text-space-blue-500 invalid:text-red-800" type="email" name="email" id="input-email" placeholder="yourname@example.com" required/>
+						<input pattern="^[^@]+@(?!gmail|hotmail|yahoo|aol)[^\.]+(?:\.[^\.]+){1,3}$" class="w-full rounded-md placeholder:text-space-blue-200 text-space-blue-500 invalid:text-red-800" type="email" name="email" id="input-email" placeholder="yourname@yourcompany.com" required/>
 					</div>
 					<div>
 						<label for="input-phone" class="block">Phone</label>

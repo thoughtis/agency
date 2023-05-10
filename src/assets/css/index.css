@@ -7,8 +7,10 @@
 @tailwind utilities;
 
 @layer base {
-	html {
-		scroll-behavior: smooth;
+	@media(prefers-reduced-motion:no-preference) {
+		html {
+			scroll-behavior: smooth;
+		}
 	}
 }
 
@@ -63,11 +65,13 @@
 
 input[type="text"],
 input[type="email"],
-input[type="tel"] {
+input[type="tel"],
+textarea {
 	@apply border-space-blue-500;
 }
 
-input:placeholder-shown {
+input:placeholder-shown,
+textarea:placeholder-shown {
 	@apply border-space-blue-200;
 }
 
